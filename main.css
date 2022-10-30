@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin :0;
+    width:100vw;
+    height:100vh; 
+  }
+
+  header {
+    text-align: center;
+    background: SeaShell;
+  }
+
+  ul{
+    list-style:none;
+    padding-left:0px;
+  }
+
+
+  nav{
+    width:65px;
+    background-color: #FFFFFF;
+    border-right:1px solid #FFFFFF;
+
+    position:fixed;
+    height:100%
+  }
+
+
+  nav h2{
+    width: 65px;
+    height: 95%;
+    left: 22.58px;
+    top: 633.11px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+  }
+
+  h1{font-size:18px; padding:20px;}
+
+  .menu li a:hover { background-color: yellowgreen; color:white;}
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  section {   
+    float: left;
+    width: 52%;
+  }
+  
+  /* Right column */
+  aside {
+    float: right;
+    width: 48%;
+  }
+  
+  
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: #224932;
+    width:100%;
+    height:37%;
+    margin:0;
+  }
+
+  .card h2 {
+    margin:-20px auto;
+    color: white;
+    
+    width: 350px;
+    height: 300px;
+    left: 241px;
+    top: 764px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 23px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .card button{
+    margin: -80px auto;
+    width: 360px;
+    height: 60px;
+    left: 400px;
+    top: 600px;
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    border-color:white;
+    
+
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+  .card2 {
+    background-color: #CEC4BC;
+    width:100%;
+    height:37%;
+    margin:0;
+  }
+
+  .card2 h2 {
+    margin:-20px auto;
+    color: black;
+    
+    width: 300px;
+    height: 300px;
+    left: 241px;
+    top: 764px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .card2 button{
+    margin:-80px auto;
+    width: 350px;
+    height: 60px;
+    left: 400px;
+    top: 800px;
+    background-color: rgba(255, 255, 255, 0);
+    color:black;
+    border-color:black;
+    
+
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    section, aside {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }

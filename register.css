@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin :0;
+    width:100vw;
+    height:100vh;
+    background-color: #224932;
+  }
+
+  nav{
+    width:65px;
+    background-color: #FFFFFF;
+    border-right:1px solid #FFFFFF;
+
+    position:fixed;
+    height:100%
+  }
+
+
+  nav h2{
+    width: 65px;
+    height: 95%;
+    left: 22.58px;
+    top: 633.11px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+  }
+
+
+  .rectangle {
+    box-sizing: border-box;
+    box-align:center;
+
+    position: absolute;
+    width: 90%;
+    height:85%;
+    left:7%;
+    top: 110px;
+
+    border: 1px solid #FFFFFF;
+  }
+
+  .rectangle2 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    left: 53.5%;
+    top: 55%;
+
+    border: 1.5px solid #FFFFFF;
+  }
+
+  h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+  }
+
+  .input-field {
+    font-size:18px;
+    width: 570px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    color:white;
+}
+
+.input-field2 {
+  font-size:18px;
+  width: 160px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  color:white;
+}
+
+button{
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  left: 400px;
+  top: 800px;
+  background-color: rgba(255, 255, 255, 0);
+  color:white;
+  border-color:white;
+  
+
+  font-family: 'Hubballi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  display:flex;
+}
+label {
+  cursor:pointer;
+  font-size: 1em;
+}
+
+/* 못생긴 기존 input 숨기기 */
+#image {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 800px) {
+  body {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  body {
+    float: none;
+    width: 100%;
+  }
+}
+

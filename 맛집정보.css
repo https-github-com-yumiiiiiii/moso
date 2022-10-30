@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin :0;
+    width:100vw;
+    height:100vh;
+    background-color: #CEC4BC;
+  }
+
+  nav{
+    width:65px;
+    background-color: #FFFFFF;
+    border-right:1px solid #FFFFFF;
+
+    position:fixed;
+    height:100%
+  }
+
+
+  nav h2{
+    width: 65px;
+    height: 95%;
+    left: 22.58px;
+    top: 633.11px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 35px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+  }
+
+
+  .rectangle {
+    box-sizing: border-box;
+    box-align:center;
+
+    position: absolute;
+    width: 90%;
+    height:85%;
+    left:7%;
+    top: 12%;
+
+    border: 1px solid #000000;
+  }
+
+  .hr-dotted {
+    position:absolute;
+    border : 0px;
+    border-top: 1.5px dotted black;
+    width:90%;
+    left:7%;
+    top:53%;
+
+  }
+
+  .hr-dotted1 {
+    position:absolute;
+    border : 0px;
+    border-top: 1.5px dotted black;
+    width:27.7%;
+    left:-50%;
+    top:300px;
+
+    transform: rotate(-90deg);
+
+  }
+
+  .line { 
+    border-left: 1.5px dotted #000;
+    height:42%;
+    top:12%;
+    left: 53%;
+    position: absolute;
+
+  }
+
+  img{
+    position:absolute;
+    left:10.8%;
+    top:14.7%;
+  }
+
+  .rectangle1{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 80%;
+    height:30%;
+    left:11%;
+    top: 55.5%;
+
+    border: 1px solid #000000;
+  }
+
+    #form-commentInfo{
+        position:relative;
+        width: 100%;
+        top:55.5%;
+        left:11%;
+    }
+
+    #comment-count{
+        margin-bottom: 10px; 
+    }
+
+    #comment-input{
+        width: 75%;
+        height: 3.7em;
+        background-color: #c1bcba00;
+        color:black;
+    }
+
+    #submit{
+        position:absolute;
+        background-color: rgba(0, 128, 255, 0);
+        width: 5%;
+        height: 3.3em;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+    }
+
+    #comments{
+        margin-top: 0px;
+        position:absolute;
+        width: 150%;
+        top:63.5%;
+        left:12%;
+        height:20px;
+
+    }
+
+    .eachComment{   
+        width :50%; 
+        margin: 5px;  
+        padding: 0.5em; 
+        border-bottom: 1px solid #c1bcba;
+    }
+
+    .eachComment .name{
+        font-size: 1.0em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .eachComment .inputValue{
+        font-size: 1.0em;
+        font-style: italic;    
+    }
+
+    .eachComment .time{
+        font-size: 0.7em;
+        color: #000000;
+        font-style: oblique;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        
+    }
+    
+    .eachComment .deleteComment{
+        background-color: rgba(255, 0, 0, 0);
+        color: rgb(0, 0, 0);
+    }
+
+    .button1{
+        margin: auto;
+        width: 60px;
+        height: 30px;
+        left: 400px;
+        top: 800px;
+        background-color: rgba(255, 255, 255, 0);
+        color:#564C44;
+        border-color:#564C44;
+        border: 1.5px solid ;
+        
+      
+        font-family: 'Hubballi';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 40px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .clicked {
+        color: #564C44;
+      }
+      
+      a:visited{
+        color:#564C44;
+      }
+    
