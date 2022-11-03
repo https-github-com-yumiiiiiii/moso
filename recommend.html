@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <div style="width:1250px"></div>
+        <link rel="stylesheet" type="text/css" href="recommend.css">
+        <script src="recommend.js"></script>
+    </head>
+
+    <body>
+        <nav style="position:absolute; z-index:10;">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">맛집 조회</a>
+                <a href="#">맛집 등록</a>
+                <p></p>
+                <a href="#">맛집 지도</a>
+                <a href="#">맛집 추천</a>
+            </div>
+            <div id = "menu">
+              <a onclick="openNav()"><img src="vector.png" height="77px"></a></div>
+              <h2> EAT:WHA </h2>
+        </nav>
+
+        <h2 style="position: absolute;
+            width: 238px;
+            height: 63px;
+            left: 140px;
+            top: 3px;
+            
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 42px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color:black;">맛집 추천</h2>
+
+        <h2 style="position: fixed;
+        width: 1000px;
+        height: 63px;
+        left: 270px;
+        top: 15px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">이대 주변 맛집을 랜덤으로 추천해드립니다.</h2>
+
+       
+        <div class="rectangle">
+            <h1>출출한 지금, 여기는 어떠세요?</h1>
+            <img src="vector2.png" alt="vector2" width="10%" height="auto">
+            <h2 id="display"></h2>
+            <button type="button" onclick="randomString()"> 
+            아니요, 다시 추천 받을래요 </button>
+            <button type="button" onclick="" style="top:72%"> 
+            좋아요, 맛집 정보 보러 갈래요 </button>
+        </div> 
+        <div class="rectangle2" style="box-align:right; left:52%">
+        <img src="soup.png" alt="soupphoto" width="100%" height="100%"></div> 
+        
+        
+
+
+    </body>
+</html>

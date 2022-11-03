@@ -4,13 +4,13 @@
 
   body {
     margin :0;
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     background-color: #CEC4BC;
   }
 
   nav{
-    width:65px;
+    width:80px;
     background-color: #FFFFFF;
     border-right:1px solid #FFFFFF;
 
@@ -42,10 +42,11 @@
   .rectangle {
     box-sizing: border-box;
     box-align:center;
+    margin:20px;
 
     position: fixed;
-    width: 20%;
-    height:35%;
+    width: 250px;
+    height:353px;
     left:14.5%;
     top: 10%;
 
@@ -81,8 +82,6 @@
     line-height: 28px;
     align-items: center;
     color:#403831;
-
-    
   }
 
   button{
