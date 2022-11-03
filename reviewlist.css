@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin :0;
+    width:100%;
+    height:100%;
+    background-color:#CEC4BC;
+  }
+  nav{
+      width:65px;
+      background-color: #FFFFFF;
+      border-right:1px solid #FFFFFF;
+  
+      position:fixed;
+      height:100%
+    }
+  
+   
+    nav h2{
+      width: 65px;
+      height: 95%;
+      left: 22.58px;
+      top: 633.11px;
+  
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 35px;
+      line-height: 48px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+  
+      color: #000000;
+  
+      transform: rotate(-90deg);
+    }
+    h3{
+        position: absolute;
+    width: 138px;
+    height: 27px;
+    left: 20%;
+    top: 4%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    }
+
+    table{
+        box-sizing: border-box;
+
+position: absolute;
+width: 80%;
+height: 80%;
+left: 8%;
+top: 15%;
+
+border: 1px solid #000000;
+    }
+
+h4{
+position: absolute;
+margin:0;
+left: 16%;
+top: 2%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+opacity: 0.5;
+}
+
+
+.like.likeimg{
+    position: absolute;
+    left:10%;
+    top:1%;
+  }
+  .like h1{
+    
+          position:absolute;
+          left:120%;
+          top:-7%;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 1px;
+         
+          align-items: center;
+          text-align: center;
+          
+          color: #403831;
+  }
+
+  h6{
+    position: absolute;
+   left:17%;
+   top:-6%;
+   width: 949px;
+   height: 168px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: flex-end;
+text-align: left;
+color: #000000;
+
+  }
+  h8{
+    
+    position: absolute;
+  left:7%;
+   top:-16%;
+ 
+   width: 949px;
+  height: 168px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: flex-end;
+text-align: left;
+color: #000000;
+  }
