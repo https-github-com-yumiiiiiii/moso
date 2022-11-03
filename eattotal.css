@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    margin :0;
+    width:100%;
+    height:100%;
+    background-color:#CEC4BC;
+  }
+  nav{
+      width:65px;
+      background-color: #FFFFFF;
+      border-right:1px solid #FFFFFF;
+  
+      position:fixed;
+      height:100%
+    }
+  
+   
+    nav h2{
+      width: 65px;
+      height: 95%;
+      left: 22.58px;
+      top: 633.11px;
+  
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: normal;
+      font-weight: 100;
+      font-size: 35px;
+      line-height: 48px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+  
+      color: #000000;
+  
+      transform: rotate(-90deg);
+    }
+    .rectangle1 {
+     
+        position: absolute;
+    width: 260px;
+    height: 390px;
+    left: 11%;
+    top: 12%;
+
+    border: 1px solid #000000;
+      }
+    .rectangle2{
+        box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 390px;
+left: 33%;
+top: 12%;
+
+border: 1px solid #000000;
+    }
+    .rectangle3{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 260px;
+        height: 390px;
+        left: 55%;
+        top: 12%;
+        
+        border: 1px solid #000000;
+    }
+.rectangle4{
+    
+box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 390px;
+left:77%;
+top: 12%;
+
+border: 1px solid #000000;
+}
+.rectangle5{
+    box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 390px;
+left: 11%;
+top: 55%;
+
+border: 1px solid #000000;
+}
+
+.rectangle6{
+    box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 390px;
+left: 33%;
+top: 55%;
+
+border: 1px solid #000000;
+}
+
+.rectangle7{
+   
+box-sizing: border-box;
+
+position: absolute;
+width: 260px;
+height: 390px;
+left: 55%;
+top: 55%;
+
+border: 1px solid #000000; 
+}
+
+.rectangle8{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 260px;
+    height: 390px;
+    left: 77%;
+    top: 55%;
+    
+    border: 1px solid #000000;
+}
+
+.like.likeimg{
+  position: absolute;
+  left:10%;
+  top:1%;
+}
+.like h1{
+  
+        position:absolute;
+        left:120%;
+        top:-7%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1px;
+       
+        align-items: center;
+        text-align: center;
+        
+        color: #403831;
+}
+.review.reviewimg{
+  position: absolute;
+  left:10%;
+  top:10%;
+}
+.review h2{
+  
+  position:absolute;
+  left:140%;
+  top: -40%;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1px;
+ 
+  align-items: center;
+  text-align: center;
+  
+  color: #403831;
+}
+.arrow{
+  position:absolute;
+}
