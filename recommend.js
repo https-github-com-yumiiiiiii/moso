@@ -23,8 +23,7 @@ function showReason(num) {
 };*/
 
 function randomString(){
-let sValue = ['Lorem', 'Ipsum', 'Dolor' ,'코끼리 식당', '기린 식당','빼빼로식당'
-,'ㅇㅇ','ㅇㄹㄴ','ㄹㅇㅇㄴ'];
+let sValue = ['여우카페', '이화키친', 'Je T’aime' ,'코끼리 식당'];
 let sPick = Math.floor(Math.random() * sValue.length);
 document.getElementById("display").innerHTML = sValue[sPick];
 }
