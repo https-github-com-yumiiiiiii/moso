@@ -185,6 +185,58 @@ label {
     color: black;
     display: block;
     transition: 0.3s;
+    top:400px;
+  }
+
+  .sidenav h1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 43px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #343434;
+  }
+
+  .sidenav hr{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 40px;
+    top: 230px;
+
+    border : 0px;
+    border-top: 1.5px solid #343434;
+  }
+
+  .sidenav button{
+    position: absolute; 
+    width:160px;
+    top:200px;
+    left:40px;
+    height:39.5px;
+    background-color: rgba(255, 255, 255, 0);
+    color:#343434;
+    border:1.5px solid #343434;
+    align-items: center;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color:black;
+    text-align: center;
   }
   nav
   /* When you mouse over the navigation links, change their color */
