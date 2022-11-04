@@ -49,7 +49,7 @@ html { overflow-y:scroll; }
     position: absolute;
     width: 90%;
     height:85%;
-    left:7%;
+    left:8%;
     top: 12%;
 
     border: 1px solid #000000;
@@ -60,7 +60,7 @@ html { overflow-y:scroll; }
     border : 0px;
     border-top: 1.5px dotted black;
     width:90%;
-    left:7%;
+    left:8%;
     top:53%;
 
   }
@@ -98,7 +98,7 @@ html { overflow-y:scroll; }
     position: relative;
     width: 80%;
     height:30%;
-    left:11%;
+    left:12%;
     top: 64%;
 
     border: 1px solid #000000;
@@ -108,7 +108,7 @@ html { overflow-y:scroll; }
         position:absolute;
         width: 80%;
         top:55.5%;
-        left:11%;
+        left:12%;
     }
 
     #comment-count{
@@ -196,12 +196,97 @@ html { overflow-y:scroll; }
         text-align: center;
       }
 
+      button.on {
+        color: white;
+        background-color: #564C44;
+    }
+
       .clicked {
         color: #564C44;
       }
       
       div a:visited{
         background-color:#564C44;
+      }
+
+      .rectangle button{
+        position: absolute; 
+        width:15%;
+        top:20%;
+        left:54%;
+        background-color: rgba(255, 255, 255, 0);
+        color:black;
+        border:1.5px solid black;
+        align-items: center;
+        
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 40px;
+        color:black;
+        text-align: center;
+      }
+
+      .rectangle.infor{
+        position: absolute;
+        width: 542px;
+        height: 170.67px;
+        left: 60%;
+        top: 20%;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        color: #000000;
+
+      }
+
+      .rectangle button1{
+        position: absolute; 
+        width:90px;
+        background-color:#7E6F63;
+        color:rgb(255, 255, 255);
+        border:1.5px solid #7E6F63;
+        border-radius: 30px;
+        align-items: center;
+        
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+
+      }
+
+      .heart {
+        width: 20px;
+        height: 20px;
+        background: #403831bb;
+        position: relative;
+        transform: rotate(45deg);
+      }
+      .heart::before,
+      .heart::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        background: #403831bb;
+      }
+      .heart::before {
+        left: -50%;
+      }
+      .heart::after {
+        top: -50%;
       }
 
       /* The side navigation menu */
@@ -227,6 +312,59 @@ html { overflow-y:scroll; }
     color: black;
     display: block;
     transition: 0.3s;
+
+    position: absolute;
+    top:400px;
+  }
+
+  .sidenav h1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 43px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #343434;
+  }
+
+  .sidenav hr{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 40px;
+    top: 230px;
+
+    border : 0px;
+    border-top: 1.5px solid #343434;
+  }
+
+  .sidenav button{
+    position: absolute; 
+    width:160px;
+    top:200px;
+    left:40px;
+    background-color: rgba(255, 255, 255, 0);
+    color:#343434;
+    border:1.5px solid #343434;
+    align-items: center;
+    
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color:black;
+    text-align: center;
   }
   nav
   /* When you mouse over the navigation links, change their color */

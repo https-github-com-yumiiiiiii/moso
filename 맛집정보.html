@@ -11,11 +11,16 @@
         <nav style="position:absolute; z-index:10;">
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">맛집 조회</a>
-                <a href="#">맛집 등록</a>
+                <img src="mainpage.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+                <h1>로그인이 필요합니다.</h1>
+                <hr class="hr1"/>
+                <button type="button" onclick="" style="top:250px"> 로그인 </button>
+                <button type="button" onclick="" style="top:300px"> 회원가입 </button>
+                <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+                <a href="register.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
                 <p></p>
-                <a href="#">맛집 지도</a>
-                <a href="recommend.html">맛집 추천</a>
+                <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+                <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
             </div>
             <div id = "menu">
               <a onclick="openNav()"><img src="vector.png" height="77px"
@@ -39,7 +44,24 @@
             text-align: center;
             color:black;">맛집 정보</h2>
 
-        <div class="rectangle"></div>
+        <div class="rectangle">
+            <div><button1 type="button" style="position:absolute; left:54.5%; top:3.5%;">
+                한식</button1></div>
+            <div class ="infor" style="position:absolute; left:55%; top:8.5%">
+                <div id="name" style="font-size:25px; float:left;">코끼리 식당   ----------</div><br>
+                <div ><img src="Vector3.png" id="img1" width="31px" height="28px" style="float:left; position:absolute; left:290px; top:6px;">
+                    <img src="Vector4.png" id="img2" width="31px" height="28px" style="float:left; position:absolute; left:290px; top:6px"></div><br>
+                <div id="address" style="clear:both;">주소: 서울시 서대문구 냠냠로 123-98 1F</div><br>
+                <div id="tel">번호: 02 - 465 - 8473</div><br>
+                <div id="time">영업 시간: 화-일 : 10:00 - 20:00</div><br>
+                <div id="park">주차 가능</div>
+            </div>
+            <button type="button" onclick="location.href='menu list.html';" style="top:39%"> 
+                메뉴 조회하기 </button>
+            <button type="button" onclick="" style="top:39%; left:70%"> 
+                리뷰 조회/작성하기 </button>
+        </div>
+
 
         <hr class='hr-dotted'/>
         <hr class='hr-dotted1'/>
@@ -55,12 +77,17 @@
         <div id="comments"></div>
             <script src="맛집정보.js"></script>
 
-        <div class="rectangle1"></div>
+        <div class="rectangle1" style="border-top-color: rgba(0, 0, 0, 0);"></div>
 
-        <div class = "star" style="position:absolute; right:3%; top:12%; ">
-            <button class="button1" type="button" style="font-size:18px; width:170px; 
+        <div class = "star" style="position:absolute; right:2%; top:12%; ">
+            <button class="button1" id="btn" type="button" 
+            onclick="document.getElementById('btn').style.backgroundColor='#564C44'
+            document.getElementById('btn').style.color='white';" style="font-size:18px; width:170px; 
             height:40px "><a>즐겨찾기</a>
             </div>
+
+        <div style="position:absolute; right:5%; top:40px;">
+            <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
 
     </body>
     </html>

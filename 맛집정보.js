@@ -141,3 +141,9 @@ function openNav() {
 
     btn.onclick = pressBtn;
 
+
+    function ChnImg(){
+	
+        document.getElementById("img2").src = "vector4.png";
+        
+    }
