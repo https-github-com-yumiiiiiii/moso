@@ -1,0 +1,172 @@
+html { overflow-y:scroll; }
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin:0;
+    width:2000px;
+    height:100%;
+    background-color: #224932;
+    display:block;
+  }
+
+ 
+
+
+  nav{
+    width:80px;
+    background-color: #FFFFFF;
+    border-right:1px solid #FFFFFF;
+
+    position:fixed;
+    height:100%;
+    top:0%;
+    
+  }
+
+
+  nav h2{
+    width: 80px;
+    height: 95%;
+    left: 50%;
+    top: 650.11px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 48px;
+    display:flex;
+    align-items: center;
+    text-align:center;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+  }
+  
+
+  .rectangle {
+    box-sizing: border-box;
+    box-align:center;
+
+    position: fixed;
+    width: 90%;
+    height:85%;
+    left:7%;
+    top: 110px;
+
+    border: 1px solid #FFFFFF;
+  }
+
+  .rectangle2 {
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 330px;
+    height: 233px;
+    left: 12%;
+    top: 60%;
+
+    border: 1.5px solid #FFFFFF;
+  }
+
+  .rectangle3 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 527px;
+    height: 231px;
+    left: 57%;
+    top: 236px;
+
+    border: 1.5px solid #FFFFFF;
+  }
+  .rectangle3 h1{
+    position: absolute;
+
+        left:5%;
+        top:10%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+
+  }
+
+
+  h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+
+    color: #FFFFFF;
+  }
+
+  .input-field {
+    font-size:18px;
+    width: 530px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    color:white;
+}
+
+.input-field2 {
+  font-size:18px;
+  width: 160px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  color:white;
+}
+
+
+button{
+    margin: auto;
+    width: 60px;
+    height: 30px;
+    left: 400px;
+    top: 800px;
+    background-color: rgba(255, 255, 255, 0);
+    color:white;
+    border-color:white;
+    
+  
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .button {
+    display:flex;
+  }
+  
+  label {
+    cursor:pointer;
+    font-size: 1em;
+  }
+  
+  .v-line{
+    border-left: thin solid #FFFFFF;
+   top:0%;
+    height:100%;
+    left: 50%;
+    position: absolute;
+   }
