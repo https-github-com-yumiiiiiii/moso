@@ -8,37 +8,59 @@
     </head>
 </html>
 <body>
-    <nav>
-        <a href="main2.html"><img src="vector.png" height="6.5%"></a>
-       <h2>EAT:WHA</h2>
-        <ul class="menu" >
-        </ul>
+    <nav style="position:absolute; z-index:10;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="mainpage.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+            <h1>로그인이 필요합니다.</h1>
+            <hr class="hr1"/>
+            <button type="button" onclick="" style="top:250px"> 로그인 </button>
+            <button type="button" onclick="" style="top:300px"> 회원가입 </button>
+            <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="register.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>
+
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+            <h1><b>김이화</b>님 환영합니다.</h1>
+            <hr class="hr1"/>
+            <a href="마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+            <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+            <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+            <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+            <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="맛집등록.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>
+        <div id = "menu">
+          <a onclick="openNav()"><img src="vector.png" height="77px"
+            style="position:absolute; top:0%; left:0%"></a></div>
+          <h2> EAT:WHA </h2>
     </nav>
     
-    <h1 style="position: absolute;
-        width: 238px;
-        height: 63px;
-        left: 8%;
-        top: 1%;
-        
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 35px;
-        line-height: 42px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color:#000000;">코끼리식당</h1><h3>-리뷰작성하기-</h3>
-
-
+    <div class="card3">
+        <div class="ha">
+            <div style="position:absolute;margin-left:1180px; top:32px;">
+                <img src= To-left.png onclick="history.back();" width="40px" height="40px"></div>
+        <h2>코끼리식당</h2>
+        <h1>-메뉴-</h1>
+        </div>
+    </div>
+<div class="card2">
 <table border="1" bordercolor="white" cellspacing="0.5">
     <tr style="text-align:center;" >
         <td rowspan="4" width="20%"><img src="Ellipse 1.png"><br><br>user2</td>
         <td colspan="4"height="35%">
             <h1>1. 방문 날짜 등록</h1>
             <form >
-            <input type="text" class="date" style="width:8%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">년
+            <input type="text" class="date" style="width:9%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">년
             <input type="text" class="date" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">월
             <input type="text" class="date" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">일
             </form>
@@ -46,7 +68,7 @@
             <h1 style="top:12%;">2. 평점 등록</h1>
             <div class="img" ><img src="Thumbs-up.png"style="top:10px;width:35px; height:35px;"></div>
                 
-            <div class="bb" style="position:absolute; left:420px;top:180px;">
+            <div class="bb" style="position:absolute; left:330px;top:150px;">
                 <input type="button"class="b1" value="1" style="left:-10px;"></button>
                 <input type="button" class="b1" value="2"style="left:20px;"></button>
                 <input type="button" class="b1"value="3"style="left:50px;"></button>
@@ -59,18 +81,17 @@
     <tr>
         <td height="50%"> 
             <h1 style="top:35%;">3. 리뷰 작성</h1>
-            <h2><textarea name="write" rows="5" cols="20" style="width: 800px;height: 250px;;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;border-bottom: 0px;" placeholder="방문한 맛집에 대한 솔직한 리뷰를 작성해주세요."></textarea>
+            <h2><textarea name="write" rows="5" cols="20" style="position:absolute;top:28px;width: 800px;height: 210px;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;border-bottom: 0px;" placeholder="방문한 맛집에 대한 솔직한 리뷰를 작성해주세요."></textarea>
             </h2>
                
         </td>
     </tr>
     <tr>
         <td>
-            <a href="main2.html"><img src="작성 완료 버튼.png" style="position:absolute; top:90%;left:87%;"></a>
+            <a href="reviewlist.html"><img src="작성 완료 버튼.png" style="position:absolute; top:90%;left:950px;"></a>
          </td>
 
     </tr>
 </table>
+</div>
         
-<a href="main2.html"><img src="To-left.png" style="position:absolute; top:5%;left:90%;"></a>
-</body>
