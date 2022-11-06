@@ -2,47 +2,49 @@
     <head>
         <div style="width :1250px;"></div>
         <link rel="stylesheet" type="text/css" href="eattotal.css">
+        <script src="login.js"></script>
     </head>
 </html>
 
 <body >
-<nav>
-    <a href="main2.html"><img src="vector.png" height="6.5%"></a>
-   <h2>EAT:WHA</h2>
-    <ul class="menu" >
-    </ul>
-</nav>
+    <nav style="position:absolute; z-index:10;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="mainpage.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+            <h1>로그인이 필요합니다.</h1>
+            <hr class="hr1"/>
+            <button type="button" onclick="" style="top:250px"> 로그인 </button>
+            <button type="button" onclick="" style="top:300px"> 회원가입 </button>
+            <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="register.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>
+        <div id = "menu">
+          <a onclick="openNav()"><img src="vector.png" height="77px"
+            style="position:absolute; top:0%; left:0%"></a></div>
+          <h2> EAT:WHA </h2>
+    </nav>
 
-<h1 style="position: absolute;
-    width: 238px;
-    height: 63px;
-    left: 8%;
-    top: 1%;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:#000000;">맛집/전체</h1>
-    
-
-    
+    <div class="card3">
+        <div class="ha">
+            <div style="position:absolute; margin-left:1180px; top:32px;">
+                <img src= To-left.png onclick="history.back();" width="40px" height="40px"></div>
+        <h2>코끼리식당</h2>
+     
    <div>
     <button type="total_list" 
     style="position: absolute;
-    width: 114px;
-    height: 42px;
-    left: 18%;
-    top: 4%;
+    width: 95px;
+    height: 35px;
+    margin-left: 280px;
+    top: 3%;
      border: 1px solid #000000;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     display: flex;
     align-items: center;
@@ -56,416 +58,194 @@
     style="box-sizing: border-box;
 
     position: absolute;
-    width: 113px;
-    height: 42px;
-    left: 27%;
-    top: 4%;
+    width: 95px;
+    height: 35px;
+    margin-left: 390px;
+    top: 3%;
     border: 1px solid #000000;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27px;
     display: flex;
     align-items: center;
     text-align: center;
     
     color: #7E6F63;"
-     >&nbsp;리뷰 순  ▼</button></div>
-
-     <div class="rectangle1">
-        <a href="main2.html"><img src="식당사진.png" >
-        
-        <p name="name" 
-                style="position: absolute;
-                width: 131px;
-                height: 27.05px;
-                left: 10%;
-                top: 50%;
-                
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 25px;
-                line-height: 30px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                
-                color: #403831;">코끼리식당</p></a></div>
-       
-        <ul style="position:absolute;
-        left:10.5%;
-        top:36%;
-        
-
-         font-family: 'Inter';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 13px;
-          line-height: 20px;
-          /* identical to box height */
+     >&nbsp;리뷰 순  ▼</button></div></div> </div>
 
 
-          color: #403831;" >
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-
-        <div class="like" style=" position: absolute; left:12%;top:46%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >2.6</h1></div>
-        <div class="review" style="position: absolute; left:17%;top:46.5%;">
-            <img class="reviewimg" src="review.png"  >
-            <h2 >50</h2></div>
-            <div class="arrow" style="position: absolute;left:22.5%;top:46.5%;">
-                <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                 
-            
-     <div class="rectangle2" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <form>
-        <p name="name" 
-        style="position: absolute;
-        width: 131px;
-        height: 27.05px;
-        left: 11%;
-        top: 50%;
-        
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 25px;
-        line-height: 30px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        
-        color: #403831;">코끼리식당</p></a></div>
-         <ul style="position:absolute;
-         left:32.5%;
-         top:36%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:34%;top:46%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >2.6</h1></div>
-        <div class="review" style="position: absolute; left:39%;top:46.5%;">
-            <img class="reviewimg" src="review.png"  >
-            <h2 >50</h2></div>
     
-         
-         <div class="arrow" style="position: absolute;left:44.5%;top:46.5%;">
-         <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-          
-     
-        
-     <div class="rectangle3" >
-        <a href="main2.html"><img src="식당사진.png" >
-            <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
+    <div class ="card">
+        <div class ="ha">
             
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:54.5%;
-         top:36%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
+    <a class="rectangle" style="margin-left:110">
+        <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:112px;top:10%;width:229px;" >
+        <p id="name" >코끼리식당</p></a>
+        <ul>
+             <li  >서울시 서대문구 냠냠로 123-98</li>
+             <li >02-456-8473</li>
             <li> ...</li>
         </ul>
-        
-        <div class="like" style=" position: absolute; left:56%;top:46%;">
+        <div class="kind" style=" position: absolute; margin-left:250px;top:34%;">
+            <img class="kind" src="한식.png"></div>
+        <div class="like" style=" position: absolute; margin-left:120px;top:46%;">
             <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >4.6</h1></div>
-
-            <div class="review" style="position: absolute; left:61%;top:46.5%;">
-                <img class="reviewimg" src="review.png"  >
-                <h2 >500</h2></div>
-    
-                <div class="arrow" style="position: absolute;left:66.5%;top:46.5%;">
-                    <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                     
+               <h1 >2.6</h1></div>
+          <div class="review" style="position: absolute; margin-left:200px;top:46.5%;">
+               <img class="reviewimg" src="review.png"  >
+                    <h2 >50</h2></div>
+           <div class="arrow" style="position: absolute;margin-left:285px;top:46%;">
+                <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
+    </a>
                 
-
-     <div class="rectangle4" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
+      <a class="rectangle" style="margin-left:370">
+        <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:372px;top:10%;width:229px;" >
+            <p id="name" style="margin-left:390px;">코끼리식당</p></a> 
             
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:76.5%;
-         top:36%;
-         
+            <ul style="margin-left:360px;">
+                 <li  >서울시 서대문구 냠뇸로 123-98</li>
+                 <li >02-336-8473</li>
+                <li> ...</li>
+            </ul>
+            <div class="kind" style=" position: absolute; margin-left:510px;top:34%;">
+                <img class="kind" src="한식.png"></div>
 
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:78%;top:46%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >2.9</h1></div>
-        <div class="review" style="position: absolute; left:83%;top:46.5%;">
-            <img class="reviewimg" src="review.png"  >
-            <h2 >5</h2></div>
-            <div class="arrow" style="position: absolute;left:88.5%;top:46.5%;">
-                <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                 
-     <div class="rectangle5" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:10.5%;
-         top:79%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:12%;top:89%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >5</h1></div>
-
-         <div class="review" style="position: absolute; left:17%;top:89.5%;">
-            <img class="reviewimg" src="review.png"  >
-            <h2 >50</h2></div>
-
-            <div class="arrow" style="position: absolute;left:22.5%;top:89.5%;">
-                <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                 
-            
-     <div class="rectangle6" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:32.5%;
-         top:79%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:34%;top:89%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >3.7</h1></div>
-
-        <div class="review" style="position: absolute; left:39%;top:89.5%;">
-            <img class="reviewimg" src="review.png"  >
-            <h2 >2</h2></div>
-
-            <div class="arrow" style="position: absolute;left:44.5%;top:89.5%;">
-                <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                 
-            
-     <div class="rectangle7" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
-            
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:54.5%;
-         top:79%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 냠냠로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:56%;top:89%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >2.6</h1></div>
-
-            <div class="review" style="position: absolute; left:61%;top:89.5%;">
-                <img class="reviewimg" src="review.png"  >
-
-                <h2 >507</h2></div>
-                <div class="arrow" style="position: absolute;left:66.5%;top:89.5%;">
+            <div class="like" style=" position: absolute; margin-left:380px;top:46%;">
+                <img class="likeimg" src="Thumbs-up.png" >
+                   <h1 >3.2</h1></div>
+              <div class="review" style="position: absolute; margin-left:460px;top:46.5%;">
+                   <img class="reviewimg" src="review.png"  >
+                        <h2 >5</h2></div>
+               <div class="arrow" style="position: absolute;margin-left:545px;top:46%;">
                     <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                     
-     <div class="rectangle8" >
-        <a href="main2.html"><img src="식당사진.png" >
-        <p name="name" 
-            style="position: absolute;
-            width: 131px;
-            height: 27.05px;
-            left: 11%;
-            top: 50%;
+            </a>
+             <a class="rectangle" style="margin-left:630">
+                <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:632px;top:10%;width:229px;" >
+                    <p id="name" style="margin-left:650px;">고양이식당</p></a>
+                    <ul style="margin-left:620px;">
+                         <li  >서울시 서대문구 냠냠로 123-98</li>
+                         <li >02-006-8473</li>
+                        <li> ...</li>
+                    </ul>
+                    
+                    <div class="kind" style=" position: absolute; margin-left:760px;top:34%;">
+                        <img class="kind" src="한식.png"></div>
+                    <div class="like" style=" position: absolute; margin-left:640px;top:46%;">
+                        <img class="likeimg" src="Thumbs-up.png" >
+                           <h1 >4.6</h1></div>
+                      <div class="review" style="position: absolute; margin-left:720px;top:46.5%;">
+                           <img class="reviewimg" src="review.png"  >
+                                <h2 >102</h2></div>
+                       <div class="arrow" style="position: absolute;margin-left:805px;top:46%;">
+                            <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>                                       
+            </a>
+            <a class="rectangle" style="margin-left:890">
+                <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:892px;top:10%;width:229px;" >
+                    <p id="name" style="margin-left:910px;">강아지분식</p></a>
+                    <ul style="margin-left:880px;">
+                         <li  >서울시 서대문구 냠냠로 123-98</li>
+                         <li >02-456-8003</li>
+                        <li> ...</li>
+                    </ul>
+                    <div class="kind" style=" position: absolute; margin-left:1020px;top:34%;">
+                        <img class="kind" src="분식.png"></div>
+                    <div class="like" style=" position: absolute; margin-left:900px;top:46%;">
+                        <img class="likeimg" src="Thumbs-up.png" >
+                           <h1 >4.8</h1></div>
+                      <div class="review" style="position: absolute; margin-left:980px;top:46.5%;">
+                           <img class="reviewimg" src="review.png"  >
+                                <h2 >410</h2></div>
+                       <div class="arrow" style="position: absolute;margin-left:1065px;top:46%;">
+                            <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>                                
+            </a>        
+             
+                        <a class="number" style="margin-left:1210">
+                            <p>1<br><br>2<br><br>3<br><br>4<br><br>5</p>
+                        </a>
+                    </div>
+                </div>
             
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 25px;
-            line-height: 30px;
-            display: flex;
-            align-items: center;
-            text-align: center;
             
-            color: #403831;">코끼리식당</p></a>
-     </div>
-     <ul style="position:absolute;
-         left:76.5%;
-         top:79%;
-         
-
-          font-family: 'Inter';
-           font-style: normal;
-           font-weight: 500;
-           font-size: 13px;
-           line-height: 20px;
-           /* identical to box height */
-
-
-           color: #403831;">
-            <li  >서울시 서대문구 뇸뇸로 123-98</li>
-            <li >02-456-8473</li>
-            <li> ...</li>
-        </ul>
-        <div class="like" style=" position: absolute; left:78%;top:89%;">
-            <img class="likeimg" src="Thumbs-up.png" >
-            <h1 >2.6</h1></div>
-            <div class="review" style="position: absolute; left:83%;top:89.5%;">
-                <img class="reviewimg" src="review.png" >
-                <h2 >37</h2></div>
-                <div class="arrow" style="position: absolute;left:88.5%;top:89.5%;">
-                    <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
-                     
+                    <div class="card2">
+                        <div class ="ha">
+                        <a class="rectangle" style="margin-left:110; top:57%">
+                            <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:112px;top:57%;width:229px;" >
+                                <p id="name" style="top:78%;">코끼리식당</p></a>
+                                <ul style="top:83%;">
+                                     <li  >서울시 동대문구 냠냠로 123-98</li>
+                                     <li >02-456-8883</li>
+                                    <li> ...</li>
+                                </ul>
+                                <div class="kind" style=" position: absolute; margin-left:250px;top:81%;">
+                                    <img class="kind" src="한식.png"></div>
+                                <div class="like" style=" position: absolute; margin-left:120px;top:93%;">
+                                    <img class="likeimg" src="Thumbs-up.png" >
+                                       <h1 >3.3</h1></div>
+                                  <div class="review" style="position: absolute; margin-left:200px;top:93.5%;">
+                                       <img class="reviewimg" src="review.png"  >
+                                            <h2 >33</h2></div>
+                                   <div class="arrow" style="position: absolute;margin-left:285px;top:93%;">
+                                        <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
+                        </a>
+                        <a class="rectangle" style="margin-left:370; top:57%">
+                            <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:372px;top:57%;width:229px;" >
+                                <p id="name" style="margin-left:390px;top:78%;">여우분식</p></a>
+                                <ul style="margin-left:360px;top:83%;">
+                                     <li  >서울시 서대문구 냠냠로 123-98</li>
+                                     <li >02-456-8473</li>
+                                    <li> ...</li>
+                                </ul>
+                                <div class="kind" style=" position: absolute; margin-left:510px;top:81%;">
+                                    <img class="kind" src="분식.png"></div>
+                                <div class="like" style=" position: absolute; margin-left:380px;top:93%;">
+                                    <img class="likeimg" src="Thumbs-up.png" >
+                                       <h1>3.6</h1></div>
+                                  <div class="review" style="position: absolute; margin-left:460px;top:93.5%;">
+                                       <img class="reviewimg" src="review.png"  >
+                                            <h2 >500</h2></div>
+                                   <div class="arrow" style="position: absolute;margin-left:545px;top:93%;">
+                                        <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>
+                        </a>
+                        <a class="rectangle" style="margin-left:630; top:57%">
+                            <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:632px;top:57%;width:229px;" >
+                                <p id="name" style="margin-left:650px;top:78%;">코끼리식당</p></a>
+                                <ul style="margin-left:620px;top:83%;">
+                                     <li  >서울시 서대문구 뇸냠로 123-98</li>
+                                     <li >02-666-8473</li>
+                                    <li> ...</li>
+                                </ul>
+                                <div class="kind" style=" position: absolute; margin-left:760px;top:81%;">
+                                    <img class="kind" src="한식.png"></div>
+                                <div class="like" style=" position: absolute; margin-left:640px;top:93%;">
+                                    <img class="likeimg" src="Thumbs-up.png" >
+                                       <h1 >4.6</h1></div>
+                                  <div class="review" style="position: absolute; margin-left:720px;top:93.5%;">
+                                       <img class="reviewimg" src="review.png"  >
+                                            <h2 >5</h2></div>
+                                   <div class="arrow" style="position: absolute;margin-left:805px;top:93%;">
+                                        <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>   
+                        </a>
+                        <a class="rectangle" style="margin-left:890; top:57%">
+                            <a href="main2.html"><img src="식당사진.png" style="position:absolute;margin-left:892px;top:57%;width:229px;" >
+                                <p id="name" style="margin-left:910px;top:78%;">여우분식</p></a>
+                                <ul style="margin-left:880px;top:83%;">
+                                     <li  >서울시 서대문구 뇸뇸로 123-98</li>
+                                     <li >02-126-5473</li>
+                                    <li> ...</li>
+                                </ul>
+                                <div class="kind" style=" position: absolute; margin-left:1020px;top:81%;">
+                                    <img class="kind" src="분식.png"></div>
+                                <div class="like" style=" position: absolute; margin-left:900px;top:93%;">
+                                    <img class="likeimg" src="Thumbs-up.png" >
+                                       <h1 >3.8</h1></div>
+                                  <div class="review" style="position: absolute; margin-left:980px;top:93.5%;">
+                                       <img class="reviewimg" src="review.png"  >
+                                            <h2 >47</h2></div>
+                                   <div class="arrow" style="position: absolute;margin-left:1065px;top:93%;">
+                                        <a href="main2.html"><img class="arrow" src="Arrow-right.png" ></a></div>  
+                        </a>
+                        </div>
+                    </div>
+            
