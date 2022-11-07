@@ -44,7 +44,7 @@ nav h2{
   margin-left:110;
   width: 238px;
   height: 63px;
-  top: -15px;
+  top: 3px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -61,8 +61,8 @@ nav h2{
   position: absolute;
   width: 238px;
   height: 63px;
-  margin-left:250;
-  top:5px;
+  margin-left:250px;
+  top:17px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -139,7 +139,7 @@ font-family: 'Inter';
 .review.reviewimg{
   position: absolute;
   left:10%;
-  top:10%;
+  top:10%
 }
 .review h2{
   
@@ -179,8 +179,8 @@ font-family: 'Inter';
     margin:0;
     position: absolute;
     width: 230px;
-    height:40%;
-    top: 10%;
+    height: 270px;
+    top: 92px;
     border: 1px solid #000000;
   }
 
@@ -219,21 +219,21 @@ font-family: 'Inter';
   .card {
     background-color: #CEC4BC;
     width:1250px;
-    height:45%;
+    height:310px;
     margin:0 auto;
   }
 
   .card2{
     background-color: #CEC4BC;
     width:1250px;
-    height:45%;
+    height:310;
     margin:0 auto;
   }
 
   .card3{
     background-color: #CEC4BC;
     width:1250px;
-    height:10%;
+    height:92px;
     margin:0 auto;
   }
 
@@ -348,4 +348,15 @@ font-family: 'Inter';
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
     }

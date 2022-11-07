@@ -210,3 +210,20 @@ text-align: center;
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
     }
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+      iframe{
+        height:670;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+      iframe{
+        height:700;
+      }
+    }
