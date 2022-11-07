@@ -42,7 +42,7 @@ nav h2{
 .card3{
   background-color: #CEC4BC;
   width:1250px;
-  height:10%;
+  height:92px;
   margin:0 auto;
 }
 .card3 h2{
@@ -84,11 +84,8 @@ nav h2{
 .card2{
   background-color: #CEC4BC;
   width:1250px;
-  height:620;
-  top:92px;
-  margin-top:auto;
-  margin:auto;
-  
+  height:310px;
+  margin:0 auto;
 }
 
  
@@ -105,16 +102,7 @@ height:600px;
 margin-top:0;
 
 border: 1px solid #000000;
-/*
- box-sizing: border-box;
 
-position: absolute;
-width: 85%;
-height: 80%;
-left: 8%;
-top: 15%;
-
-border: 1px solid #000000;*/
     }
 
 td h1{
@@ -161,11 +149,11 @@ opacity: 0.5;
     
           position:absolute;
           left:120%;
-          top:-20%;
+          top:-19%;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 500;
-          font-size: 24px;
+          font-size: 20px;
           line-height: 1px;
          
           align-items: center;
@@ -177,7 +165,7 @@ opacity: 0.5;
   td h4{
     position: absolute;
    left:17%;
-   top:-7%;
+   top:-6.3%;
    width: 949px;
    height: 168px;
 font-family: 'Inter';
@@ -218,22 +206,7 @@ color: #000000;
       padding: 0;
     }
   }
-  @media screen and (max-width: 1120px) {
-    .rectangle {
-      width: 220px;
-    }
-
-  }
-
-  @media screen and (min-width: 1360px) {
-    .rectangle {
-      width: 243px;
-    }
-      .number h1{
-        font-size: 13px;
-    }
-  }
-
+  
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
     nav a {
@@ -337,4 +310,16 @@ color: #000000;
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      table{
+        height:700;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      table {
+        height:730;
+      }
     }
