@@ -46,6 +46,24 @@
     margin:auto;
   }
 
+  .card h1{
+    position:absolute;
+    width: 300px;
+    height: 63px;
+    margin-left: 230px;
+    top: 17px;
+                
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:black;
+  }
+
   .card2{
     background-color: #CEC4BC;
     width:1250px;
@@ -77,9 +95,6 @@
     width:54%;
     left:23%;
     top:290px;
-
-    transform: rotate(-90deg);
-
   }
 
   .rectangle h1{
@@ -98,9 +113,19 @@
     color:black;
   }
 
+  .hr3{
+    position:absolute;
+    border : 0px;
+    border-top: 1.0px solid black;
+    width:54%;
+    left:23%;
+    top:290px;
+    
+    transform: rotate(-90deg);
+  }
+
   .rectangle img{
     position:absolute;
-    top:35%; 
     left:22%;
   }
 
@@ -263,4 +288,38 @@
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+
+      .hr3{
+        position:absolute;
+        border : 0px;
+        border-top: 1.0px solid black;
+        width: 700px;
+        left:18.39%;
+        top:340px;
+        
+        transform: rotate(-90deg);
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+
+      .hr3{
+        position:absolute;
+        border : 0px;
+        border-top: 1.0px solid black;
+        width: 730px;
+        left:17%;
+        top:355.5px;
+        
+        transform: rotate(-90deg);
+      }
     }

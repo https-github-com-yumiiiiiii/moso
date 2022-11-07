@@ -1,9 +1,12 @@
+
 <html>
     <head>
         <div style="width :1250px;"></div>
-        <link rel="stylesheet" type="text/css" href="맛집추천.css">
-        <script src="맛집추천.js"></script>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="login.js"></script>
+
     </head>
+</html>
 
 <body>
     <nav style="position:absolute; z-index:10;">
@@ -43,6 +46,9 @@
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>-->
     </nav>
+
+
+
     <div class="card">
         <h2 style="position:absolute;
         width: 238px;
@@ -58,33 +64,32 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color:black;">맛집추천</h2>
-        <h1>이대 주변 맛집을 랜덤으로 추천해드립니다.</h1>
+        color:#fff;">로그인</h2>
         <div style="position:absolute; margin-left:1180px; top:32px;">
-        <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
+        <img src= "To-left (1).png" onclick="history.back();" width="40px" height="40px"></div>
         </div>
         
     </div>
-
     <div class ="card2">
         <div class="rectangle">
-            <hr class='hr3'/>
-            <h1>출출한 지금,<br>여기는 어떠세요?</h1>
-            <img src="vector2.png" alt="vector2" width="50px" height="auto"
-            style="top:35%; ">
-            <hr class="hr2"/>
-            <h2 id="display"></h2>
-            <button type="button" onclick="randomString()"> 
-            아니요, 다시 추천 받을래요 </button>
-            <button type="button" onclick="" style="top:72%"> 
-            좋아요, 맛집 정보 보러 갈래요 </button>
-            <img src="soup.png" alt="soupphoto" width="50%" height="100%"
-            style="position:absolute; top:0; left:50%">
-            <img src="EAT_WHA.png" alt="eatwha" width="157px" height="24px"
-            style="position:absolute; bottom:3.5%; left:83%">
-        </div> 
+            <h2><div style="position:absolute; left:111px; top:30%;">
+                가입하신 정보로 로그인하세요.</div></h2>
+            
+            <div style="position:absolute; left:45px; top:45%;">
+                <input tsype="text" name="id" id="username-field"class="login-form-field" placeholder="   아이디 입력"  required><br>
+                <input type="text" name="password" id="password-field"class="login-form-field" placeholder="   비밀번호 입력" required>
+            </div>
+            <div style="position:absolute; left:378px; top:45.5%;">
+                <button type="login" style="border-radius: 5px; border-color:#CEC4BC;width:144px; height: 137px;font-size: 20px;">로그인</button></div>
+
+            
+            <h4><div style="position:absolute; width:534px; height: 100px; left:20px; top:80%;text-align:center;">
+                아직 회원이 아니신가요?<br><a href="sign_up.html"><ins>회원가입</ins></a></div></h4>
+            <div class="container">
+             <img src="soup.png" alt="food" style="position:absolute; width:50%; height:100%;left:50%;top:0;" >
+            </div>
+            <h5 style="position:absolute; left: 950px;top:83%">EAT:WHA</h5>
+            <div class="v-line"></div>
+        </div>
     </div>
-
-
 </body>
-</html>

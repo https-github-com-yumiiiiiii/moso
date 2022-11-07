@@ -138,65 +138,82 @@
   .rectangle h1{
     position: absolute;
     width:100%;
-    text-align: center;
-
+    text-align: left;
+    top:51%;
+    left:20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
     align-items: center;
     color:#403831;
 
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+
+  }
+  .rectangle h2{
+    position: absolute;
+    width:100%;
+    text-align: left;
+    top:83%;
+    left:45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    align-items: center;
+    color:#403831;
   }
 
   .rectangle2 h1{
     position: absolute;
     width:100%;
-    text-align: center;
-
+    text-align: left;
+    top:51%;
+    left:20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 28px;
-    align-items: center;
-    color:#403831;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-
-  .rectangle h2{
-    position: absolute;
-    width:100%;
-    top:12%;
-    text-align: center;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
     align-items: center;
     color:#403831;
   }
-
   .rectangle2 h2{
     position: absolute;
     width:100%;
-    top:12%;
-    text-align: center;
-
+    text-align: left;
+    top:83%;
+    left:45px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 30px;
     align-items: center;
     color:#403831;
   }
+  ul{
+    position:absolute;
+   
+    top:62%;
+    left:-10px;
+                                  
+                          
+     font-family: 'Inter';
+     font-style: normal;
+      font-weight: 500;
+       font-size: 13px;
+         line-height: 20px;
+       /* identical to box height */
+                          
+                          
+   color: #403831;
+  }
 
+  
   .card {
     background-color: #CEC4BC;
     width:1250px;
@@ -241,7 +258,7 @@
       width: 243px;
     }
 
-    .rectangle2{
+    .rectangle2,button{
       width: 243px;
     }
       .number h1{
@@ -270,7 +287,7 @@
     .rectangle {
       height:350px;
     }
-
+    
     .rectangle2{
       height:350px;
     }

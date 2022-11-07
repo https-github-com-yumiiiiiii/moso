@@ -9,19 +9,24 @@
     <nav style="position:absolute; z-index:10;">
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <img src="mainpage.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+            <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
             <h1>로그인이 필요합니다.</h1>
             <hr class="hr1"/>
-            <button type="button" onclick="" style="top:250px"> 로그인 </button>
-            <button type="button" onclick="" style="top:300px"> 회원가입 </button>
-            <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+            <button type="button" onclick="location.href='login.html';" style="top:250px"> 로그인 </button>
+            <button type="button" onclick="location.href='sign_up.html';" style="top:300px"> 회원가입 </button>
+            <a href="eattotal2.html" style="position:absolute; left:8px">맛집 조회</a>
             <a href="맛집등록.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
             <p></p>
-            <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="eatmap.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>
 
-        <!--로그인 성공했을 때-->
+        <div id = "menu">
+          <a onclick="openNav()"><img src="vector.png" height="77px"
+            style="position:absolute; top:0%; left:0%"></a></div>
+          <h2> EAT:WHA </h2>
+
+          <!--로그인 성공했을 때-->
         <!--<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
@@ -37,16 +42,11 @@
             <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>-->
-        
-        <div id = "menu">
-          <a onclick="openNav()"><img src="vector.png" height="77px"
-            style="position:absolute; top:0%; left:0%"></a></div>
-          <h2> EAT:WHA </h2>
     </nav>
 
     <div class="card3">
         <div class="ha">
-            <button type="button" onclick="" style="margin-left:960; top:32px">메뉴 추가하기</button>
+            <button type="button" onclick="location.href='foodregister.html';" style="margin-left:960; top:32px">메뉴 추가하기</button>
             <div style="position:absolute; margin-left:1180; top:32px;">
                 <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
         <h2>코끼리식당</h2>
@@ -82,19 +82,19 @@
 
         <div class="card2">
             <div class ="ha">
-            <a class="rectangle2" style="margin-left:110; top:430px">
+            <a class="rectangle2" style="margin-left:110;">
                 <h1>육회덮밥</h1><h2>10,000(원)</h2><img src=menu.png width="100%;" height="71.8%;"
                 style=" position:absolute; width:100%; top:28.5%;bottom:0%;">
             </a>
-            <a class="rectangle2" style="margin-left:370; top:430">
+            <a class="rectangle2" style="margin-left:370;">
                 <h1>육회덮밥</h1><h2>10,000(원)</h2><img src=menu.png width="100%;" height="71.8%;"
                 style=" position:absolute; width:100%; top:28.5%;bottom:0%;">
             </a>
-            <a class="rectangle2" style="margin-left:630; top:430">
+            <a class="rectangle2" style="margin-left:630;">
                 <h1>육회덮밥</h1><h2>10,000(원)</h2><img src=menu.png width="100%;" height="71.8%;"
                 style=" position:absolute; width:100%; top:28.5%;bottom:0%;">
             </a>
-            <a class="rectangle2" style="margin-left:890; top:430">
+            <a class="rectangle2" style="margin-left:890;">
                 <h1>육회덮밥</h1><h2>10,000(원)</h2><img src=menu.png width="100%;" height="71.8%;"
                 style=" position:absolute; width:100%; top:28.5%;bottom:0%;">
             </a>

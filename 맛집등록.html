@@ -12,16 +12,21 @@
             <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
             <h1>로그인이 필요합니다.</h1>
             <hr class="hr1"/>
-            <button type="button" onclick="" style="top:250px"> 로그인 </button>
-            <button type="button" onclick="" style="top:300px"> 회원가입 </button>
-            <a href="#" style="position:absolute; left:8px">맛집 조회</a>
+            <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px;"> 로그인 </button>
+            <button type="button" onclick="location.href='sign_up.html';" style="top:300px; height:40px;"> 회원가입 </button>
+            <a href="eattotal2.html" style="position:absolute; left:8px">맛집 조회</a>
             <a href="맛집등록.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
             <p></p>
-            <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="eatmap.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>
 
-        <!--로그인 성공했을 때-->
+        <div id = "menu">
+          <a onclick="openNav()"><img src="vector.png" height="77px"
+            style="position:absolute; top:0%; left:0%"></a></div>
+          <h2> EAT:WHA </h2>
+
+          <!--로그인 성공했을 때-->
         <!--<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
@@ -37,11 +42,6 @@
             <a href="#" style="position:absolute; top:485px; left:8px">맛집 지도</a>
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>-->
-    
-        <div id = "menu">
-          <a onclick="openNav()"><img src="vector.png" height="77px"
-            style="position:absolute; top:0%; left:0%"></a></div>
-          <h2> EAT:WHA </h2>
     </nav>
 
     <div class="card">
@@ -137,7 +137,7 @@
                 <h1><div style="position:absolute; left:86.5%; top:21.5%; font-size:18px;">
                     종료</div></h1>
         
-                <h1><div style="position:absolute; left:91%; top:21.5%; font-size:18px;">
+                <h1><div style="position:absolute; left:91%; top:21%; font-size:17px;">
                     <button type="submit">추가
                     </div></h1>
         
@@ -166,7 +166,7 @@
                     등록하고자 하는 맛집의 메인 메뉴를 선정하는 목록입니다.</div></h1>
         
                 <h1><div style="position:absolute; left:52%; top:88%;">
-                    <button type="button" style="font-size:17px; width:170px; 
+                    <button type="button" onclick="location.href='foodregister.html';" style="font-size:17px; width:170px; 
                     height:35px ">메뉴 등록하러 가기
                     </div></h1>
         

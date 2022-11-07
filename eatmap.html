@@ -1,9 +1,10 @@
 <html>
     <head>
         <div style="width :1250px;"></div>
-        <link rel="stylesheet" type="text/css" href="맛집추천.css">
-        <script src="맛집추천.js"></script>
+        <link rel="stylesheet" type="text/css" href="eatmap.css">
+        <script src="login.js"></script>
     </head>
+</html>
 
 <body>
     <nav style="position:absolute; z-index:10;">
@@ -43,6 +44,7 @@
             <a href="맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
         </div>-->
     </nav>
+
     <div class="card">
         <h2 style="position:absolute;
         width: 238px;
@@ -58,33 +60,22 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color:black;">맛집추천</h2>
-        <h1>이대 주변 맛집을 랜덤으로 추천해드립니다.</h1>
+        color:black;">맛집지도</h2>
         <div style="position:absolute; margin-left:1180px; top:32px;">
-        <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
+        <img src= "To-left.png" onclick="history.back();" width="40px" height="40px"></div>
         </div>
+    </div>
         
-    </div>
+<div class="card2">
+<div class="rectangle" >
 
-    <div class ="card2">
-        <div class="rectangle">
-            <hr class='hr3'/>
-            <h1>출출한 지금,<br>여기는 어떠세요?</h1>
-            <img src="vector2.png" alt="vector2" width="50px" height="auto"
-            style="top:35%; ">
-            <hr class="hr2"/>
-            <h2 id="display"></h2>
-            <button type="button" onclick="randomString()"> 
-            아니요, 다시 추천 받을래요 </button>
-            <button type="button" onclick="" style="top:72%"> 
-            좋아요, 맛집 정보 보러 갈래요 </button>
-            <img src="soup.png" alt="soupphoto" width="50%" height="100%"
-            style="position:absolute; top:0; left:50%">
-            <img src="EAT_WHA.png" alt="eatwha" width="157px" height="24px"
-            style="position:absolute; bottom:3.5%; left:83%">
-        </div> 
-    </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3162.7823416395895!2d126.94374538878623!3d37.56019156210604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z7J2M7Iud7KCQ!5e0!3m2!1sko!2skr!4v1667643511547!5m2!1sko!2skr" width="870" height="570" style="border:0;position:absolute;left:10px;top: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+<div class="vector" style="position:absolute;left:87%;top:40%;">
+<img src="Vector (2).png" >
+<h1 style="position:absolute;left:-50px;top: 70px;">등록된 맛집들을<br>지도로 한눈에<br> 살펴볼 수 있습니다.</h1></div>
+       
 
-
+</div>
+</div>
 </body>
-</html>

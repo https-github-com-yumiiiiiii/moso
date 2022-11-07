@@ -76,7 +76,7 @@
     border-top: 1.5px dotted black;
     width:1110;
     left:0%;
-    top:52%;
+    top:300px;
 
   }
 
@@ -84,9 +84,9 @@
     position:absolute;
     border : 0px;
     border-top: 1.5px dotted black;
-    width:28.7%;
+    width:28%;
     left:35%;
-    top:150px;
+    top:146px;
 
     transform: rotate(-90deg);
 
@@ -97,12 +97,12 @@
     width: 542px;
     height: 170.67px;
     left: 60%;
-    top: 20%;
+    top: 100px;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
     text-align: center;
 
@@ -112,7 +112,7 @@
 
   .rectangle button1{
     position: absolute; 
-    width:90px;
+    width:80px;
     background-color:#7E6F63;
     color:rgb(255, 255, 255);
     border:1.5px solid #7E6F63;
@@ -123,8 +123,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
 
   }
@@ -152,7 +152,7 @@
   img{
     position:absolute;
     left:5%;
-    top:7%;
+    top: 27px;;
   }
 
   .button1{
@@ -181,7 +181,7 @@
   #form-commentInfo{
     position:absolute;
     width: 93.5%;
-    top:55.5%;
+    top:320px;
     left:3%;
 }
 
@@ -210,8 +210,8 @@
     margin-top: 0px;
     position:absolute;
     width: 90%;
-    top:67%;
-    left:3%;
+    top:393px;
+    left:4%;
     height:20px;
 
 }
@@ -243,6 +243,18 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     
+}
+
+.rectangle1{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 93.5%;
+  height:30%;
+  left:3%;
+  top: 400px;
+
+  border: 1px solid #000000;
 }
 
 
@@ -358,4 +370,40 @@
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+
+      .rectangle1{
+        box-sizing: border-box;
+      
+        position: absolute;
+        width: 93.5%;
+        height:39%;
+        left:3%;
+        top: 400px;
+      
+        border: 1px solid #000000;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+
+      .rectangle1{
+        box-sizing: border-box;
+      
+        position: absolute;
+        width: 93.5%;
+        height:42%;
+        left:3%;
+        top: 400px;
+      
+        border: 1px solid #000000;
+      }
     }

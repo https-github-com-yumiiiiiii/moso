@@ -6,11 +6,8 @@ body {
   margin :0;
   width:100%;
   height:100%;
-  background-color: #224932;
+  background: #CEC4BC;
 }
-
-
-
 
 nav{
   width:80px;
@@ -18,9 +15,7 @@ nav{
   border-right:1px solid #FFFFFF;
 
   position:fixed;
-  height:100vh;
-  top:0%;
-  
+  height:100%
 }
 
 
@@ -28,147 +23,185 @@ nav h2{
   width: 80px;
   height: 95%;
   left: 50%;
-  top: 650.11px;
+  top: 633.11px;
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 100;
   font-size: 25px;
   line-height: 48px;
-  display:flex;
+  display: flex;
   align-items: center;
-  text-align:center;
+  text-align: center;
 
   color: #000000;
 
   transform: rotate(-90deg);
 }
 
-.card {
-  background-color: #224932;
+.card3{
+  background-color: #CEC4BC;
   width:1250px;
-  height:92;
-  margin:auto;
+  height:92px;
+  margin:0 auto;
 }
-
-.card2{
-  background-color: #224932;
-  width:1250px;
-  height:620;
-  top:92px;
-  margin-top:auto;
-  margin:auto;
-  
-}
-
-.rectangle {
-  box-sizing: border-box;
-  box-align:center;
-  margin:100 auto;
-  margin-left: 110;
-
+.card3 h2{
   position: absolute;
-  width: 1110px;
-  height:600px;
-  margin-top:0;
+  margin-left:110;
+  width: 238px;
+  height: 63px;
+  top: -15px;
 
-  border: 1px solid white;
-}
-
-.rectangle2 {
-  box-sizing: border-box;
-
-  position: fixed;
-  width: 280px;
-  height: 180px;
-  left: 53.5%;
-  top: 55%;
-
-  border: 1.5px solid #FFFFFF;
-}
-
-h1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-
-  color: #FFFFFF;
+  font-size: 25px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color:black;
 }
 
-.input-field {
-  font-size:18px;
-  width: 500px;
-  padding: 10px 0;
-  margin: 5px 0;
-  border: none;
-  border-bottom: 1px solid white;
-  outline: none;
-  background: transparent;
-  color:white;
-}
+.card3 h1{
+  position: absolute;
+  width: 238px;
+  height: 63px;
+  margin-left:250;
+  top:5px;
 
-.input-field2 {
-  font-size:18px;
-  width: 160px;
-  padding: 10px 0;
-  margin: 5px 0;
-  border: none;
-  border-bottom: 1px solid white;
-  outline: none;
-  background: transparent;
-  color:white;
-}
-
-button{
-  margin: auto;
-  width: 60px;
-  height: 30px;
-  left: 400px;
-  top: 800px;
-  background-color: rgba(255, 255, 255, 0);
-  color:white;
-  border-color:white;
-
-
-  font-family: 'Hubballi';
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 40px;
-  display:flex;
+  font-size: 14px;
+  line-height: 42px;
+  display: flex;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  color:black;
 }
 
-.button {
-  display:flex;
-}
-
-label {
-  cursor:pointer;
-  font-size: 1em;
-}
-
-/* 못생긴 기존 input 숨기기 */
-#image {
-  visibility: hidden;
-  position:absolute;
-  top:0%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.card2{
+  background-color: #CEC4BC;
+  width:1250px;
+  height:310px;
+  margin:0 auto;
 }
 
  
+    table{
 
+      box-sizing: border-box;
+  box-align:center;
+margin:100 auto;
+margin-left: 110;
+
+position: absolute;
+width: 1110px;
+height:600px;
+margin-top:0;
+
+border: 1px solid #000000;
+
+    }
+
+td h1{
+position: absolute;
+margin:0;
+left: 16%;
+top: 1%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+
+opacity: 0.5;
+}
+
+.ha{
+  width:1250px;
+  margin: 0 auto;
+  height:100%;
+  background-color: #CEC4BC;
+}
+
+.number {
+  box-sizing: border-box;
+  box-align:center;
+  margin:0;
+  position: absolute;
+  width: 10px;
+  top: 35%;
+}
+.like.likeimg{
+    position: absolute;
+    left:10%;
+    top:1%;
+  }
+  .like h2{
+    
+          position:absolute;
+          left:120%;
+          top:-19%;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 1px;
+         
+          align-items: center;
+          text-align: center;
+          
+          color: #403831;
+  }
+
+  td h4{
+    position: absolute;
+   left:17%;
+   top:-6.3%;
+   width: 949px;
+   height: 168px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 19px;
+display: flex;
+align-items: flex-end;
+text-align: left;
+color: #000000;
+
+  }
+  h7{
+    
+    position: absolute;
+    left:1%;
+    top:-8%;
+ 
+   width: 949px;
+  height: 168px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: flex-end;
+text-align: left;
+color: #000000;
+  }
+
+  
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
-    section, aside {   
+    section, aside {
       width: 100%;
       padding: 0;
     }
@@ -195,8 +228,8 @@ label {
     padding-top: 300px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  
-  
+
+
   /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
@@ -239,7 +272,7 @@ label {
   }
 
   .sidenav button{
-    position: absolute; 
+    position: absolute;
     width:160px;
     top:200px;
     left:40px;
@@ -247,7 +280,7 @@ label {
     color:#343434;
     border:1.5px solid #343434;
     align-items: center;
-    
+
 
     font-family: 'Inter';
     font-style: normal;
@@ -263,7 +296,7 @@ label {
     color: #224932;
     font-size: 16px;
   }
-  
+
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
@@ -280,13 +313,13 @@ label {
     }
 
     @media screen and (min-height: 840px) {
-      .rectangle {
+      table{
         height:700;
       }
     }
 
     @media screen and (min-height: 920px) {
-      .rectangle {
+      table {
         height:730;
       }
     }
