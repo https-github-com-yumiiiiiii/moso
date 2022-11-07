@@ -293,3 +293,16 @@ button{
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
     }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+    }
+    
