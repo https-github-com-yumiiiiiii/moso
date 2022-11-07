@@ -73,7 +73,7 @@ nav h2{
       font-family: 'Inter';
       font-style: normal;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 25px;
       line-height: 36.31px;
       display: flex;
       align-items: center;
@@ -86,14 +86,14 @@ nav h2{
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24.2px;
         display: flex;
         align-items: center;
     
         color: #FFFFFF;
       }
-      h5{
+      /*h5{
     
         font-family: 'Inter';
         font-style: normal;
@@ -104,7 +104,7 @@ nav h2{
         align-items: center;
     
         color: #FFFFFF;
-      }
+      }*/
       h3{
     
         font-family: 'Inter';
@@ -130,15 +130,16 @@ nav h2{
         color:black;
         font-size: 20px;
     }
-    .container{
+    .containher{
       position:absolute;
-    top:0%;
-  
+      
+      
+    
     }
     h5{
       position:absolute;
       width: 65px;
-      height: 95%;
+      
      
     
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -320,4 +321,18 @@ nav h2{
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+    @media screen and (min-height: 840px) {
+      .rectangle{
+        height:700;
+        
+      }
+      
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+      
     }
