@@ -122,16 +122,16 @@
     color:black;
     font-size: 20px;
 }
-.container{
+.containher{
   position:absolute;
-  top:0%;
+  
   
 
 }
 h5{
   position:absolute;
   width: 65px;
-  height: 95%;
+  
   
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -278,4 +278,18 @@ a:active {
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+      
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+      
     }
