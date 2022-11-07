@@ -38,11 +38,16 @@ nav h2{
 
   transform: rotate(-90deg);
 }
-
+.ha{
+  width:1250px;
+  margin: 0 auto;
+  height:100%;
+  background-color: #CEC4BC;
+}
 .card3{
   background-color: #CEC4BC;
   width:1250px;
-  height:10%;
+  height:92px;
   margin:0 auto;
 }
 .card3 h2{
@@ -90,7 +95,12 @@ nav h2{
   margin:auto;
   
 }
-
+.card23{
+  background-color: #CEC4BC;
+  width:1250px;
+  height:310px;
+  margin:0 auto;
+}
 .rectangle {
   box-sizing: border-box;
   box-align:center;
@@ -102,24 +112,23 @@ nav h2{
   height:600px;
   margin-top:0;
 
-  border: 1px solid #000000;
+  
 }
 
 
-    table{
-  
+table{
+   box-sizing: border-box;
+    box-align:center;
+    margin:100 auto;
+    margin-left: 110;
 
-box-sizing: border-box;
-box-align:center;
-margin:100 auto;
-margin-left: 110;
+    position: absolute;
+    width: 1110px;
+    height:600px;
+    margin-top:0;
+    
 
-position: absolute;
-width: 1110px;
-height:600px;
-margin-top:0;
-
-border: 1px solid #000000;
+    border: 1px solid #000000;
     }
 
 td h1{
@@ -282,22 +291,22 @@ background-color:#CEC4BC;
       padding: 0;
     }
   }
-  @media screen and (max-width: 1120px) {
-    .rectangle {
+  /*@media screen and (max-width: 1120px) {
+    tabfle {
       width: 220px;
     }
 
   }
 
   @media screen and (min-width: 1360px) {
-    .rectangle {
+    tablfe {
       width: 243px;
     }
       .number h1{
         font-size: 13px;
     }
   }
-
+*/
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
     nav a {
@@ -401,4 +410,15 @@ background-color:#CEC4BC;
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
+    }
+    @media screen and (min-height: 840px) {
+      table {
+        height:700;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      table {
+        height:730;
+      }
     }
