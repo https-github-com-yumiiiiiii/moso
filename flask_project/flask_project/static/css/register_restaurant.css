@@ -1,0 +1,296 @@
+*{
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+#menu a{
+  color:#FFFFFF;
+}
+
+body {
+  margin :0;
+  width:100%;
+  height:100%;
+  background-color: #224932;
+}
+
+nav{
+  width:80px;
+  background-color: #FFFFFF;
+  border-right:1px solid #FFFFFF;
+
+  position:fixed;
+  height:100vh;
+  top:0%;
+
+}
+
+
+nav h2{
+  width: 80px;
+  height: 95%;
+  left: 50%;
+  top: 650.11px;
+
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 48px;
+  display:flex;
+  align-items: center;
+  text-align:center;
+
+  color: #000000;
+
+  transform: rotate(-90deg);
+}
+
+.card {
+  background-color: #224932;
+  width:1250px;
+  height:92;
+  margin:auto;
+}
+
+.card2{
+  background-color: #224932;
+  width:1250px;
+  height:620;
+  top:92px;
+  margin-top:auto;
+  margin:auto;
+
+}
+
+.rectangle {
+  box-sizing: border-box;
+  box-align:center;
+  margin:100 auto;
+  margin-left: 110;
+
+  position: absolute;
+  width: 1110px;
+  height:600px;
+  margin-top:0;
+
+  border: 1px solid white;
+}
+
+.rectangle2 {
+  box-sizing: border-box;
+
+  position: fixed;
+  width: 280px;
+  height: 180px;
+  left: 53.5%;
+  top: 55%;
+
+  border: 1.5px solid #FFFFFF;
+}
+
+h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.input-field {
+  font-size:18px;
+  width: 500px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  color:white;
+}
+
+.input-field2 {
+  font-size:18px;
+  width: 160px;
+  padding: 10px 0;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  background: transparent;
+  color:white;
+}
+
+button{
+  margin: auto;
+  width: 60px;
+  height: 30px;
+  left: 400px;
+  top: 800px;
+  background-color: rgba(255, 255, 255, 0);
+  color:white;
+  border-color:white;
+
+
+  font-family: 'Hubballi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 40px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button {
+  display:flex;
+}
+
+label {
+  cursor:pointer;
+  font-size: 1em;
+}
+
+/* 못생긴 기존 input 숨기기 */
+#image {
+  visibility: hidden;
+  position:absolute;
+  top:0%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    section, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 300px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    top:400px;
+  }
+
+  .sidenav h1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 43px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #343434;
+  }
+
+  .sidenav hr{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 40px;
+    top: 230px;
+
+    border : 0px;
+    border-top: 1.5px solid #343434;
+  }
+
+  .sidenav button{
+    position: absolute;
+    width:160px;
+    top:200px;
+    left:40px;
+    background-color: rgba(255, 255, 255, 0);
+    color:#343434;
+    border:1.5px solid #343434;
+    align-items: center;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color:black;
+    text-align: center;
+  }
+  nav
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #224932;
+    font-size: 16px;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+    }

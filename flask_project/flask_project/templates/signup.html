@@ -1,0 +1,70 @@
+{% extends "index.html" %}
+<html>
+    {% block head %}
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/signup.css')}}">
+        <script src="{{ url_for('static', filename = 'js/signup.js')}}"></script>
+    </head>
+    {% endblock head %}
+
+
+<body >
+ {% block body %}
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:#fff;">회원가입</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/To-left (1).png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+    </div>
+
+
+    <div class ="card2">
+        <div class="rectangle">
+            <h1><div style="position:absolute; left: 200px;;top:10%;">
+                가입하기</div></h1>
+                <input id="id" type="text"class='sign_up_field' style= "top:22%;"placeholder="아이디 입력" required>
+                <input id="password" type="password"class='sign_up_field'style= "top:35%;" placeholder="비밀번호 입력"required>
+                <input id="passwordCheck" type="password"class='sign_up_field'style= "top:48%;" placeholder="비밀번호 확인"required>
+                <input id="name"  type="text"class='sign_up_field' style= "top:61%;"placeholder="이름 혹은 별명"required>
+                <input type="text" class="email"  placeholder="이메일 주소" required
+                    style="position:absolute; width:18%;">
+
+                        <select class="email" title="이메일 주소 선택" style="width:18%; left: 270px;" >
+                            <option value="" style="font-size: 18px;">  이메일주소 직접입력  </option>
+                            <option value="naver.com">@naver.com</option>
+                            <option value="nate.com">@nate.com</option>
+                            <option value="gmail.com">@gmail.com</option>
+                            <option value="yahoo.com">@yahoo.com</option>
+                            <option value="hanmail.net">@hanmail.net</option>
+                    </select>
+
+                <input type="submit" style="position:absolute; left: 70px; top:85%;
+                border-radius: 5px; background-color:bisque;outline-color:bisque;
+                width:400px; height: 50px;font-size: 18px;" value="회원가입">
+                 <div class="container">
+                    <img src="{{url_for('static', filename='image/soup.png')}}" alt="food" style="position:absolute; width:50%; height:100%;left:50%;top:0;" >
+                   </div>
+                <h5 style="position:absolute; left: 950px;top:83%">EAT:WHA</h5>
+                <div class="v-line"></div>
+        </div>
+    </div>
+
+
+{% endblock body%}
+</body>
+</html>
