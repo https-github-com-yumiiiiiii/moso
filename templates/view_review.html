@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/view_review.css') }}">
+        <script src="{{ url_for('static', filename='js/view_review.js') }}"></script>
+    </head>
+</html>
+
+<body >
+  <nav style="position:absolute; z-index:10;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="{{url_for('static', filename='image/profile.png')}}" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+        <h1>로그인이 필요합니다.</h1>
+        <hr class="hr1"/>
+        <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px"> 로그인 </button>
+        <button type="button" onclick="location.href='signup.html';" style="top:300px; height:40px"> 회원가입 </button>
+        <a href="view_restaurantlist.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="register_restaurant.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="map.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>
+
+    <div id = "menu">
+      <a onclick="openNav()"><img src="{{url_for('static', filename='image/vector.png')}}" height="77px"
+        style="position:absolute; top:0%; left:0%"></a></div>
+      <a href="index.html"><h2> EAT:WHA </h2></a>
+      <!--로그인 성공했을 때-->
+    <!--<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="{{url_for('static', filename='image/profile2.png')}}" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+        <h1><b>김이화</b>님 환영합니다.</h1>
+        <hr class="hr1"/>
+        <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+        <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+        <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+        <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+        <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>-->
+</nav>
+
+<div class="card3">
+    <div class="ha">
+        <div style="position:absolute;margin-left:1180px; top:32px;">
+            <img src="{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+    <h2>코끼리식당</h2>
+    <h1>-메뉴-</h1>
+    </div>
+    <a href="write_review.html"><img src="{{url_for('static', filename='image/write_review.png')}}" style="position:absolute;margin-left:1000px; top:25px;"></a>
+
+</div>
+<div class="card2">
+    <table border ="1"  bordercolor="white" cellspacing="0.5">
+        <tr style="text-align:center;" >
+          <td rowspan="1" width="15%;" height="150px;"><img src="{{url_for('static', filename='image/Ellipse 1.png')}}"><br>user1</td>
+
+          <td width="943.5px;">
+            <h1 class="review">2022-10-13</h1>
+            <div class="like" style=" position: absolute; left:25%;top:0.5%;">
+                <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
+                <h2 >4.6</h2></div>
+                  <h4>지난주 수요일에 학교 수업 끝나고 다녀왔어요~<br>음 솔직히 리뷰 보고 별로 기대 안 하고 갔는데, 생각보다 괜찮았어요 <br>
+                      소고기 가지 덮밥이랑 육회 덮밥 시켜서 둘이 나눠 먹었는데 개인적으로는 가지 덮밥이 더 맛있었던 거 같아요!<br>
+                      후문에서 가까우니까 후문쪽에서 수업 들으시는 분들은 한 번쯤 가보세요!!!<br><br>
+
+                      p.s 소고기가 좀 덜 익어서 나오는데 싫어하시는 분들은 미리 말씀드리면 완전히 익혀주신대요~~~~~
+
+
+                  </h4>
+          </td>
+        </tr>
+
+        <tr style="text-align:center;" >
+          <td ><img src="{{url_for('static', filename='image/Ellipse 2.png')}}"><br>user2</td>
+
+          <td width="100%;">
+            <h1 class="review" style="top:26%;">2022-10-15</h1>
+            <div class="like" style=" position: absolute; left:25%;top:25.5%;">
+                <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
+                <h2 >3.7</h2></div>
+                <h4  style="top:13.5%;" >저번에 휴무인줄 모르고 헛걸음했었는데...<br>
+                   이번엔 잘 알아보고 가서 맛있게 잘 먹고 왔습니다!<br>
+                    남자친구랑 같이 갔는데 저보다 남자친구가 더 좋아하더라구용! <br>
+                    저도 다른 건 다 좋았는데 밑반찬이 전반적으로 좀 짠 거 같아서 그게 좀 아쉽네요ㅜ
+
+                </h4>
+           </td>
+        </tr>
+        <tr style="text-align:center;" >
+            <td><img src="{{url_for('static', filename='image/Ellipse 3.png')}}"><br>user3</td>
+          <td width="943.5px;">
+            <h1 class="review" style="top:51%;">2022-10-19</h1>
+            <div class="like" style=" position: absolute; left:25%;top:50.5%;">
+                <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
+                <h2>4.6</h2></div>
+                <h4 style="top:43.5%;">저는 오히려 해물파전이 너무 맛있었어요.<br>
+                   반죽에서 계란의 비중이 굉장히 높아서 퍽퍽하지 않고 감칠맛 넘칩니다.<br>
+                    통 크게 쑹덩쑹덩 썰어넣은 파와 오징어, 굴 등등 다채롭게 들어간 해물이 입 안에서 꽉 찬 풍미를 만들어냅니다.<br><br>
+
+                  서울에서는 보기 힘든 푸짐한 해물이 인상적인 식당이었습니다.<br> 점심 때 손님이 거의 꽉 차고, 그 주변에서 일하는 사람들도 많이 찾는 것 같습니다. 뭐 먹지 고민될 때 찾아볼 만 한 것 같아요. 냠냠</h4>
+          </td>
+        </tr>
+        <tr style="text-align:center;">
+            <td><img src="{{url_for('static', filename='image/Ellipse 4.png')}}"><br>user4</td>
+          <td width="943.5px;">
+            <h1 class="review" style="top:76%;">{{data.year}}-{{data.month}}-{{data.day}}</h1>
+            <div class="like" style=" position: absolute; left:25%;top:75.5%;">
+                <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
+                <h2>{{data.star}}</h2></div>
+                <h4 style="top:60%;">{{data.write}}
+               </h4>
+          </td>
+        </tr>
+      </table>
+      <div class ="ha">
+      <a class="number" style="margin-left:1230">
+        <p>1<br><br>2<br><br>3<br><br>4<br><br>5</p> </a>
+          </div>
+    
+    </div>

@@ -1,0 +1,95 @@
+
+<html>
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script src="login.js"></script>
+
+    </head>
+</html>
+
+<body>
+  <nav style="position:absolute; z-index:10;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+        <h1>로그인이 필요합니다.</h1>
+        <hr class="hr1"/>
+        <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px"> 로그인 </button>
+        <button type="button" onclick="location.href='signup.html';" style="top:300px; height:40px"> 회원가입 </button>
+        <a href="view_restaurantlist.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="register_restaurant.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="map.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>
+
+    <div id = "menu">
+      <a onclick="openNav()"><img src="vector.png" height="77px"
+        style="position:absolute; top:0%; left:0%"></a></div>
+      <a href="index.html"><h2> EAT:WHA </h2></a>
+
+          <!--로그인 성공했을 때-->
+        <!--<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+            <h1><b>김이화</b>님 환영합니다.</h1>
+            <hr class="hr1"/>
+            <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+            <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+            <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+            <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+            <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>-->
+    </nav>
+
+
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:#fff;">로그인</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "To-left (1).png" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+
+    </div>
+    <div class ="card2">
+        <div class="rectangle">
+            <h2><div style="position:absolute; left:111px; top:30%;">
+                가입하신 정보로 로그인하세요.</div></h2>
+
+            <div style="position:absolute; left:45px; top:45%;">
+                <input tsype="text" name="id" id="username-field"class="login-form-field" placeholder="   아이디 입력"  required><br>
+                <input type="text" name="password" id="password-field"class="login-form-field" placeholder="   비밀번호 입력" required>
+            </div>
+            <div style="position:absolute; left:378px; top:45.5%;">
+                <button type="login" style="border-radius: 5px; border-color:#CEC4BC;width:144px; height: 137px;font-size: 20px;">로그인</button></div>
+
+
+            <h4><div style="position:absolute; width:534px; height: 100px; left:20px; top:80%;text-align:center;">
+                아직 회원이 아니신가요?<br><a href="signup.html"><ins>회원가입</ins></a></div></h4>
+            <div class="container">
+             <img src="soup.png" alt="food" style="position:absolute; width:50%; height:100%;left:50%;top:0;" >
+            </div>
+            <h5 style="position:absolute; left: 950px;top:83%">EAT:WHA</h5>
+            <div class="v-line"></div>
+        </div>
+    </div>
+</body>
