@@ -1,8 +1,8 @@
 <html>
     <head>
         <div style="width :1250px;"></div>
-        <link rel="stylesheet" type="text/css" href="recommend.css">
-        <script src="recommend.js"></script>
+        <link rel="stylesheet" type="text/css" href="mypage.css">
+        <script src="mypage.js"></script>
     </head>
 
 <body>
@@ -25,7 +25,6 @@
       <a onclick="openNav()"><img src="vector.png" height="77px"
         style="position:absolute; top:0%; left:0%"></a></div>
       <a href="index.html"><h2> EAT:WHA </h2></a>
-
           <!--로그인 성공했을 때-->
         <!--<div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -59,8 +58,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color:black;">맛집추천</h2>
-        <h1>이대 주변 맛집을 랜덤으로 추천해드립니다.</h1>
+        color:black;">마이페이지</h2>
         <div style="position:absolute; margin-left:1180px; top:32px;">
         <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
         </div>
@@ -69,20 +67,50 @@
 
     <div class ="card2">
         <div class="rectangle">
-            <hr class='hr3'/>
-            <h1>출출한 지금,<br>여기는 어떠세요?</h1>
-            <img src="vector2.png" alt="vector2" width="50px" height="auto"
-            style="top:35%; ">
-            <hr class="hr2"/>
-            <h2 id="display"></h2>
-            <button type="button" onclick="randomString()">
-            아니요, 다시 추천 받을래요 </button>
-            <button type="button" onclick="location.href='view_one_restaurant.html'" style="top:72%">
-            좋아요, 맛집 정보 보러 갈래요 </button>
-            <img src="soup.png" alt="soupphoto" width="50%" height="100%"
-            style="position:absolute; top:0; left:50%">
-            <img src="EAT_WHA.png" alt="eatwha" width="157px" height="24px"
-            style="position:absolute; bottom:3.5%; left:83%">
+            <hr class='hr-solid'/>
+            <a>회원정보</a>
+            <img src="profile.png" width="100px" height="100px" style="position:absolute; top:90px; left:6%">
+            <div class="infor" style="position:absolute; left:20%; top:13.2%;">
+                <div id="name" style="font-size:18px"><b>김이화</b></div><br>
+                <div><img src="Vector7.png" width="31px" height="36px" style="float:left; position:absolute; left:40%; top:-10%"></div>
+                <div id="email" style="font-size:16px; color:#404040">example@ewhain.net</div>
+                <a style="font-size:15px; left:130%; top:-20%">즐겨찾기 목록</a>
+            </div>
+            <button type="button" onclick="location.href='#'" style="top:29%">
+            회원정보 수정</button>
+            <button type="button" onclick="location.href='#';" style="top:29%; right:3%">
+            로그아웃</button>
+            <a style="top:37.5%;">즐겨찾기 목록</a>
+            <img src="Vector8.png" width=15px; height=22px; style="position:absolute; left:38.5%; top:20%;">
+            <a id="number" style="position:absolute; left:41%; top:16.5%"><b>17</b></a>
+            <div class="rectangle1">
+                <img src="university.png" style="width:100%; height:50%; top:0">
+                <h1>코끼리 식당</h1>
+                <div><button type="button" style="position:absolute;">한식</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" onclick="location.href='view_one_restaurant.html';" style="top:85%">맛집 보러가기</button1></div>
+            </div>
+            <div class="rectangle1" style="left:321">
+                <img src="still.png" style="width:100%; height:50%; top:0">
+                <h1>여우카페</h1>
+                <div><button type="button" style="position:absolute;">카페/디저트</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+            </div>
+            <div class="rectangle1" style="left:584">
+                <img src="food.png" style="width:100%; height:50%; top:0">
+                <h1>이화키친</h1>
+                <div><button type="button" style="position:absolute;">양식</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+                </div>
+            <div class="rectangle1" style="left:839">
+                <img src="coffee.png" style="width:100%; height:50%; top:0">
+                <h1>Je T'aime</h1>
+                <div><button type="button" style="position:absolute;">카페/디저트</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+            </div>
         </div>
     </div>
 

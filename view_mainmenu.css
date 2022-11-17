@@ -1,18 +1,18 @@
 *{
     box-sizing: border-box;
   }
-  a{
+a{
       text-decoration: none;
       text-decoration-line: none;
     }
-  #menu a{
+#menu a{
     color:#FFFFFF;
   }
   body {
     margin :0;
     width:100%;
     height:100%;
-    background-color: #CEC4BC;
+    background: #CEC4BC;
   }
 
   nav{
@@ -45,18 +45,29 @@
     transform: rotate(-90deg);
   }
 
-  .card {
-    background-color: #CEC4BC;
-    width:1250px;
-    height:92;
-    margin:auto;
+  .card3 h2{
+    position:absolute;
+    width: 238px;
+    height: 63px;
+    margin-left: 110;
+    top: 3px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:black;
   }
 
-  .card h1{
+  .card3 h1{
     position:absolute;
-    width: 300px;
+    width: 238px;
     height: 63px;
-    margin-left: 230px;
+    margin-left: 250px;
     top: 17px;
 
     font-family: 'Inter';
@@ -70,117 +81,147 @@
     color:black;
   }
 
-  .card2{
-    background-color: #CEC4BC;
+  .ha{
     width:1250px;
-    height:620;
-    top:92px;
-    margin-top:auto;
-    margin:auto;
-
+    margin: 0 auto;
+    height:100%;
+    background-color: #CEC4BC;
   }
 
-  .rectangle {
-    box-sizing: border-box;
-    box-align:center;
-    margin:100 auto;
-    margin-left: 110;
-
+  .ha button{
     position: absolute;
-    width: 1110px;
-    height:600px;
-    margin-top:0;
-
-    border: 1px solid #000000;
-  }
-
-  .hr1 {
-    position:absolute;
-    border : 0px;
-    border-top: 1.0px solid black;
-    width:54%;
-    left:23%;
-    top:290px;
-  }
-
-  .rectangle h1{
-    position: absolute;
-    width:50%;
-    top:18%;
-    text-align: center;
-    left:0%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    align-items: center;
-    color:black;
-  }
-
-  .hr3{
-    position:absolute;
-    border : 0px;
-    border-top: 1.0px solid black;
-    width:54%;
-    left:23%;
-    top:290px;
-
-    transform: rotate(-90deg);
-  }
-
-  .rectangle img{
-    position:absolute;
-    left:22%;
-  }
-
-  .hr2{
-    position: absolute;
-    width: 20%;
-    height: 0px;
-    left: 14.2%;
-    top: 54%;
-
-    border : 0px;
-    border-top: 1.0px solid #343434;
-  }
-
-  .rectangle button{
-    position: absolute;
-    width:30%;
-    top:82%;
-    left:10%;
+    width:160px;
     background-color: rgba(255, 255, 255, 0);
-    color:black;
-    border:1.5px solid black;
+    color:#343434;
+    border:1.2px solid #343434;
     align-items: center;
 
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 35px;
     color:black;
     text-align: center;
   }
 
-  .rectangle h2{
+.number {
+  box-sizing: border-box;
+  box-align:center;
+  margin:0;
+  position: absolute;
+  width: 10px;
+  top: 40%;
+}
+.number h1{
+  font-size: 10px;
+  text-align: center;
+}
+  .rectangle {
+    box-sizing: border-box;
+    box-align:center;
+    margin:0;
     position: absolute;
-    width:20%;
-    top:46%;
-    left:14%;
+    width: 230px;
+    height:270px;
+    top: 92px;
+    border: 1px solid #000000;
+  }
+
+  .rectangle2 {
+    box-sizing: border-box;
+    box-align:center;
+    margin:0;
+    position: absolute;
+    width: 230px;
+    height:270px;
+    top: 420px;
+    border: 1px solid #000000;
+  }
+
+
+  .rectangle h1{
+    position: absolute;
+    width:100%;
     text-align: center;
 
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
+    font-weight: 400;
+    font-size: 17px;
     line-height: 28px;
     align-items: center;
-    color:black;
-    text-decoration-line: 1px solid  black underline;
+    color:#403831;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .rectangle2 h1{
+    position: absolute;
+    width:100%;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    align-items: center;
+    color:#403831;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .rectangle h2{
+    position: absolute;
+    width:100%;
+    top:12%;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    color:#403831;
+  }
+
+  .rectangle2 h2{
+    position: absolute;
+    width:100%;
+    top:12%;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    align-items: center;
+    color:#403831;
+  }
+
+  .card {
+    background-color: #CEC4BC;
+    width:1250px;
+    height:310px;
+    margin:0 auto;
+  }
+
+  .card2{
+    background-color: #CEC4BC;
+    width:1250px;
+    height:310px;
+    margin:0 auto;
+  }
+
+  .card3{
+    background-color: #CEC4BC;
+    width:1250px;
+    height:92px;
+    margin:0 auto;
   }
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -188,6 +229,63 @@
     section, aside {
       width: 100%;
       padding: 0;
+    }
+  }
+  @media screen and (max-width: 1120px) {
+    .rectangle {
+      width: 220px;
+    }
+
+    .rectangle2{
+      width: 220px;
+    }
+
+  }
+
+  @media screen and (min-width: 1360px) {
+    .rectangle {
+      width: 243px;
+    }
+
+    .rectangle2{
+      width: 243px;
+    }
+      .number h1{
+        font-size: 13px;
+    }
+  }
+
+  @media screen and (min-height: 840px) {
+    .rectangle {
+      height:320px;
+    }
+
+    .rectangle2{
+      height:320px;
+    }
+
+    .rectangle2{
+      top:460px;
+    }
+      .number h1{
+        font-size: 13px;
+    }
+  }
+
+  @media screen and (min-height: 920px) {
+    .rectangle {
+      height:350px;
+    }
+
+    .rectangle2{
+      height:350px;
+    }
+
+    .rectangle2{
+      top:490px;
+    }
+      .number h1{
+        font-size: 13px;
     }
   }
 
@@ -294,38 +392,4 @@
     @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 14px;}
-    }
-
-    @media screen and (min-height: 840px) {
-      .rectangle {
-        height:700;
-      }
-
-      .hr3{
-        position:absolute;
-        border : 0px;
-        border-top: 1.0px solid black;
-        width: 700px;
-        left:18.39%;
-        top:340px;
-
-        transform: rotate(-90deg);
-      }
-    }
-
-    @media screen and (min-height: 920px) {
-      .rectangle {
-        height:730;
-      }
-
-      .hr3{
-        position:absolute;
-        border : 0px;
-        border-top: 1.0px solid black;
-        width: 730px;
-        left:17%;
-        top:355.5px;
-
-        transform: rotate(-90deg);
-      }
     }

@@ -1,0 +1,77 @@
+<html>
+<head>
+  <div style="width :1250px;"></div>
+  <script src="index.js"></script>
+<link rel="stylesheet"  href="index.css">
+</head>
+
+<body>
+
+  <nav style="position:absolute; z-index:10;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+        <h1>로그인이 필요합니다.</h1>
+        <hr class="hr1"/>
+        <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px"> 로그인 </button>
+        <button type="button" onclick="location.href='signup.html';" style="top:300px; height:40px"> 회원가입 </button>
+        <a href="view_restaurantlist.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="register_restaurant.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="map.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>
+
+    <div id = "menu">
+      <a onclick="openNav()"><img src="vector.png" height="77px"
+        style="position:absolute; top:0%; left:0%"></a></div>
+      <a href="index.html"><h2> EAT:WHA </h2></a>
+
+      <!--로그인 성공했을 때-->
+    <!--<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+        <h1><b>김이화</b>님 환영합니다.</h1>
+        <hr class="hr1"/>
+        <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+        <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+        <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+        <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+        <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>-->
+</nav>
+
+<div class="realbody">
+  <div class = "imagebox" style="height:66%; width:80%;">
+    <img src="school.png" height="auto" width="100%" alt="mainphoto"
+    style= "min-width:1074px;">
+  </div>
+  <div class = "namebox" style="height:66%; width:20%;">
+    <h2>EAT:WHA</h2>
+    <h5>Discover <br>Your New Taste!</h5>
+  </div>
+
+  <section>
+    <div class = "card">
+        <h2>추천하고 싶은 이대 주변 맛집을 직접 소개해 보세요.</h2>
+        <button type="button" onclick="location.href='register_restaurant.html';">
+            맛집 등록하기 </button>
+    </div>
+</section>
+
+<aside>
+    <div class="card2">
+        <h2>등록된 모든 맛집을 한눈에 살펴볼 수 있습니다.</h2>
+        <button type="button" onclick="location.href='view_restaurantlist.html';">
+               맛집 보러가기
+        </button>
+    </div>
+</aside>
+
+</div>
+</body>
+</html>
