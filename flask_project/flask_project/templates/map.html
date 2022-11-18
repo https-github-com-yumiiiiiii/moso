@@ -1,0 +1,49 @@
+{% extends "index.html" %}
+<html>
+    <head>
+        {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/map.css')}}">
+        <script src="{{ url_for('static', filename = 'js/map.js')}}"></script>
+        {% endblock head %}
+    </head>
+</html>
+
+<body>
+    {% block body %}
+ 
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">맛집지도</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+    </div>
+
+<div class="card2">
+<div class="rectangle" >
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3162.7823416395895!2d126.94374538878623!3d37.56019156210604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z7J2M7Iud7KCQ!5e0!3m2!1sko!2skr!4v1667643511547!5m2!1sko!2skr" width="870" height="570" style="border:0;position:absolute;left:10px;top: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="vector" style="position:absolute;left:87%;top:40%;">
+<img src="{{url_for('static', filename='image/Vector (2).png')}}" >
+<h1 style="position:absolute;left:-50px;top: 70px;">등록된 맛집들을<br>지도로 한눈에<br> 살펴볼 수 있습니다.</h1></div>
+
+
+</div>
+</div>
+{% endblock body%}
+</body>

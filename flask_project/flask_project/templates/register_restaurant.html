@@ -1,0 +1,153 @@
+{% extends "index.html" %}
+<html>
+    {% block head %}
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/register_restaurant.css')}}">
+        <script src="{{ url_for('static', filename = 'js/register_restaurant.js')}}"></script>
+        {% endblock head %}
+    </head>
+
+<body>
+  {% block body %}
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:white;">맛집 등록하기</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/vector6.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+        
+
+    <div class ="card2">
+        <div class="rectangle">
+            <form action="https://eating-ewha.run.goorm.io/result" enctype="multipart/form-data" method="POST">
+                <!-- "https://mosoeatwhapr.run.goorm.io/result" 바꿨음-->
+                <h1><div style="position:absolute; left:3%; top:4%;">
+                    1. 상호명 등록</div></h1>
+
+                <div style="position:absolute; left:3%; top:10%;">
+                    <input type="text" class="input-field" name="name" id="name" placeholder="식당 이름 입력" required></div>
+
+                <h1><div style="position:absolute; left:3%; top:24%;">
+                    2. 위치 등록</div></h1>
+
+                <div style="position:absolute; left:3%; top:30%;">
+                    <input type="text" class="input-field" name="location" id="location" placeholder="상세 주소 입력" required></div>
+
+                <h1><div style="position:absolute; left:3%; top:44%;">
+                    3. 대표번호 등록</div></h1>
+
+                <div style="position:absolute; left:3%; top:50%;">
+                    <input type="text" class="input-field" name="phone" id="phone" placeholder="식당 전화번호 입력" required></div>
+
+                <h1><div style="position:absolute; left:3%; top:63%;">
+                    4. 음식 카테고리 설정</div></h1>
+
+                <div style="position:absolute; left:3%; top:70%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="한식"><span>한식</span></div>
+
+                <div style="position:absolute; left:10%; top:70%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="중식"><span>중식</span></div>
+
+                <div style="position:absolute; left:17%; top:70%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="일식"><span>일식</span></div>
+
+                <div style="position:absolute; left:24%; top:70%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="양식"><span>양식</span></div>
+
+                <div style="position:absolute; left:3%; top:75%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="분식"><span>분식</span></div>
+
+                <div style="position:absolute; left:10%; top:75%; color:white">
+                    <input type="radio" class="radio" id="category" name="category" value="카페/디저트"><span>카페/디저트</span></div>
+
+                <h1><div style="position:absolute; left:3%; top:85%;">
+                    5. 주차/예약 가능 여부 (가능 시 체크하세요.)</div></h1>
+
+                <div style="position:absolute; left:3%; top:92%; color:white">
+                    <input type="radio" class="radio" id="park" name="park" value="available"><span>주차 가능</span></div>
+
+                <div style="position:absolute; left:12%; top:92%; color:white">
+                    <input type="radio" class="radio" id="reserve" name="reserve" value="available"><span>예약 가능</span></div>
+
+
+
+                <h1><div style="position:absolute; left:51%; top:4%;">
+                    6. 영업시간 등록</div></h1>
+
+                <div style="position:absolute; left:51%; top:10%;">
+                    <input type="text" class="input-field2" id="monToSun" name="monToSun" placeholder="요일 입력(ex:월-토)" required></div>
+
+                <div style="position:absolute; left:51%; top:19%;">
+                    <input type="time" class= "input-field2" id="open" name="open" ></div>
+
+                <h1><div style="position:absolute; left:67%; top:21.5%; font-size:18px;">
+                    시작</div></h1>
+
+                <div style="position:absolute; left:71%; top:19%;">
+                    <input type="time" class= "input-field2" id="close" name="close" ></div>
+
+                <h1><div style="position:absolute; left:86.5%; top:21.5%; font-size:18px;">
+                    종료</div></h1>
+
+                <h1><div style="position:absolute; left:91%; top:21%; font-size:17px;">
+                    <button type="submit">추가</button>
+                    </div></h1>
+
+                <div style="position:absolute; left:51%; top:30%; color:white;
+                border-bottom: 1px solid white; font-size:18px; padding: 10px 0;">
+                    </div>
+
+                <h1><div style="position:absolute; left:51%; top:44%;">
+                    7. 업체사진 등록</div></h1>
+
+                <div style="position:absolute; left:52%; top:48%; ">
+                        <div class="button">
+                            <label for="image">
+                                <p style="border-bottom: 1px solid white; color:white; font-size:18px;
+                                position:absolute; left:320px; width:80px; top:0%">파일 열기</p>
+                            </label>
+                        </div>
+                        <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);"/>
+                <div id="image_container"></div>
+                </div>
+
+                <h1><div style="position:absolute; left:51%; top:76%;">
+                    8. 음식메뉴 등록</div></h1>
+
+                <h1><div style="position:absolute; left:51.5%; top:82.2%; font-size: 16;">
+                    등록하고자 하는 맛집의 메인 메뉴를 선정하는 목록입니다.</div></h1>
+
+            
+
+                <h1><div style="position:absolute; left:84%; bottom:1.5%;">
+                    <button type="submit" onclick="location.href='/result'" style="font-size:17px; width:170px;
+                                                                                   height:35px ">등록 완료하기</button>
+                    </div></h1>
+            </form>
+            <h1><div style="position:absolute; left:52%; top:88%;">
+                    <button type="button" onclick="location.href='/register_mainmenu'" style="font-size:17px; width:170px;
+                                                                                              height:35px ">메뉴 등록하러 가기</button>
+                    </div></h1>
+            <!--메뉴 등록 버튼이 form 안에 있으면 button이 안먹힘 ㅜㅜ-->
+        </div>
+
+    </div>
+
+{% endblock body%}
+</body>
+</html>

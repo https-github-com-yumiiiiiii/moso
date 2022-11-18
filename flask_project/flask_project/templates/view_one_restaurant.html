@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="view_one_restaurant.css">
+
+    </head>
+
+<body>
+  <nav style="position:absolute; z-index:10;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+        <h1>로그인이 필요합니다.</h1>
+        <hr class="hr1"/>
+        <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px"> 로그인 </button>
+        <button type="button" onclick="location.href='signup.html';" style="top:300px; height:40px"> 회원가입 </button>
+        <a href="view_restaurantlist.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="register_restaurant.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="map.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>
+
+    <div id = "menu">
+      <a onclick="openNav()"><img src="vector.png" height="77px"
+        style="position:absolute; top:0%; left:0%"></a></div>
+      <a href="index.html"><h2> EAT:WHA </h2></a>
+
+          <!--로그인 성공했을 때-->
+        <!--<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+            <h1><b>김이화</b>님 환영합니다.</h1>
+            <hr class="hr1"/>
+            <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+            <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+            <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+            <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+            <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>-->
+    </nav>
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">맛집 정보</h2>
+        <div style="position:absolute; margin-left:1180px; top:10px;">
+        <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+
+
+    </div>
+
+    <div class ="card2">
+        <div class="rectangle">
+        <div><button1 type="button" style="position:absolute; left:54.5%; top:15px;">
+            한식</button1></div>
+        <div class ="infor" style="position:absolute; left:55%; top:45px">
+          <div id="name" style="font-size:23px; float:left;">코끼리 식당</div>⠀⠀----------<br>
+            <div ><img src="Vector3.png" id="img1" width="31px" height="28px" style="float:left; position:absolute; left:250px; top:4px;">
+                <img src="Vector4.png" id="img2" width="31px" height="28px" style="float:left; position:absolute; left:250px; top:4px"></div><br>
+            <div id="address" style="clear:both;">주소: 서울시 서대문구 냠냠로 123-98 1F</div><br>
+            <div id="tel">번호: 02 - 465 - 8473</div><br>
+            <div id="time">영업 시간: 화-일 : 10:00 - 20:00</div><br>
+            <div id="park">주차 가능</div>
+        </div>
+        <button type="button" onclick="location.href='view_mainmenu.html';" style="top:250px">
+            메뉴 조회하기 </button>
+        <button type="button" onclick="location.href='view_review.html';" style="top:250px; left:72%">
+            리뷰 조회/작성하기 </button>
+
+        <hr class='hr-dotted'/>
+        <hr class='hr-dotted1'/>
+
+        <img src="image.png" height="250px" width="38%" alt="mainphoto">
+
+        <div id="form-commentInfo">
+        <div id="comment-count">댓글 <span id="count">0</span></div>
+        <input id="comment-input" placeholder="맛집에 대한 댓글을 자유롭게 작성해보세요.">
+        <button id="submit" style="top:39%; left:93%">작성</button>
+        </div>
+        <div id="comments"></div>
+        <script src="view_one_restaurant.js"></script>
+
+        <div class="rectangle1" style="border-top-color: rgba(0, 0, 0, 0);"></div>
+
+        <div class = "star" style="position:absolute; right:-0.1%; top:-0.223%; ">
+        <button3 class="button1" id="btn" type="button"
+        onclick="document.getElementById('btn').style.backgroundColor='#564C44'
+        document.getElementById('btn').style.color='white';" style="font-size:18px; width:170px;
+        height:40px "><a>즐겨찾기</a></button3>
+        </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

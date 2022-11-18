@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/write_review.css') }}">
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  src="{{ url_for('static', filename='js/write_review.js') }}"></script>
+    </head>
+</html>
+<body>
+      <nav style="position:absolute; z-index:10;">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="{{url_for('static', filename='image/profile.png')}}" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+            <h1>로그인이 필요합니다.</h1>
+            <hr class="hr1"/>
+            <button type="button" onclick="location.href='/login';" style="top:250px; height:40px"> 로그인 </button>
+            <button type="button" onclick="location.href='/signup';" style="top:300px; height:40px"> 회원가입 </button>
+            <a href="/view_restaurantlist" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="/register_restaurant" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="/map" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="/recommend" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>
+
+        <div id = "menu">
+          <a onclick="openNav()"><img src="{{url_for('static', filename='image/vector.png')}}" height="77px"
+            style="position:absolute; top:0%; left:0%"></a></div>
+          <a href="/index"><h2> EAT:WHA </h2></a>
+
+          <!--로그인 성공했을 때-->
+        <!--<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="{{url_for('static', filename='image/profile2.png')}}" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+            <h1><b>김이화</b>님 환영합니다.</h1>
+            <hr class="hr1"/>
+            <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+            <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+            <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+            <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+            <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>-->
+    </nav>
+
+    <div class="card3">
+        <div class="ha">
+            <div style="position:absolute;margin-left:1180px; top:32px;">
+                <img src="{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        <h2>코끼리식당</h2>
+        <h1>-메뉴-</h1>
+        </div>
+    </div>
+<form action="/view_review" method="post">
+<div class="card2">
+
+        <table border="1" bordercolor="white"cellspacing="0.5" width="100%;">
+            <tr style="text-align:center;" >
+                <td  rowspan="4" width="200px;"><img src="{{url_for('static', filename='image/Ellipse 1.png')}}"><br><br>user2</td>
+                <td colspan="4" width="910px;"height="210px">
+                    <h1>1. 방문 날짜 등록</h1>
+        
+                    <input type="text" class="date" name="year" style="width:9%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">년
+                    <input type="text" class="date" name="month" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">월
+                    <input type="text" class="date" name="day" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">일
+                    
+
+                    <h1 style="top:12%;">2. 평점 등록</h1>
+                    <div class="img" ><img src="{{url_for('static', filename='image/Thumbs-up.png')}}"style="top:3px;width:35px; height:35px;"></div>
+
+                    <div class="bb" style="position:absolute; left:330px;top:22%;">
+                        <input type="radio"class="b1" id="star" name="star" value="1" style="left:-10px;"><span>1</span>
+                        <input type="radio" class="b1" id="star" name="star" value="2"style="left:20px;"><span>2</span>
+                        <input type="radio" class="b1" id="star" name="star" value="3"style="left:50px;"><span>3</span>
+                        <input type="radio" class="b1" id="star"  name="star" value="4"style="left:80px;"><span>4</span>
+                        <input type="radio" class="b1" id="star"  name="star" value="5"style="left:110px;"><span>5</span>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td width="910px;" height="300px;">
+                    <h1 style="top:30%;">3. 리뷰 작성</h1>
+                    <h2><textarea name="write" rows="5" cols="20" style="position:absolute;top:-2%;width: 800px;height: 70%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;border-bottom: 0px;" placeholder="방문한 맛집에 대한 솔직한 리뷰를 작성해주세요."></textarea>
+                    </h2>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                     <button type="submit" onclick="location.href='/view_review'" img src="{{url_for('static', filename='image/write_complete.png')}}" 
+                             style="position:absolute; top:90%;left:950px;"></button>
+                    <!-- <a href="view_review.html"><img src="{{url_for('static', filename='image/write_complete.png')}}" style="position:absolute; top:90%;left:950px;"></a> -->
+                </td>
+
+            </tr>
+        </table>
+
+</div>
+</form>
+
+</body>

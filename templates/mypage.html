@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="mypage.css">
+        <script src="mypage.js"></script>
+    </head>
+
+<body>
+  <nav style="position:absolute; z-index:10;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="profile.png" width="100px" height="100px" style="position:absolute; top:70px; left:25%">
+        <h1>로그인이 필요합니다.</h1>
+        <hr class="hr1"/>
+        <button type="button" onclick="location.href='login.html';" style="top:250px; height:40px"> 로그인 </button>
+        <button type="button" onclick="location.href='signup.html';" style="top:300px; height:40px"> 회원가입 </button>
+        <a href="view_restaurantlist.html" style="position:absolute; left:8px">맛집 조회</a>
+        <a href="register_restaurant.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+        <p></p>
+        <a href="map.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+        <a href="recommend.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+    </div>
+
+    <div id = "menu">
+      <a onclick="openNav()"><img src="vector.png" height="77px"
+        style="position:absolute; top:0%; left:0%"></a></div>
+      <a href="index.html"><h2> EAT:WHA </h2></a>
+          <!--로그인 성공했을 때-->
+        <!--<div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
+            <h1><b>김이화</b>님 환영합니다.</h1>
+            <hr class="hr1"/>
+            <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+            <a href="#" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
+            <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
+            <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
+            <a href="맛집 리스트화면.html" style="position:absolute; left:8px">맛집 조회</a>
+            <a href="맛집 등록화면.html" style="position:absolute; top:435px; left:8px">맛집 등록</a>
+            <p></p>
+            <a href="특별화면5 - 맛집 지도.html" style="position:absolute; top:485px; left:8px">맛집 지도</a>
+            <a href="특별화면4 - 맛집추천.html" style="position:absolute; top:520px; left:8px">맛집 추천</a>
+        </div>-->
+    </nav>
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">마이페이지</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= vector5.png onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+
+    </div>
+
+    <div class ="card2">
+        <div class="rectangle">
+            <hr class='hr-solid'/>
+            <a>회원정보</a>
+            <img src="profile.png" width="100px" height="100px" style="position:absolute; top:90px; left:6%">
+            <div class="infor" style="position:absolute; left:20%; top:13.2%;">
+                <div id="name" style="font-size:18px"><b>김이화</b></div><br>
+                <div><img src="Vector7.png" width="31px" height="36px" style="float:left; position:absolute; left:40%; top:-10%"></div>
+                <div id="email" style="font-size:16px; color:#404040">example@ewhain.net</div>
+                <a style="font-size:15px; left:130%; top:-20%">즐겨찾기 목록</a>
+            </div>
+            <button type="button" onclick="location.href='#'" style="top:29%">
+            회원정보 수정</button>
+            <button type="button" onclick="location.href='#';" style="top:29%; right:3%">
+            로그아웃</button>
+            <a style="top:37.5%;">즐겨찾기 목록</a>
+            <img src="Vector8.png" width=15px; height=22px; style="position:absolute; left:38.5%; top:20%;">
+            <a id="number" style="position:absolute; left:41%; top:16.5%"><b>17</b></a>
+            <div class="rectangle1">
+                <img src="university.png" style="width:100%; height:50%; top:0">
+                <h1>코끼리 식당</h1>
+                <div><button type="button" style="position:absolute;">한식</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" onclick="location.href='view_one_restaurant.html';" style="top:85%">맛집 보러가기</button1></div>
+            </div>
+            <div class="rectangle1" style="left:321">
+                <img src="still.png" style="width:100%; height:50%; top:0">
+                <h1>여우카페</h1>
+                <div><button type="button" style="position:absolute;">카페/디저트</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+            </div>
+            <div class="rectangle1" style="left:584">
+                <img src="food.png" style="width:100%; height:50%; top:0">
+                <h1>이화키친</h1>
+                <div><button type="button" style="position:absolute;">양식</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+                </div>
+            <div class="rectangle1" style="left:839">
+                <img src="coffee.png" style="width:100%; height:50%; top:0">
+                <h1>Je T'aime</h1>
+                <div><button type="button" style="position:absolute;">카페/디저트</button></div>
+                <div><button1 type="button">목록에서 제외하기</button1></div>
+                <div><button1 type="button" style="top:85%">맛집 보러가기</button1></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
