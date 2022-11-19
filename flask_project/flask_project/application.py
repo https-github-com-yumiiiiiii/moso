@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
+from database import DBhandler
 import sys
 application = Flask(__name__)
+
+DB=DBhandler()
 
 
 @application.route("/")
@@ -57,7 +60,10 @@ def view_mainmenu():
     image_file=request.files["file"]
     image_file.save("static/image/{}".format(image_file.filename))
     data=request.form
-    return render_template("view_mainmenu.html", data=data, image_file=image_file.filename) 
+    if DB.insert_mainmenu(data['menu_name'], data, image_file.filename)
+        return render_template("view_mainmenu.html", data=data, image_file=image_file.filename) 
+    else
+        return "Mainmenu name is already exist!"
 
 
 

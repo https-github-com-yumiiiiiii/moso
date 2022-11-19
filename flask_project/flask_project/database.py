@@ -15,10 +15,23 @@ class DBhandler:
         mainmenu_info={
             "menu_name": data['menu_name'],
             "menu_price": data['menu_price'],
-            "imge_path": img_path       
+            "img_path": img_path       
         }
         self.db.child("mainmenu").child(name).set(mainmenu_info)
         print(data, img_path)
+        return True
+    
+    #리뷰 데이터베이스 함수
+    def insert_review(self, name, data):
+        review_info={
+            "year": data['year'],
+            "month": data['month'],
+            "date": data['date'],
+            "star": data['star'],
+            "write": data['write']
+        }
+        self.db.child("review").child(name).set(review_info)
+        print(data)
         return True
             
             
