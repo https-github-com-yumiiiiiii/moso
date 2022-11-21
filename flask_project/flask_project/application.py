@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
+from database import DBhandler
 import sys
 application = Flask(__name__)
-
+DB = DBhandler()
 
 @application.route("/")
 def index():
@@ -19,10 +20,6 @@ def signup():
 @application.route("/register_restaurant")
 def register_restaurant():
     return render_template("register_restaurant.html")
-
-@application.route("/register_mainmenu")
-def register_mainmenu():
-    return render_template("register_mainmenu.html")
 
 @application.route("/view_restaurantlist")
 def view_restaurantlist():
@@ -47,10 +44,22 @@ def view_one_restaurant():
 
 @application.route("/result", methods=['GET','POST'])
 def result():
+    global idx
     image_file=request.files["file"]
     image_file.save("static/image/{}".format(image_file.filename))
     data=request.form
-    return render_template("result.html",data=data,image_file=image_file.filename)
+    
+    if DB.insert_restaurant(data['name'],data,image_file.filename):
+        return render_template("result.html",data=data,image_path="image/"+image_file.filename)
+    else:
+        return "RESTAURANT NAME ALREADY EXISTS!"
+    
+@application.route("/register_mainmenu", methods=['GET','POST'])
+def register_mainmenu():
+    global idx
+    data=request.form
+    print(data)
+    return render_template("register_mainmenu.html",data=data)
 
 if __name__ == "__main__":
     application.run(host='0.0.0.0', debug = True)

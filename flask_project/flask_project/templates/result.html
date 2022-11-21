@@ -2,7 +2,7 @@
 <html>
     <body>
         <h1>
-            맛집 등록 데이터 출력
+            맛집 등록 데이터 출력 : {{ data.name }}
         </h1>
         <p>
         Restaurant name is {{ data.name }}<br>
@@ -34,10 +34,19 @@
 
         </p>
         
-        <img src="{{url_for('static', filename='image/'+image_file)}}" alt="restaurantPhoto" width="30%">
+        <img src="{{url_for('static', filename=image_path)}}" alt="restaurantPhoto" width="30%">
         
-        <button type="button" onclick="location.href='/register_mainmenu'" style="font-size:17px; width:170px;
-                    height:35px ">메인메뉴등록
+        <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+            <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
+            <div>
+                <p>
+                    It's time to register the representative menu in {{data.name}}
+                </p>
+                <button type="submit" style="font-size:17px; width:170px;
+                    height:35px ">Register Menu
+            </div>
+        </form>
+        
     </body>
     
     
