@@ -1,0 +1,57 @@
+{% extends "index.html" %}
+<html>
+    <head>
+         {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/recommend.css')}}">
+        <script src="{{ url_for('static', filename = 'js/recommend.js')}}"></script>
+        {% endblock head %}
+    </head>
+
+<body>
+  {% block body %}
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">맛집추천</h2>
+        <h1>이대 주변 맛집을 랜덤으로 추천해드립니다.</h1>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/vector5.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+
+
+    <div class ="card2">
+        <div class="rectangle">
+            <hr class='hr3'/>
+            <h1>출출한 지금,<br>여기는 어떠세요?</h1>
+            <img src="{{url_for('static', filename='image/vector2.png')}}" alt="vector2" width="50px" height="auto"
+            style="top:35%; ">
+            <hr class="hr2"/>
+            <h2 id="display"></h2>
+            <button type="button" onclick="randomString()">
+            아니요, 다시 추천 받을래요 </button>
+            <button type="button" onclick="location.href='view_one_restaurant.html'" style="top:72%">
+            좋아요, 맛집 정보 보러 갈래요 </button>
+            <img src="{{url_for('static', filename='image/soup.png')}}" alt="soupphoto" width="50%" height="100%"
+            style="position:absolute; top:0; left:50%">
+            <img src="{{url_for('static', filename='image/EAT_WHA.png')}}" alt="eatwha" width="157px" height="24px"
+            style="position:absolute; bottom:3.5%; left:83%">
+        </div>
+    </div>
+    {% endblock body%}
+
+</body>
+</html>
