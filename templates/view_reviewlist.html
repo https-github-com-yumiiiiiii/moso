@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/view_mainmenu.css')}}">
+        <script src="{{ url_for('static', filename = 'js/view_mainmenu.js')}}"></script>
+        {% endblock head %}
+    </head>
+
+<body>
+  {% block body %}
+    {% if total>0 %}
+  <div class="card3">
+    <div class="ha">
+       
+        <div style="position:absolute; margin-left:1180; top:32px;">
+            <img src="{{url_for('static', filename='image/vector5.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+{% for data in datas %}
+    <h2>{{data.restaurant_name}}</h2>
+    <h1>{{total}}개의 리뷰</h1>
+        {% endfor %}
+    </div>
+</div>
+{% for data in datas %} 
+<div style="margin-left: 300px">
+           
+       
+        <h1>별점: {{data.star}}</h1>
+    <h2>날짜: {{data.year}}-{{data.month}}-{{data.date}}</h2>
+    <div>
+        <a>{{data.write}}</a>
+    </div>
+
+   
+    </div>
+    <a>------------------------------------------------------------</a>
+{% endfor %} 
+    
+    <!--페이지네이션-->
+    
+    {% else %}
+        <p>
+            등록된 메뉴가 없습니다.
+            </p>
+    {% endif %}
+            
+
+{% endblock body %}
+</body>
+</html>
