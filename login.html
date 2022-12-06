@@ -10,6 +10,12 @@
 </html>
 <body>
 {% block body %}
+    {% block section %}
+        {% with mesg=get_flashed_messages() %}
+        {% if mesg !=[] %}
+            <script>alert("{{mesg[0]}}")</script>
+        {% endif %}
+        {% endwith %}
 
     <div class="card">
         <h2 style="position:absolute;
@@ -31,12 +37,12 @@
         <img src= "{{url_for('static', filename='image/To-left (1).png')}}" onclick="history.back();" width="40px" height="40px"></div>
         </div>
 
- 
+    
     <div class ="card2">
         <div class="rectangle">
             <h2><div style="position:absolute; left:111px; top:30%;">
                 가입하신 정보로 로그인하세요.</div></h2>
-
+<form action="/login_confirm" method="post">
             <div style="position:absolute; left:45px; top:45%;">
                 <input tsype="text" name="id" id="username-field"class="login-form-field" placeholder="   아이디 입력"  required><br>
                 <input type="text" name="password" id="password-field"class="login-form-field" placeholder="   비밀번호 입력" required>
@@ -44,9 +50,9 @@
             <div style="position:absolute; left:378px; top:45.5%;">
                 <button type="login" style="border-radius: 5px; border-color:#CEC4BC;width:144px; height: 137px;font-size: 20px;">로그인</button></div>
 
-
+            </form>
             <h4><div style="position:absolute; width:534px; height: 100px; left:20px; top:80%;text-align:center;">
-                아직 회원이 아니신가요?<br><a href="signup.html"><ins>회원가입</ins></a></div></h4>
+                아직 회원이 아니신가요?<br><a href="/signup"><ins>회원가입</ins></a></div></h4>
             <div class="container">
              <img src="{{url_for('static', filename='image/soup.png')}}" alt="food" style="position:absolute; width:50%; height:100%;left:50%;top:0;" >
             </div>
@@ -54,5 +60,6 @@
             <div class="v-line"></div>
         </div>
     </div>
+    {% endblock section %}
 {% endblock body%}
 </body>

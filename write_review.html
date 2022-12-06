@@ -29,46 +29,47 @@
                 <td colspan="4" width="910px;"height="210px">
                     <h1>1.방문 날짜 등록, 식당이름</h1>
         
-                    <input type="text" id="restaurant_name" class="restaurant_name" name="restaurant_name" required>
-                    <input type="text" id="year" class="date" name="year" style="width:9%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;" required>년
-                    <input type="text" id="month" class="date" name="month" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;" required>월
-                    <input type="text" id="date" class="date" name="day" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;" required>일
+                    <input type="text" class="restaurant_name" name="restaurant_name">
+                    <input type="text" class="date" name="year" style="width:9%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">년
+                    <input type="text" class="date" name="month" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">월
+                    <input type="text" class="date" name="day" style="width:5%;background-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;">일
                     
                     
 
                     <h1 style="top:12%;">2. 평점 등록</h1>
                     <div class="img" ><img src="{{url_for('static', filename='image/Thumbs-up.png')}}"style="top:3px;width:35px; height:35px;"></div>
 
-                    <div class="bb" style="position:absolute; left:-60px;top:20%;">
-                        
-                        <form name="myform" id="myform" method="post" action="./save" >
+                    <div class="bb" style="position:absolute; left:-60px;top:20.8%;">
+                    
+                        <div name="myform" id="myform" method="post" action="./save" >
                             <fieldset>
                                 
-                                <input type="radio" name="rating" value="5" id="rate1" style="position:absolute;left:-10px;"><label for="rate1">⭐</label>
-                                <input type="radio" name="rating" value="4" id="rate2"style="position:absolute;left:20px;"><label for="rate2">⭐</label>
+                                <input type="radio" name="rating" value="5" id="rate1" style="position:absolute;left:-10px;"><label for="rate1">★</label>
+                                <input type="radio" name="rating" value="4" id="rate2"style="position:absolute;left:20px;"><label for="rate2">★</label>
                                 <input type="radio" name="rating" value="3" id="rate3"style="position:absolute;left:50px;"><label for="rate3">⭐</label>
                                 <input type="radio" name="rating" value="2" id="rate4"style="position:absolute;left:80px;"><label for="rate4">⭐</label>
                                 <input type="radio" name="rating" value="1" id="rate5"style="position:absolute;left:110px;"><label for="rate5">⭐</label>
                             </fieldset>
-                        </form>
+                        </div>
                          
-                    </div>
+                    </div>    
+                    
                 </td>
             </tr>
             <tr>
                 <td width="910px;" height="300px;">
                     <h1 style="top:30%;">3. 리뷰 작성</h1>
-                    <h2><textarea name="write" id="review" rows="5" cols="20" style="position:absolute;top:-2%;width: 800px;height: 70%;backgr
+                    <h2><textarea name="write" rows="5" cols="20" style="position:absolute;top:-2%;width: 800px;height: 70%;backgr
                         ound-color:#CEC4BC;border-right:0px;border-left:0px; border-top:0px;border-bottom: 0px;"
-                                  placeholder="방문한 맛집에 대한 솔직한 리뷰를 작성해주세요." required></textarea>
+                                  placeholder="방문한 맛집에 대한 솔직한 리뷰를 작성해주세요."></textarea>
                     </h2>
 
                 </td>
             </tr>
             <tr>
                 <td> 
-                    <button type="submit" onclick="go()" style="font-size:17px; width:170px;
-                    height:40px; position:absolute; top:92%;left:920px;">작성 완료하기
+                    <button type="submit" onclick="location.href='/view_review'" img src="{{url_for('static', filename='image/write_complete.png')}}" 
+                            style="position:absolute; top:90%;left:950px;"></button>
                    <!-- <a href="view_review.html"><img src="{{url_for('static', filename='image/write_complete.png')}}" style="position:absolute; top:90%;left:950px;"></a> -->
                </td>
 

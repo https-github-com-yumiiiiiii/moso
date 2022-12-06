@@ -28,25 +28,25 @@
         color:#fff;">메뉴 등록하기 : {{ data.restaurant_name }}  </h2>
 
         <div style="position:absolute; margin-left:1180px; top:32px;">
-        <img src= "{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        <img src= "{{url_for('static', filename='image/To-left (1).png')}}" onclick="history.back();" width="40px" height="40px"></div>
         
 
     </div>
 
     <div class ="card2">
         <div class="rectangle" >
-      <form enctype="multipart/form-data" action="/view_mainmenu" method="POST">
+      <form enctype="multipart/form-data" action="/result_mainmenu" method="POST">
         <h1><div style="position:absolute;left:30px; top:8%;">
             1. 메뉴명 등록</div></h1>
 
         <div style="position:absolute; left:30px; top:15%;">
-            <input type="text" id="menu_name" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
+            <input type="text" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
 
         <h1><div style="position:absolute; left:30px; top:30%;">
             2.가격 등록</div></h1>
 
         <div style="position:absolute; left:30px; top:37%;">
-            <input type="text" id= "price" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
+            <input type="text" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
 
 
 
@@ -59,7 +59,7 @@
                             <p style="position:absolute; text-align:center;width: 100px;left:370px; border-bottom: 1px solid white; color:white; font-size:18px">파일 열기</p>
                         </label>
                     </div>
-                    <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);" required/>
+                    <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);"/>
             <div id="image_container"></div>
 
             </div>
@@ -88,32 +88,9 @@
             <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
     <div class="v-line"></div>
     <h1><div style="position:absolute; margin-left:37%; top:89%;">
-        <button type="submit" onclick="go()" style="font-size:18px; width:121px; height: 48px;">추가</button>
+        <button type="submit" style="font-size:18px; width:121px; height: 48px;">추가</button>
         </div></h1>
-        
-         <script>
-        function go(){
-    var menu = document.getElementById("menu_name");
-    var price = document.getElementById("price");
-    var image = document.getElementById("file");
-
-    if(menu.value==""){
-      alert("메뉴명을 입력해주세요!")
-    }
-    else if(price.value==""){
-      alert("가격을 입력해주세요!")
-    }
-    else if(image.value==""){
-      alert("음식 사진을 등록해주세요!");
-    }
-    else{
-      location.href="view_mainmenu.html"
-    }
-
-  }</script>
           </form>
-          <h1><div style="position:absolute;margin-left:750px; top:7.3%; font-size: 18px; color:rgb(176, 173, 173)">
-            (예시)</div></h1>
     <h1><div style="position:absolute;margin-left:580px; top:7%;">
         등록된 메인 메뉴</div></h1>
     <div class="rectangle3" style="top:15%;">
