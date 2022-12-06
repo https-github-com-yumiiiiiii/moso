@@ -101,12 +101,7 @@ nav h2{
   margin:auto;
 
 }
-.card23{
-  background-color: #CEC4BC;
-  width:1250px;
-  height:310px;
-  margin:0 auto;
-}
+
 .rectangle {
   box-sizing: border-box;
   box-align:center;
@@ -289,44 +284,20 @@ background-color:#CEC4BC;
 
 
 }
-
-button{
-  margin: auto;
-  width: 60px;
-  height: 35px;
-  left: 400px;
-  top: 800px;
-  background-color: rgba(255, 255, 255, 0);
-  color:black;
-  border: 1.3px solid black;
-
-
-  font-family: 'Hubballi';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 40px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 #myform fieldset{
   display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
   direction: rtl; /* 이모지 순서 반전 */
   border: 0; /* 필드셋 테두리 제거 */
   width:1000px;
 }
-
 #myform input[type=radio]{
   display: none; /* 라디오박스 감춤 */
 }
 #myform label{
-  font-size: 1.5em; /* 이모지 크기 */
+  font-size: 2em; /* 이모지 크기 */
   color: transparent; /* 기존 이모지 컬러 제거 */
   text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
-  
+ border-radius: 10%;
   
 }
 #myform label:hover{
@@ -338,7 +309,6 @@ button{
 #myform input[type=radio]:checked ~ label{
   text-shadow: 0 0 0 #224932; /* 마우스 클릭 체크 */
 }
-
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     section, aside {

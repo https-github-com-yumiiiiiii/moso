@@ -90,45 +90,42 @@ nav h2{
 .card2{
   background-color: #CEC4BC;
   width:1250px;
-  height:310px;
+  height:200px;
   margin:0 auto;
 }
-
-
-    table{
-
-      box-sizing: border-box;
+.rectangle {
+  box-sizing: border-box;
   box-align:center;
-margin:100 auto;
-margin-left: 110;
+  margin:100 auto;
+  margin-left: 110;
 
-position: absolute;
-width: 1110px;
-height:600px;
-margin-top:0;
+  position: absolute;
+  width: 1110px;
+  height:200px;
+  margin-top:0;
 
-border: 1px solid #000000;
+  border: 1px solid #000000;
+}
 
-    }
+ .card2 h1{
 
-td h1{
-position: absolute;
-margin:0;
-left: 16%;
-top: 1%;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 21px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #000000;
-
-opacity: 0.5;
+  position: absolute;
+  margin:0;
+  left: 20%;
+  top: 3%;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #000000;
+  
+  opacity: 0.5;
 }
 
 .ha{
@@ -137,25 +134,20 @@ opacity: 0.5;
   height:100%;
   background-color: #CEC4BC;
 }
-
-.number {
-  box-sizing: border-box;
-  box-align:center;
-  margin:0;
+.v-line{
+  border-left: thin solid #000000;
+  top:0%;
+  height:100%;
+  left: 18.018%;
   position: absolute;
-  width: 10px;
-  top: 35%;
-}
-.like.likeimg{
-    position: absolute;
-    left:10%;
-    top:1%;
-  }
+ }
+
+
   .like h2{
 
           position:absolute;
-          left:120%;
-          top:-19%;
+          left:36%;
+          top:2%;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 500;
@@ -168,42 +160,37 @@ opacity: 0.5;
           color: #403831;
   }
 
-  td h4{
+   h4{
     position: absolute;
-   left:17%;
-   top:-6.3%;
-   width: 949px;
-   height: 168px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 19px;
-display: flex;
-align-items: flex-end;
-text-align: left;
-color: #000000;
+   left:20%;
+   top:10%;
+   width: 870px;
+   height: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 15px;
+    /*line-height: 19px;*
+    display: flex;
+    align-items: flex-end;*/
+   
+    color: #000000;
 
   }
-  h7{
-
+  .box {
     position: absolute;
-    left:1%;
-    top:-8%;
-
-   width: 949px;
-  height: 168px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: flex-end;
-text-align: left;
-color: #000000;
-  }
-
+   top:10%;
+   left:2.3%;
+    width: 150px;
+    height: 150px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {

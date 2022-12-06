@@ -104,17 +104,7 @@ def view_mainmenulist(name):
     data = DB.get_food_byname(str(name))
     tot_count=len(data)
     
-    page=request.args.get("page",0,type=int)
-    limit=4
-    start_idx=limit*(page-1)
-    end_index=limit*page
-    data2=DB.get_mainmenus()
-    tot_count=len(data)
-    data2=dict(list(data2.items())[start_idx:end_index])
-    
-    
-    return render_template("view_mainmenulist.html", datas=data, total=tot_count,
-                           limit=limit, page=page, page_count=int((tot_count/3)+1))
+    return render_template("view_mainmenulist.html", datas=data, total=tot_count)
 
 @application.route("/view_reviewlist/<name>/")
 def view_reviewlist(name):
