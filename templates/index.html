@@ -13,7 +13,10 @@
         <img src="profile2.png" width="100px" height="105px" style="position:absolute; top:70px; left:25%">
         <h1><b>{{session['id']}}</b>님 환영합니다.</h1>
         <hr class="hr1"/>
-        <a href="특별화면6 - 마이페이지.html" style="position:absolute; left:8px; top:260px">마이페이지</a>
+        <form method="post" action="/mypage/{{session['id']}}/">
+                <input type="hidden" name="user_id" value="{{session['id']}}">                  
+                        <a href="/mypage/{{session['id']}}/" style="position:absolute; left:8px; top:260px">마이페이지</a>
+         </form>
         <a href="/logout" style="position:absolute; left:23px; top:290px; font-size: 14px;">-로그아웃</a>
         <a href="#" style="position:absolute; left:23px; top:317px; font-size: 14px;">-즐겨찾기 목록</a>
         <a href="#" style="position:absolute; left:23px; top:344px; font-size: 14px;">-회원정보 수정</a>
