@@ -45,167 +45,92 @@ a{
     transform: rotate(-90deg);
   }
 
-  .card3 h2{
-    position:absolute;
-    width: 1000px;
-    height: 63px;
-    margin-left: 110;
-    top: 3px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 42px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:black;
-  }
-
-  .card3 h1{
-    position:absolute;
-    width: 238px;
-    height: 63px;
-    margin-left: 250px;
-    top: 17px;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 42px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color:black;
-  }
-
-  .ha{
-    width:1250px;
-    margin: 0 auto;
-    height:100%;
+  .card {
     background-color: #CEC4BC;
+    width:1250px;
+    height:92;
+    margin:auto;
   }
 
-  .ha button{
-    position: absolute;
-    width:160px;
-    background-color: rgba(255, 255, 255, 0);
-    color:#343434;
-    border:1.2px solid #343434;
-    align-items: center;
+  .card2{
+    background-color: #CEC4BC;
+  width:1250px;
+  height:200px;
+  margin:0 auto;
 
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 35px;
-    color:black;
-    text-align: center;
   }
 
-.number {
+.rectangle {
   box-sizing: border-box;
   box-align:center;
-  margin:0;
+  margin:100 auto;
+  margin-left: 110;
+
   position: absolute;
-  width: 10px;
-  top: 40%;
+  width: 1090px;
+  height:250px;
+  margin-top:0;
+
+  border: 1px solid #000000;
 }
-.number h1{
-  font-size: 10px;
+
+.box {
+  position: absolute;
+ 
+  width: 400px;
+  height: 248px;
+}
+
+.v-line{
+  border-left: thin solid #000000;
+  top:0%;
+  height:100%;
+  left: 100%;
+  position: absolute;
+ }
+
+ .h4{
+  position: absolute;
+   left:40%;
+   top:15%;
+   width: 500px;
+   height: 150px;
+    font-family: 'Inter';
+    font-style: normal;
+    /*font-weight: 400;*/
+    font-size: 16px;
+    /*line-height: 19px;*
+    display: flex;
+    align-items: flex-end;*/
+   
+    color: #000000;
+
+}
+
+.rectangle button1{
+  position: absolute;
+  width:80px;
+  background-color:#7E6F63;
+  color:rgb(255, 255, 255);
+  border:1.5px solid #7E6F63;
+  border-radius: 30px;
+  align-items: center;
+
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
+
 }
-.rectangle {
-    box-sizing: border-box;
-    box-align:center;
-    margin:0;
-    position: absolute;
-    width: 230px;
-    height:270px;
-    top: 200px;
-    border: 1px solid #000000;
-  }
 
-  .rectangle2 {
-    box-sizing: border-box;
-    box-align:center;
-    margin:0;
-    position: absolute;
-    width: 230px;
-    height:270px;
-    top: 420px;
-    border: 1px solid #000000;
-  }
-
-
-  .rectangle h1{
-    position: absolute;
-    width:100%;
-    text-align: left;
-    top:51%;
-    left:20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    align-items: center;
-    color:#403831;
-
-
-
-  }
-  .rectangle h2{
-    position: absolute;
-    width:100%;
-    text-align: left;
-    top:83%;
-    left:45px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    align-items: center;
-    color:#403831;
-  }
-
-  .rectangle2 h1{
-    position: absolute;
-    width:100%;
-    text-align: left;
-    top:51%;
-    left:20px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    align-items: center;
-    color:#403831;
-  }
-  .rectangle2 h2{
-    position: absolute;
-    width:100%;
-    text-align: left;
-    top:83%;
-    left:45px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    align-items: center;
-    color:#403831;
-  }
   ul{
     position:absolute;
 
     top:62%;
-    left:-10px;
+    /*left:-10px;*/
 
 
      font-family: 'Inter';
@@ -219,90 +144,21 @@ a{
    color: #403831;
   }
 
-
-  .card {
-    background-color: #CEC4BC;
-    width:1250px;
-    height:310px;
-    margin:0 auto;
-  }
-
-  .card2{
-    background-color: #CEC4BC;
-    width:1250px;
-    height:310px;
-    margin:0 auto;
-  }
-
-  .card3{
-    background-color: #CEC4BC;
-    width:1250px;
-    height:92px;
-    margin:0 auto;
-  }
-
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    section, aside {
-      width: 100%;
-      padding: 0;
-    }
-  }
-  @media screen and (max-width: 1120px) {
-    .rectangle {
-      width: 220px;
-    }
-
-    .rectangle2{
-      width: 220px;
-    }
-
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 14px;}
   }
 
-  @media screen and (min-width: 1360px) {
+  /*@media screen and (min-height: 840px) {
     .rectangle {
-      width: 243px;
-    }
-
-    .rectangle2,button{
-      width: 243px;
-    }
-      .number h1{
-        font-size: 13px;
-    }
-  }
-
-  @media screen and (min-height: 840px) {
-    .rectangle {
-      height:320px;
-    }
-
-    .rectangle2{
-      height:320px;
-    }
-
-    .rectangle2{
-      top:460px;
-    }
-      .number h1{
-        font-size: 13px;
+      height:700;
     }
   }
 
   @media screen and (min-height: 920px) {
     .rectangle {
-      height:350px;
-    }
-
-    .rectangle2{
-      height:350px;
-    }
-
-    .rectangle2{
-      top:490px;
-    }
-      .number h1{
-        font-size: 13px;
+      height:730;
     }
   }
 
@@ -421,7 +277,6 @@ a{
 }
 
 .page-nation{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -431,14 +286,53 @@ a{
     display: block;
     margin: 0 3px;
     float: left;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #564C44;
     width: 28px;
     height: 28px;
     line-height: 28px;
     text-align: center;
-    background-color: #fff;
+    background-color: #CEC4BC;
     font-size: 13px;
-    color: black;
+    color: #473f38;
     text-decoration: none;
     font-weight: bold;
 }
+
+.selectBox {
+  position: relative;
+  width: 155px;
+  height: 35px;
+  border-radius: 4px;
+  border: 2px solid #564C44;
+  font-size: 16px;
+}
+.selectBox .select {
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 0 none;
+  outline: 0 none;
+  padding: 0 5px;
+  position: relative;
+  z-index: 3; 
+  font-size: 16px;
+}
+.selectBox .select option {
+  background: #564C44;
+  color: #fff;
+  padding: 3px 0;
+  font-size: 16px;
+}
+.selectBox .icoArrow {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  z-index: 1; 
+  width: 33px; 
+  height: inherit;
+  border-left: 2px solid #564C44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

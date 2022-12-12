@@ -147,3 +147,21 @@ function openNav() {
         document.getElementById("img2").src = "vector4.png";
         
     }
+
+
+    let x = 0;
+        let isShown = false;
+        //const button = 버튼 태그 선택;
+        const checkbox = document.getElementById("heart");
+        const changeText = document.querySelector('#heartcount');
+        
+        checkbox.addEventListener("change", event => {
+          // 체크박스 바뀌었을 때 감지
+          if (event.target.checked) {
+            // 체크박스가 선택되었다면
+            changeText.innerHTML++;
+          } else {
+            // 체크박스가 선택이 안되었다면
+            changeText.innerHTML--;
+          };
+        });
