@@ -147,7 +147,8 @@ class DBhandler:
         user_info={
             "id":data['id'],
             "pw":pw,
-            "nickname":data['nickname']
+            "nickname":data['nickname'],
+            "email": data["email"]
         }
         if self.user_duplicate_check(str(data['id'])):
             self.db.child("user").push(user_info)
@@ -182,13 +183,40 @@ class DBhandler:
                 return True
         return False
     
-    def get_user_byname(self, id_):
-        users = self.db.child("usert").get()
-        target_value=""
+    def get_user_byname(self, id_):    
+        users = self.db.child("user").get()
+        target_value=[]
         for res in users.each():
             value = res.val()
             
-            if value['id'] == id:
-                target_value = value
+            if value['id'] == id_:
+                target_value.append(value)
                 
-            return target_value
+        return target_value
+        
+    #즐겨찾기 함수-->미완
+    # def insert_bookmark(self, id_, res_name):
+    #     user=self.get_user_byname(id_)
+    #     restaurant=self.get_restaurant_byname(res_name)
+    #     bookmark_info={
+    #         "my_restaurant": res_name,
+    #         "id": id_
+    #     }
+    #     if self.mainmenu_duplicate_check(res_name):
+    #         self.db.child("bookmark").push(bookmark_info)
+    #         return True
+    #     else:
+    #         return False
+        
+    # def get_bookmark_byuser(self, id_):
+    #     bookmarks = self.db.child("bookmark").get()
+    #     target_value=""
+    #     for bookmark in bookmarks.each():
+    #         value = res.val()
+            
+    #         if value['id'] == id_:
+    #             target_value = value
+                
+    #         return target_value
+            
+        

@@ -79,9 +79,11 @@ def map():
 def recommend():
     return render_template("recommend.html")
 
-@application.route("/mypage")
-def mypage():
-    return render_template("mypage.html")
+@application.route("/mypage/<id_>/")
+def mypage(id_):
+    data=DB.get_user_byname(str(id_))
+#    data2=DB.get_bookmark_byuser(str(id_))
+    return render_template("mypage.html", datas=data)
 
 @application.route("/view_one_restaurant")
 def view_one_restaurant():
@@ -104,7 +106,15 @@ def view_mainmenulist(name):
     data = DB.get_food_byname(str(name))
     tot_count=len(data)
     
-    return render_template("view_mainmenulist.html", datas=data, total=tot_count)
+    page=request.args.get("page",0,type=int)
+    limit=4
+    start_idx=limit*(page-1)
+    end_index=limit*page
+    data=dict(list(data)[start_idx:end_index])
+    
+    
+    return render_template("view_mainmenulist.html",  datas=data, 
+                           total=int(tot_count), limit=limit, page=page, page_count=int((tot_count/4)+1))
 
 @application.route("/view_reviewlist/<name>/")
 def view_reviewlist(name):
@@ -167,7 +177,19 @@ def view_restaurant_detail(name):
     print("####data:",data)
     return render_template("view_one_restaurant.html",data=data, avg_rate=avg_rate)
 
+# @application.route("/bookmark/<id_>/<name>/", methods=['GET','POST'])
+# def bookmark(id_, name):                        
+#     data = DB.get_restaurant_byname(str(name))
+#     avg_rate=DB.get_avgrate_byname(str(name))
+#     if DB.insert_bookmark(id_, name):
+#         return render_template("view_one_restaurant.html", data=data, avg_rate=avg_rate)
+#     else:
+#         return "RESTAURANT NAME ALREADY EXISTS!"
+    
+
 if __name__ == "__main__":
     application.run(host='0.0.0.0', debug = True)
     application.secret_key = 'super secret key'
     application.config['SESSION_TYPE'] = 'filesystem'
+    
+    
