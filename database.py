@@ -133,7 +133,7 @@ class DBhandler:
     
     def get_restaurant_byname(self, name):
         restaurants = self.db.child("restaurant").get()
-        target_value=""
+        target_value=[]
         for res in restaurants.each():
             value = res.val()
             
@@ -141,6 +141,21 @@ class DBhandler:
                 target_value = value
                 
             return target_value
+    
+    def get_restaurants_bycategory(self,cate):
+        restaurants=self.db.child("restaurant").get()
+        target_value=[]
+        for res in restaurants.each():
+            value=res.val()
+
+            if value['category']==cate:
+                target_value.append(value)
+        print("######target_value",target_value)
+        new_dict={}
+        for k,v in enumerate(target_value):
+            new_dict[k]=v
+
+        return new_dict
         
     #회원가입 함수
     def insert_user(self, data, pw):

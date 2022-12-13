@@ -50,7 +50,7 @@
             <div id="park">주차 가능: {{data.park}} / 예약 가능: {{data.reserve}} </div>
             
         </div>
-        <form method="post" action="/food_list">
+        <form method="post" action="/view_mainmenulist">
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_mainmenulist/{{data.name}}/" color="black">
@@ -60,7 +60,7 @@
                     </a>
                 </div>
             </form>
-        <form method="post" action="/review_list">
+        <form method="post" action="/view_reviewlist">
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_reviewlist/{{data.name}}/" color="black">

@@ -3,6 +3,8 @@ from database import DBhandler
 import sys
 import hashlib
 import os
+import math
+import json
 application = Flask(__name__)
 application.secret_key = os.urandom(24)
 DB = DBhandler()
@@ -60,16 +62,37 @@ def register_restaurant():
 @application.route("/view_restaurantlist")
 def view_restaurantlist():
     page=request.args.get("page",0,type=int)
+    category=request.args.get("category","all")
     limit=4
     
-    start_idx=limit*(page-1)
-    end_index=limit*page
-    data=DB.get_restaurants()
+    category=request.args.get("category","all")
+    limit=4
+
+    start_idx=limit*(page)
+    end_index=limit*(page+1)
+
+    if category=="all":
+        data=DB.get_restaurants()
+    else:
+        data=DB.get_restaurants_bycategory(category)
+
     tot_count=len(data)
-    data=dict(list(data.items())[start_idx:end_index])
-    
-    return render_template("view_restaurantlist.html", datas=data.items(), 
-                           total=int(tot_count), limit=limit, page=page, page_count=int((tot_count/4)+1))
+
+    print("category",category,tot_count)
+
+    if tot_count <= limit:
+        data=dict(list(data.items())[:tot_count])
+    else:
+        data=dict(list(data.items())[start_idx:end_index])
+
+    data=dict(sorted(data.items(),key=lambda x: x[1]['name'], reverse=False))
+    print(data)
+
+    page_count = len(data)
+    print(tot_count,page_count)
+
+    return render_template("view_restaurantlist.html", datas=data.items(), total=tot_count, limit=limit, page=page,
+                          page_count=math.ceil(tot_count/4), category=category)
 
 @application.route("/map")
 def map():
@@ -110,11 +133,14 @@ def view_mainmenulist(name):
     limit=4
     start_idx=limit*(page-1)
     end_index=limit*page
-    data=dict(list(data)[start_idx:end_index])
+    data2=(dict(data[start_idx:end_index]))
     
+    print("##data:", data)
     
-    return render_template("view_mainmenulist.html",  datas=data, 
+    return render_template("view_mainmenulist.html",  datas=data, datas2=data2,
                            total=int(tot_count), limit=limit, page=page, page_count=int((tot_count/4)+1))
+
+
 
 @application.route("/view_reviewlist/<name>/")
 def view_reviewlist(name):
