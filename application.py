@@ -135,9 +135,14 @@ def view_mainmenulist(name):
     end_index=limit*page
     data2=(dict(data[start_idx:end_index]))
     
+    # new_dict={}
+    #     for k,v in enumerate(target_value):
+    #         new_dict[k]=v
+
+    
     print("##data:", data)
     
-    return render_template("view_mainmenulist.html",  datas=data, datas2=data2,
+    return render_template("view_mainmenulist.html",  datas=data, datas2=data2.items(),
                            total=int(tot_count), limit=limit, page=page, page_count=int((tot_count/4)+1))
 
 
@@ -160,9 +165,10 @@ def result_mainmenu():
     else:
         return "Mainmenu name is already exist!"
     
-@application.route("/write_review")
+@application.route("/write_review", methods=['GET','POST'])
 def write_review():
-    return render_template("write_review.html")
+    data=request.form
+    return render_template("write_review.html", data=data)
 
 @application.route("/result_review", methods=['GET','POST'])
 def result_review():
@@ -199,9 +205,11 @@ def register_mainmenu():
 @application.route("/view_one_restaurant/<name>/")
 def view_restaurant_detail(name):
     data = DB.get_restaurant_byname(str(name))
-    avg_rate=DB.get_avgrate_byname(str(name))
-    print("####data:",data)
-    return render_template("view_one_restaurant.html",data=data, avg_rate=avg_rate)
+    if DB.get_avgrate_byname(str(name)):
+        avg_rate=DB.get_avgrate_byname(str(name))
+        return render_template("view_one_restaurant.html",data=data, avg_rate=avg_rate)
+    else:
+        return render_template("view_one_restaurant.html",data=data, avg_rate=0)
 
 # @application.route("/bookmark/<id_>/<name>/", methods=['GET','POST'])
 # def bookmark(id_, name):                        

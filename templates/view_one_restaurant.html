@@ -54,7 +54,7 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_mainmenulist/{{data.name}}/" color="black">
-                        <button type="button" style="top:250px; left:53%">
+                        <button type="button" style="top:250px; left:53%; height:7%; width:10%;">
                             메뉴 조회하기
                         </button>
                     </a>
@@ -64,7 +64,7 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_reviewlist/{{data.name}}/" color="black">
-                        <button type="button" style="top:250px; left:68%">
+                        <button type="button" style="top:250px; left:65%; height:7%; width:10%;">
                             리뷰 조회하기
                         </button>
                     </a>
@@ -74,8 +74,18 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/write_review" color="black">
-                        <button type="button" style="top:250px; left:83%">
+                        <button type="submit" style="top:250px; left:77%; height:7%; width:10%;">
                             리뷰 작성하기
+                        </button>
+                    </a>
+                </div>
+            </form>
+            <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+                                    <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
+                <div>
+                    <a href="/register_mainmenu" color="black">
+                        <button type="submit" style="top:250px; left:89%; height:7%; width:10%;">
+                            메뉴 작성하기
                         </button>
                     </a>
                 </div>

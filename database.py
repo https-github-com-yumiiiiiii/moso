@@ -103,7 +103,10 @@ class DBhandler:
             value=res.val()
             if value['restaurant_name']==name:
                 rates.append(float(value['star']))
-        return sum(rates)/len(rates)
+        if len(rates)==0:
+            return False
+        else: 
+            return sum(rates)/len(rates)
     
     #리뷰 리스트 가져오기(레스토랑 이름별로)
     def get_review_byname(self, name):
