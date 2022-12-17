@@ -67,3 +67,22 @@ var b1 = document.getElementsByClassName("b1");
         }
       }
 
+      function setThumbnail(event) {
+        var reader = new FileReader();
+    
+        reader.onload = function(event) {
+          var img = document.createElement("img");
+          img.setAttribute("src", event.target.result);
+          document.querySelector("div#image_container").appendChild(img);
+          
+          img.style.width = "170px"; 
+          img.style.height = "170px";
+          img.style.position="absolute";
+          img.style.top = "30%"; 
+          img.style.left = "1.5%"; 
+          img.style.borderRadius="100%";
+        };
+    
+        reader.readAsDataURL(event.target.files[0]);
+      }
+

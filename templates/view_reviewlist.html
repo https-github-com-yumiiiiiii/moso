@@ -25,24 +25,20 @@
             {% for data in datas %} 
             <div class="card2">
                 <div class="rectangle" > 
-                    <div class="box" style="background: #BDBDBD;">
-                        <img class="profile" src="/image/Ellipse 1.JPG">
-                        
+                    <div class="box">
+                        <img src="/static/image/{{data.image_path}}" alt="reviewPhoto" 
+                        style="width:150px; height:150px; border-radius:100%;"> 
                     </div>
                     <h5 style="position:absolute;
                     top:75%;
-                    left:8%;
+                    left:9.7%;
                     text-align: center;">User</h5>
                     <div class="v-line"></div>  
                     <h1 class="review">{{data.year}}-{{data.month}}-{{data.date}}</h1>
-                    <div class="like" >
-                        <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" style="position:absolute;top:3.2%; left: 33%;">
+                    <div class="like">
+                        <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" style="position:absolute;top:3%; left: 39%;">
                         <h2 >{{data.star}} </h2></div>
                         <h4>{{data.write}}</h4>
-
-
-                    
-
                 </div>
             </div>
                
@@ -60,4 +56,5 @@
         {% endblock body %}
     </body>
 </html>
+
 

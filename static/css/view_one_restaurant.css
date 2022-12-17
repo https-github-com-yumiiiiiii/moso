@@ -296,6 +296,36 @@
 }
 
 
+#myform2 fieldset{
+  display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+  direction: rtl; /* 이모지 순서 반전 */
+  border: 0; /* 필드셋 테두리 제거 */
+}
+#myform2 fieldset legend{
+  text-align: left;
+}
+#myform2 input[type=checkbox]{
+  display: none; /* 라디오박스 감춤 */
+}
+#myform2 label{
+  font-size: 2em; /* 이모지 크기 */
+  color: transparent; /* 기존 이모지 컬러 제거 */
+  text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+  border-color:#564C44;
+}
+#myform2 label:hover{
+  text-shadow: 0 0 0 #f0f0f0; /* 마우스 호버 */
+}
+#myform2 label:hover ~ label{
+  text-shadow: 0 0 0 #f0f0f0; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform2 input[type=checkbox]:checked ~ label{
+  text-shadow: 0 0 0 #564C44;; /* 마우스 클릭 체크 */
+}
+
+
+
+
 
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {

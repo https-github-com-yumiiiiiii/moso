@@ -37,17 +37,23 @@
     <div class ="card2">
         <div class="rectangle" >
             
-            <h1><div style="position:absolute;left:30px; top:8%;">
+            <h1><div style="position:absolute;left:30px; top:4%;">
                 1. 메뉴명 등록</div></h1>
     
-            <div style="position:absolute; left:30px; top:13%;">
+            <div style="position:absolute; left:30px; top:9%;">
                 <input type="text" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
     
-            <h1><div style="position:absolute; left:30px; top:29%;">
+            <h1><div style="position:absolute; left:30px; top:19%;">
                 2.가격 등록</div></h1>
     
-            <div style="position:absolute; left:30px; top:34%;">
+            <div style="position:absolute; left:30px; top:24%;">
                 <input type="text" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
+            
+            <h1><div style="position:absolute; left:30px; top:34%;">
+                3.메뉴 소개</div></h1>
+    
+            <div style="position:absolute; left:30px; top:39%;">
+                <input type="text" class="input-field" name="menu_ex" placeholder="메뉴에 대한 짧은 소개 입력" required></div>
     
 
             <h1><div style="position:absolute; left:30px; top:50%;">
@@ -76,19 +82,19 @@
     <h1><div style="position:absolute;margin-left:580px; top:7%;">
         등록된 메인 메뉴</div></h1>
     <div class="rectangle3" style="top:15%;">
-        <h1>예시<br>예시</h1>
+        <h1>예시 : 메뉴 이름<br>예시 : 메뉴 가격</h1>
         <img src="{{url_for('static', filename='image/image 8.png')}}" style="position:absolute; left:50%;top:7%;">
-        <h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
+        <!--<h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
         <h3 style="position:absolute; text-align:center;width: 70px;left:13%;top:75%; color:white; font-size:18px">/</h3>
-        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>
+        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>-->
 
     </div>
     <div class="rectangle3" style="top:53%;">
         <h1>예시 : 메뉴 이름<br>예시 : 메뉴 가격</h1>
         <img src="{{url_for('static', filename='image/image 8.png')}}" style="position:absolute; left:50%;top:7%;">
-        <h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
+        <!--<h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
         <h3 style="position:absolute; text-align:center;width: 70px;left:13%;top:75%; color:white; font-size:18px">/</h3>
-        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>
+        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>-->
 
     </div>
           <form action="/view_mainmenu" enctype="multipart/form-data" method="POST" >

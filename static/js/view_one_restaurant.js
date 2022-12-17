@@ -165,3 +165,9 @@ function openNav() {
             changeText.innerHTML--;
           };
         });
+
+
+    function jjim(){
+        document.getElementById('btn').style.backgroundColor='#564C44'
+        document.getElementById('btn').style.color='white';
+    }

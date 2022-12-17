@@ -53,7 +53,7 @@
 <body>
     {% block body %}
 <div class="realbody">
-  <div class = "imagebox" style="height:66%; width:80%;">
+  <div class = "imagebox" style="height:66%; width:80%; margin-top:-3px;">
     <img src="{{url_for('static', filename='image/school.png')}}" height="auto" width="100%" alt="mainphoto"
     style= "min-width:1074px;">
   </div>
@@ -67,7 +67,7 @@
   </div>
 
   <section>
-    <div class = "card">
+    <div class = "card" style="margin-top:3px">
         <h2>추천하고 싶은 이대 주변 맛집을 직접 소개해 보세요.</h2>
         <button type="button" onclick="location.href='/register_restaurant'">
             맛집 등록하기 </button>

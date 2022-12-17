@@ -3,89 +3,73 @@
     <head>
       {% block head %}
         <div style="width :1250px;"></div>
-        <link rel="stylesheet" type="text/css"href="{{ url_for('static', filename = 'css/view_review.css')}}">
-        <script src="{{ url_for('static', filename = 'js/view_review.js')}}"></script>
-        {% endblock head %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/write_review.css')}}">
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script  src="{{ url_for('static', filename='js/view_review.js') }}"></script>
+    {% endblock head %}
     </head>
 
-
 <body>
-{% block body %}
-<div class="card3">
-  <div class="ha">
-      <div style="position:absolute;margin-left:1180px; top:32px;">
-          <img src="{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div>
-  <h2>{{ data.restaurant_name }}</h2>
-  <h1>-리뷰-</h1>
-  </div>
-  <!-- <button onclick="location.href='/write_review'"><img src="{{url_for('static', filename='image/write_review.png')}}" style="position:absolute;margin-left:1000px; top:25px;"></button> -->
+  {% block body %}
+    <div class="card3">
+        <div class="ha">
+            <div style="position:absolute;margin-left:1180px; top:32px;">
+                <img src="{{url_for('static', filename='image/To-left.png')}}" onclick="history.back();" width="40px" height="40px"></div> 
+            <h2>{{ data.restaurant_name }}</h2>
+            <h1>
+                -작성한 리뷰-
+            </h1>
+        </div>
+    </div>
+    
+    <div class="card2">
+            <table border="1" bordercolor="black"cellspacing="0.5" width="100%;">
+                <tr style="text-align:center;" >
+                  <td  rowspan="4" width="234px;"><img src="{{url_for('static', filename='image/'+image_file)}}" 
+                    style="width:170px; height:170px; border-radius:100%"><br><br>user2</td>
+                </div>
+                <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);"/>
+        <div id="image_container"></div>
+                    <td colspan="4" width="910px;"height="210px">
+                      <div class="date">
+                        <h1 style="top: 3px;">1.방문 날짜 <br><br><a>{{data.year}}-{{data.month}}-{{data.day}}</a></h1></div>
+                        <div class="input_field" style="position:absolute; left:4%;top:10%;">
+                            <!-- <input type="text" class="restaurant_name" name="restaurant_name"> -->
+                        </div>
+                        
 
-</div>
-<div class="card2">
-  <table border ="1"  bordercolor="white" cellspacing="0.5">
-      <!-- <tr style="text-align:center;" >
-        <td rowspan="1" width="15%;" height="150px;"><img src="{{url_for('static', filename='image/Ellipse 1.png')}}"><br>user1</td>
-
-        <td width="943.5px;">
-          
-        </td>
-      </tr>
-
-      <tr style="text-align:center;" >
-        <td ><img src="{{url_for('static', filename='image/Ellipse 2.png')}}"><br>user2</td>
-
-        <td width="100%;">
-         
-         </td>
-      </tr>
-      <tr style="text-align:center;" >
-          <td><img src="{{url_for('static', filename='image/Ellipse 3.png')}}"><br>user3</td>
-        <td width="943.5px;">
-          <h1 class="review" style="top:51%;">2022-10-19</h1>
-          <div class="like" style=" position: absolute; left:25%;top:50.5%;">
-              <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
-              <h2>4.6</h2></div>
-             
-        </td>
-      </tr> -->
-      <tr style="text-align:center;">
-          <td><img src="{{url_for('static', filename='image/Ellipse 4.png')}}"><br>당신의 리뷰</td>
-        <td width="943.5px;">
-          <h1 class="review" style="top:15%;">{{data.year}}-{{data.month}}-{{data.day}}</h1>
-          <div class="like" style=" position: absolute; left:25%;top:14%;">
-              <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" >
-              <h2 style="left:120%; top:0.1%;">{{data.star}}</h2></div>
-              <h4 style="top:20%;">{{data.write}}</h4>
-        </td>
-      </tr>
-      <tr style="text-align:center;" >
-          <td><img src="{{url_for('static', filename='image/Ellipse 3.png')}}"><br></td>
-        <td width="943.5px;">
-   
-            <h4 style="top:38%;">다른사람의 리뷰가 궁금하다면?</h4>
-             
-        </td>
-      </tr>
-      <tr style="text-align:center;" >
-          <td><img src="{{url_for('static', filename='image/Ellipse 2.png')}}"><br></td>
-        <td width="943.5px;">
-   
-            <h4 style="top:54%;">
-                <form action="/view_mainmenu" enctype="multipart/form-data" method="POST" >
-            <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
-                        <a href="/view_one_restaurant/{{ data.restaurant_name }}/" style="top:230px; left:65%; height:20%; width:30%;">
-                            리뷰 조회하러가기
-                    </a></form></h4>
-             
-        </td>
-      </tr>
-    </table>
-    <!-- <div class ="ha">
-    <a class="number" style="margin-left:1230">
-      <p>1<br><br>2<br><br>3<br><br>4<br><br>5</p> </a>
-        </div> -->
+                        <h1 style="top:80px;">2. 평점 등록</h1>
+                        <div class="img" style="top:150px" ><img src="{{url_for('static', filename='image/Thumbs-up.png')}}"style="top:3px;width:33px; height:33px;">
+                          <a style="position: absolute; font-size:20; top:5.5px; margin-left:6px;"> {{data.star}} </a></div>
   
-  </div>
-{% endblock body%}
+                        </div>    
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td width="910px;" height="300px;">
+                        <h1 style="top: 200px;">3. 리뷰</h1>
+                        <h4 style="position:absolute; top: 263px; left:25%;">{{data.write}}</h4>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                      <form method="post" action="/view_reviewlist" style="left: 900px; width:150px; height:100px"></form>
+                        <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
+                        <button class="write_finish" type="button" onclick="location.href='/view_reviewlist/{{data.restaurant_name}}/'"
+                                style="position:absolute; width:170; height:40; top:90%;left:900px;">리뷰 조회하러 가기</button>
+                        </form>
+                    <!-- <a href="result_review.html"><img src="{{url_for('static', filename='image/write_complete.png')}}" style="position:absolute; top:90%;left:950px;"></a> -->
+                </td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+
+ 
+    {% endblock body %}
   </body>
 </html>

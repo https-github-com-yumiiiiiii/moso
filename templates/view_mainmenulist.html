@@ -22,43 +22,24 @@
               {% endfor %}
     </div>
 </div>
-{% for data in datas %} 
-<div style="margin-left: 300px">
-           
-       
-        <h1>메뉴이름: {{data.menu_name}}</h1>
-    <h2>메뉴가격: {{data.menu_price}}</h2>
-    <img src="/static/image/{{data.image_path}}" 
-            alt="mainmenu_photo" width="40px" height="40px">
-   
-    </div>
+{% for data in datas %}
+<div class="card2">
+    <div class="rectangle">
+        <div class="menuimage" >
+            <img src="/static/image/{{data.image_path}}" 
+            alt="mainmenu_photo" width="380px" height="220px" style="margin-top:10px; margin-bottom:10px; margin-left:35px;">
+        </div>
+        <div class="menubox">
+                <h1>--- {{data.menu_name}} ---</h1>
+                <h2>{{data.menu_price}}</h2>
+        </div>
+        <div class="explanation">
+            <h2>  {{data.menu_ex}}</h2>
+        </div>
+    </div>   
+</div>
+    
 {% endfor %} 
-    <a>----------------------------------------------------------------------------------임시---------------------------------------</a>
- {% for data in datas2 %}    
-    <div style="margin-left: 300px">
-           
-       
-        <h1>메뉴이름: {{data.menu_name}}</h1>
-    <h2>메뉴가격: {{data.menu_price}}</h2>
-    <img src="/static/image/{{data.image_path}}" 
-            alt="mainmenu_photo" width="40px" height="40px">
-    
-        <div class="page-wrap" >
-                <div class="page-nation" >
-                    <ul style= "margin-left:1180px; position:absolute; top:30%;">
-                        <li>
-                            {% for i in range(page_count) %}<br><br>
-                              <a href="{{url_for('view_mainmenulist/{{data.restaurant_name}}', page=i)}}" color="black">{{i}}</a>
-                            {% endfor %}
-                            
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div><br><br><p></p>
-    {% endfor %}
-    
-    
     {% else %}
         <p>
             등록된 메뉴가 없습니다.

@@ -60,19 +60,19 @@
                     <h1><div style="position:absolute; left:3%; top:85%;">
                         5. 주차/예약 가능 여부 </div></h1>
 
-                    <div style="position:absolute; text-align:center; left:3%; top:90%; color:white">
-                        <h3>Parking is {% if data['park'] == "available" %}
-                        available
+                    <div style="position:absolute; left:3%; top:90%; color:white">
+                        <h3>주차 {% if data['park'] == "available" %}
+                        가능
                         {% endif %}
                         {% if data['park'] == NULL %}
-                        NOT available
+                        불가능
                         {% endif %} &nbsp;&nbsp;
-                        Reservation is
+                        예약
                         {% if data['reserve'] == "available" %}
-                        available
+                        가능
                         {% endif %}
                         {% if data['reserve'] == NULL %}
-                        NOT available
+                        불가능
                         {% endif %}</h3></div>
 
                     
@@ -84,28 +84,28 @@
 
 
 
-                    <h1><div style="position:absolute; left:67%; top:18%; font-size:20px;">
-                         OPENDAYS: {{data.monToSun}}<br><br>
-                         OPENTIME: {{data.open}} ~ {{data.close}}</div></h1>
+                    <div style="position:absolute; left:52%; top:13%; font-size:18px;">
+                         <h3>영업일: {{data.monToSun}}<br><br>
+                         영업시간: {{data.open}} ~ {{data.close}}</div></h3>
 
 
 
-                    <h1><div style="position:absolute; left:51%; top:44%;">
+                    <h1><div style="position:absolute; left:51%; top:32%;">
                         7. 업체사진 </div></h1>
-                        <div style="position:absolute; left:55%; top:50%;">
+                        <div style="position:absolute; left:54%; top:38%;">
                     
-                                <img src="{{url_for('static', filename=image_path)}}" alt="restaurantPhoto" width="80%">
+                                <img src="{{url_for('static', filename=image_path)}}" alt="restaurantPhoto" width="450px" height="320px" >
 
 
 
                                 <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
                                     <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
                                     <div>
-                                        <h1 style="position:absolute;left:2%;text-align:center;">
-                                            <br> It's time to register <br>the representative menu in {{data.name}}
+                                        <h1 style="position:absolute;left:1%;text-align:center;">
+                                            <br> '{{data.name}}'의 메뉴를 등록할 수 있습니다
                                         </h1>
                                         <button type="submit" style="font-size:17px; width:170px;
-                                            height:35px ;position:absolute; top:120%;left: 60%;">Register Menu
+                                            height:35px ;position:absolute; top:120.5%;left: 70%;">Register Menu
                                     </div>
                                 </form>
 

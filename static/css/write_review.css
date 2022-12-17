@@ -26,11 +26,11 @@ nav{
 
 
 nav h2{
-  width: 80px;
-  height: 30%;
   position:absolute;
-  left: 0;
-  top: 290;
+  width: 80px;
+  height: 5%;
+  left: 0%;
+  top: 430px;
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -149,7 +149,7 @@ top:-2%;
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 21px;
+font-size: 20px;
 line-height: 25px;
 display: flex;
 align-items: center;
@@ -157,10 +157,28 @@ align-items: center;
 color: #000000;
 
 }
-
+td h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3d3b39;
+}
+.date a{
+  top:4%;
+  margin-left:-89px;
+  margin-top:48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3d3b39;
+}
 .write_finish{
   background-color:#CEC4BC;
-  font-size:18px;
+  font-size:16px;
   border-color: black;
   border-width: 2;
   color: black;

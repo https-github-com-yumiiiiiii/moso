@@ -26,10 +26,11 @@ nav{
 
 
 nav h2{
+  position:absolute;
   width: 80px;
-  height: 95%;
-  left: 50%;
-  top: 633.11px;
+  height: 5%;
+  left: 0%;
+  top: 430px;
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -112,7 +113,7 @@ nav h2{
 
   position: absolute;
   margin:0;
-  left: 20%;
+  left: 24%;
   top: 3%;
   
   font-family: 'Inter';
@@ -139,7 +140,7 @@ nav h2{
   border-left: thin solid #000000;
   top:0%;
   height:100%;
-  left: 18.018%;
+  left: 22%;
   position: absolute;
  }
 
@@ -147,12 +148,12 @@ nav h2{
   .like h2{
 
           position:absolute;
-          left:36%;
+          left:42%;
           top:2%;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 500;
-          font-size: 20px;
+          font-size: 19px;
           line-height: 1px;
 
           align-items: center;
@@ -162,29 +163,28 @@ nav h2{
   }
 
    h4{
-    position: absolute;
-   left:20%;
-   top:10%;
+   position: absolute;
+   left:24%;
+   top:13%;
    width: 870px;
    height: 150px;
-    font-family: 'Inter';
+    font-family: '굴림체';
     font-style: normal;
+    font-size: 16px;
     /*font-weight: 400;*/
-    font-size: 15px;
     /*line-height: 19px;*
     display: flex;
     align-items: flex-end;*/
    
-    color: #000000;
+    color: #211d1a;
 
   }
   .box {
     position: absolute;
-   top:10%;
-   left:2.3%;
-    width: 150px;
-    height: 150px; 
-    border-radius: 70%;
+    top:9.2%;
+    left:4.5%;
+    width: 170px;
+    height: 170px; 
     overflow: hidden;
 }
 .profile {
