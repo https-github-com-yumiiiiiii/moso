@@ -29,19 +29,20 @@ nav{
 
 
 nav h2{
+  position:absolute;
   width: 80px;
-  height: 95%;
-  left: 50%;
-  top: 650.11px;
+  height: 5%;
+  left: 0%;
+  top: 430px;
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 100;
   font-size: 25px;
   line-height: 48px;
-  display:flex;
+  display: flex;
   align-items: center;
-  text-align:center;
+  text-align: center;
 
   color: #000000;
 
@@ -156,7 +157,7 @@ label {
 }
 
 /* 못생긴 기존 input 숨기기 */
-#filee {
+#file {
   visibility: hidden;
   position:absolute;
   top:0%;

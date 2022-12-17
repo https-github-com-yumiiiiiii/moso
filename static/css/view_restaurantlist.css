@@ -20,16 +20,18 @@ a{
     background-color: #FFFFFF;
     border-right:1px solid #FFFFFF;
 
-    position:fixed;
-    height:100%
+    position:absolute;
+    top:0%;
+    height: 1200px;
   }
 
 
   nav h2{
+    position:absolute;
     width: 80px;
-    height: 95%;
-    left: 50%;
-    top: 633.11px;
+    height: 5%;
+    left: 0%;
+    top: 423.5px;
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
@@ -44,6 +46,8 @@ a{
 
     transform: rotate(-90deg);
   }
+  
+  
 
   .card {
     background-color: #CEC4BC;

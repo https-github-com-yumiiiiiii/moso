@@ -27,10 +27,11 @@ nav{
 
 
 nav h2{
+  position:absolute;
   width: 80px;
-  height: 95%;
-  left: 50%;
-  top: 633.11px;
+  height: 5%;
+  left: 0%;
+  top: 430px;
 
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -117,13 +118,13 @@ nav h2{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 19px;
 
     color: #FFFFFF;
   }
 
   .input-field {
-    font-size:18px;
+    font-size:16px;
     width: 500px;
     padding: 10px 0;
     margin: 5px 0;
@@ -135,7 +136,7 @@ nav h2{
 }
 
 .input-field2 {
-  font-size:18px;
+  font-size:16px;
   width: 160px;
   padding: 10px 0;
   margin: 5px 0;
@@ -187,7 +188,7 @@ button{
    }
 
    /* 못생긴 기존 input 숨기기 */
-#image {
+#file {
   visibility: hidden;
   position:absolute;
   top:0%;

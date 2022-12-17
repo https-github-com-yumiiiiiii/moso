@@ -37,14 +37,16 @@
         <div><button1 type="button" style="position:absolute; left:54.5%; top:15px;">
             {{data.category}}</button1></div>
         <div class ="infor" style="position:absolute; left:55%; top:45px">
-          <div id="name" style="font-size:23px; float:left;">{{data.name}}</div><a>  </a>별점:{{ "%.1f"|format(avg_rate) }}<br>
+          <div id="name" style="font-size:23px; float:left;"><strong>{{data.name}}</strong></div>
+          <div><img src="/static/image/Thumbs-up.png" width=30px; height=30px; style="position:relative; margin-left:10px; top:0%">
+            <a style="position:absolute; font-size: 18px; font-weight: 800px;">⠀⠀<em>{{ "%.1f"|format(avg_rate) }}</em></a><br></div>
           <form name="myform" id="myform" method="post" action="./save" style="position:absolute; top:-10%; left:250px;">
             <fieldset>
                 <input type="checkbox" name="rating" value="heart" id="heart" ><label for="heart">🤎</label><div id="heart-count"style="position:absolute; top:30%; left:60px;">(<span id="heartcount">0</span>)</div>
             </fieldset>
         </form>  
 
-            <br><div id="address" style="clear:both;">주소: {{data.location}}</div><br>
+            <p style="text-align: center; line-height: 0;"></p><div id="address" style="clear:both;">주소: {{data.location}}</div><br>
             <div id="tel">번호: {{data.phone}}</div><br>
             <div id="time">영업 시간: {{data.monToSun}} : {{data.open}} ~ {{data.close}}</div><br>
             <div id="park">주차 가능: {{data.park}} / 예약 가능: {{data.reserve}} </div>
@@ -54,7 +56,7 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_mainmenulist/{{data.name}}/" color="black">
-                        <button type="button" style="top:250px; left:53%; height:7%; width:10%;">
+                        <button type="button" style="top:255px; left:51%; height:42px; width:11.5%;">
                             메뉴 조회하기
                         </button>
                     </a>
@@ -64,7 +66,7 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/view_reviewlist/{{data.name}}/" color="black">
-                        <button type="button" style="top:250px; left:65%; height:7%; width:10%;">
+                        <button type="button" style="top:255px; left:75%; height: 42px; width:11.5%;">
                             리뷰 조회하기
                         </button>
                     </a>
@@ -74,7 +76,7 @@
                 <input type="hidden" name="restaurant_name" value="{{data.name}}">
                 <div>
                     <a href="/write_review" color="black">
-                        <button type="submit" style="top:250px; left:77%; height:7%; width:10%;">
+                        <button type="submit" style="top:255px; left:87%; height: 42px; width:11.5%;">
                             리뷰 작성하기
                         </button>
                     </a>
@@ -84,8 +86,8 @@
                                     <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
                 <div>
                     <a href="/register_mainmenu" color="black">
-                        <button type="submit" style="top:250px; left:89%; height:7%; width:10%;">
-                            메뉴 작성하기
+                        <button type="submit" style="top:255px; left:63%; height: 42px; width:11.5%;">
+                            메뉴 등록하기
                         </button>
                     </a>
                 </div>
@@ -106,12 +108,13 @@
 
         <div class="rectangle1" style="border-top-color: rgba(0, 0, 0, 0);"></div>
 
+        <form method="post" action="">
         <div class = "star" style="position:absolute; right:-0.1%; top:-0.223%; ">
-        <button3 class="button1" id="btn" type="button"
-        onclick="document.getElementById('btn').style.backgroundColor='#564C44'
-        document.getElementById('btn').style.color='white';" style="font-size:18px; width:170px;
+        <button3 class="button1" id="btn" type="submit"
+        onclick="jjim()" style="font-size:18px; width:170px;
         height:40px "><a>즐겨찾기</a></button3>
         </div>
+        </form>
         </div>
 
     </div>

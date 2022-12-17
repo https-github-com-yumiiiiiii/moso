@@ -37,54 +37,35 @@
     <div class ="card2">
         <div class="rectangle" >
             
-        <h1><div style="position:absolute;left:30px; top:8%;">
-            1. 메뉴명 등록</div></h1>
-
-        <div style="position:absolute; left:30px; top:15%;">
-            <input type="text" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
-
-        <h1><div style="position:absolute; left:30px; top:30%;">
-            2.가격 등록</div></h1>
-
-        <div style="position:absolute; left:30px; top:37%;">
-            <input type="text" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
-
-
+            <h1><div style="position:absolute;left:30px; top:8%;">
+                1. 메뉴명 등록</div></h1>
+    
+            <div style="position:absolute; left:30px; top:13%;">
+                <input type="text" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
+    
+            <h1><div style="position:absolute; left:30px; top:29%;">
+                2.가격 등록</div></h1>
+    
+            <div style="position:absolute; left:30px; top:34%;">
+                <input type="text" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
+    
 
             <h1><div style="position:absolute; left:30px; top:50%;">
                 3. 음식사진 등록</div></h1>
-                <div class="rectangle2" style="top:63%;"></div>
+                <div class="rectangle2" style="top:58.5%;"></div>
             <div style="position:absolute; left: 40px; top:59%; ">
                     <div class="button">
-                        <label for="image">
+                        <label for="file">
                             <p style="position:absolute; text-align:center;width: 100px;left:370px; border-bottom: 1px solid white; color:white; font-size:18px">파일 열기</p>
                         </label>
                     </div>
-                    <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);"/>
-            <div id="image_container"></div>
+                    <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);" required/>
+                <div id="image_container"></div>
 
             </div>
 
 
 
-
-
-        <script>
-            function setThumbnail(event) {
-                var reader = new FileReader();
-
-                reader.onload = function(event) {
-                var img = document.createElement("img");
-                img.setAttribute("src", event.target.result);
-                document.querySelector("div#image_container").appendChild(img);
-
-                img.style.width = "280px";
-                img.style.height = "174px";
-                };
-
-                reader.readAsDataURL(event.target.files[0]);
-            }
-            </script>
     <form action="/view_reg_mainmenu" enctype="multipart/form-data" method="POST" >
             <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
     <div class="v-line"></div>
@@ -113,8 +94,8 @@
           <form action="/view_mainmenu" enctype="multipart/form-data" method="POST" >
             <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
         <h1><div style="position:absolute; left:82%; top:89%;">
-            <a href="/view_one_restaurant/{{ data.restaurant_name }}/" style="font-size:18px; width:179px; height: 48px; color:white;">등록 완료하기</a>
-            </div></h1>
+            <button type=button style="font-size:18px; width:170px; height: 48px;"><a href="/view_one_restaurant/{{ data.restaurant_name }}/" style="font-size:18px; width:179px; height: 48px; color:white;">등록 완료하기</a>
+            </div></h1></button>
 
 
       {% endblock body %}
