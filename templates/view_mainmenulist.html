@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/view_mainmenu.css')}}">
+        <script src="{{ url_for('static', filename = 'js/view_mainmenu.js')}}"></script>
+        {% endblock head %}
+    </head>
+
+<body>
+  {% block body %}
+    {% if total>0 %}
+  <div class="card3">
+    <div class="ha">
+       
+        <div style="position:absolute; margin-left:1180; top:32px;">
+            <img src="{{url_for('static', filename='image/vector5.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+                {% for data in datas %}
+                    <h2>{{data.restaurant_name}}</h2>
+                        <h1>{{total}}개의 메뉴</h1>
+              {% endfor %}
+    </div>
+</div>
+<!-- {% for data in datas %} 
+<div style="margin-left: 300px">
+           
+       
+        <h1>메뉴이름: {{data.menu_name}}</h1>
+    <h2>메뉴가격: {{data.menu_price}}</h2>
+    <img src="/static/image/{{data.image_path}}" 
+            alt="mainmenu_photo" width="40px" height="40px">
+   
+    </div>
+{% endfor %}  -->
+    <a>----------------------------------------------------------------------------------임시---------------------------------------</a>
+ {% for data in datas2 %}    
+    <div style="margin-left: 300px">
+           
+       
+        <h1>메뉴이름: {{data[1].menu_name}}</h1>
+    <h2>메뉴가격: {{data[1].menu_price}}</h2>
+    <img src="/static/image/{{data.image_path}}" 
+            alt="mainmenu_photo" width="40px" height="40px">
+    {% endfor %}
+        <div class="page-wrap" >
+                <div class="page-nation" >
+                    <ul>
+                        <li>
+                            {% for i in range(page_count) %}<br><br>
+                              <a href="{{url_for('view_mainmenulist', name=name, page=i)}}" color="black">{{i}}</a>
+                            {% endfor %}
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br><p></p>
+    
+    
+    
+    {% else %}
+        <p>
+            등록된 메뉴가 없습니다.
+            </p>
+    {% endif %}
+            
+
+{% endblock body %}
+</body>
+</html>
