@@ -1,0 +1,103 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/view_restaurantlist.css')}}">
+        <script src="{{ url_for('static', filename = 'js/view_restaurantlist.js')}}"></script>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        {% endblock head %}
+      </head>
+
+<body>
+  {% block body %}
+
+  <script>
+    $(document).ready(function(){
+        alert("{{category}}");
+        $('#category option:contains("{{category}}")').prop("selected",true);
+    });
+</script>
+
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 900px;
+        height: 63px;
+        margin-left: 110px;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">
+        {% if total > 0 %}
+            맛집 리스트 : 현재까지 {{total}}개 등록됨
+        </p></h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/vector5.png')}}"onclick="history.back();" width="40px" height="40px"></div>
+        <div class="selectBox" style="margin-left:550px; position:absolute; top:5%">
+            <select class="select" id="category" name="category" onchange="location=this.value">
+                <option value="{{url_for('view_restaurantlist', page=i, category='all')}}">All</option>
+                <option value="{{url_for('view_restaurantlist', page=i, category='한식')}}">한식</option>
+                <option value="{{url_for('view_restaurantlist', page=i, category='중식')}}">중식</option>
+                <option value="{{url_for('view_restaurantlist', page=i, category='일식')}}">일식</option>
+                <option value="{{url_for('view_restaurantlist', page=i, category='양식')}}">양식</option>
+                <option value="{{url_for('view_restaurantlist', page=i, category='카페/디저트')}}">카페/디저트</option>
+            </select>
+        </div>
+    </div>
+
+
+
+    {% for data in datas %} 
+            <div class="card2">
+                <div class="rectangle" > 
+
+                <div class="box" style="background: #BDBDBD; width:400px">
+                        <a href="/view_one_restaurant/{{data[1].name}}/"><img src = "/static/image/{{data[1].image_path}}" width="400px" height="248px" alt = "음식사진">
+                </a></div>
+                    <div class="v-line"></div>  
+                    <div><button1 type="button" style="position:absolute; left:40%; top:11px;">
+                        {{data[1].category}}</button1></div><br>
+                    <div class="h4" >
+                        <div id="name" style="font-size:20px; float:left;">맛집 이름: {{data[1].name}}</div>
+                        <br><br><div id="address" style="clear:both;">주소:{{data[1].location}} </div><br>
+                        <div id="tel">번호:{{data[1].phone}} </div><br>
+                        <div id="time">영업 시간: {{data[1].monToSun}} : {{data[1].open}} ~ {{data[1].close}}</div><br>
+                        <div id="park">주차 가능: {{data[1].park}} / 예약 가능:{{data[1].reserve}} 
+                            <img src="/static/image/Thumbs-up.png" width=30px; height=30px; style="position:absolute; margin-left:50px; top:110%"></div>
+                    </div>
+                </div>
+            
+            <div class="page-wrap" >
+                <div class="page-nation" >
+                    <ul style= "margin-left:1180px; position:absolute; top:30%;">
+                        <li>
+                            {% for i in range(page_count) %}<br><br>
+                              <a href="{{url_for('view_restaurantlist', page=i)}}" color="black">{{i}}</a>
+                            {% endfor %}
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><br><br><p></p>
+               
+    {% endfor %} 
+    
+    {% else %}
+    <p>
+        등록된 맛집이 없습니다.
+    </p>
+    {% endif %}
+    
+
+
+        {% endblock body%}
+</body>
+</html>

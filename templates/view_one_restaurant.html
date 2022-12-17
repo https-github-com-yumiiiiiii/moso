@@ -1,0 +1,120 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/view_one_restaurant.css')}}">
+        {% endblock head %}
+    </head>
+
+<body>
+  {% block body %}
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 238px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:black;">맛집 정보</h2>
+        <div style="position:absolute; margin-left:1180px; top:10px;">
+        <img src= "{{url_for('static', filename='image/vector5.png')}}"onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+
+
+    </div>
+
+    <div class ="card2">
+        <div class="rectangle">
+        <div><button1 type="button" style="position:absolute; left:54.5%; top:15px;">
+            {{data.category}}</button1></div>
+        <div class ="infor" style="position:absolute; left:55%; top:45px">
+          <div id="name" style="font-size:23px; float:left;">{{data.name}}</div><a>  </a>별점:{{ "%.1f"|format(avg_rate) }}<br>
+          <form name="myform" id="myform" method="post" action="./save" style="position:absolute; top:-10%; left:250px;">
+            <fieldset>
+                <input type="checkbox" name="rating" value="heart" id="heart" ><label for="heart">🤎</label><div id="heart-count"style="position:absolute; top:30%; left:60px;">(<span id="heartcount">0</span>)</div>
+            </fieldset>
+        </form>  
+
+            <br><div id="address" style="clear:both;">주소: {{data.location}}</div><br>
+            <div id="tel">번호: {{data.phone}}</div><br>
+            <div id="time">영업 시간: {{data.monToSun}} : {{data.open}} ~ {{data.close}}</div><br>
+            <div id="park">주차 가능: {{data.park}} / 예약 가능: {{data.reserve}} </div>
+            
+        </div>
+        <form method="post" action="/view_mainmenulist">
+                <input type="hidden" name="restaurant_name" value="{{data.name}}">
+                <div>
+                    <a href="/view_mainmenulist/{{data.name}}/" color="black">
+                        <button type="button" style="top:250px; left:53%; height:7%; width:10%;">
+                            메뉴 조회하기
+                        </button>
+                    </a>
+                </div>
+            </form>
+        <form method="post" action="/view_reviewlist">
+                <input type="hidden" name="restaurant_name" value="{{data.name}}">
+                <div>
+                    <a href="/view_reviewlist/{{data.name}}/" color="black">
+                        <button type="button" style="top:250px; left:65%; height:7%; width:10%;">
+                            리뷰 조회하기
+                        </button>
+                    </a>
+                </div>
+            </form>
+        <form method="post" action="/write_review">
+                <input type="hidden" name="restaurant_name" value="{{data.name}}">
+                <div>
+                    <a href="/write_review" color="black">
+                        <button type="submit" style="top:250px; left:77%; height:7%; width:10%;">
+                            리뷰 작성하기
+                        </button>
+                    </a>
+                </div>
+            </form>
+            <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+                                    <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
+                <div>
+                    <a href="/register_mainmenu" color="black">
+                        <button type="submit" style="top:250px; left:89%; height:7%; width:10%;">
+                            메뉴 작성하기
+                        </button>
+                    </a>
+                </div>
+            </form>
+
+        <hr class='hr-dotted'/>
+        <hr class='hr-dotted1'/>
+
+        <img src = "/static/image/{{data.image_path}}" height="250px" width="38%" alt="mainphoto">
+
+        <div id="form-commentInfo">
+        <div id="comment-count">댓글 <span id="count">0</span></div>
+        <input id="comment-input" placeholder="맛집에 대한 댓글을 자유롭게 작성해보세요.">
+        <button id="submit" style="top:39%; left:93%">작성</button>
+        </div>
+        <div id="comments"></div>
+        <script src="{{ url_for('static', filename = 'js/view_one_restaurant.js')}}"></script>
+
+        <div class="rectangle1" style="border-top-color: rgba(0, 0, 0, 0);"></div>
+
+        <div class = "star" style="position:absolute; right:-0.1%; top:-0.223%; ">
+        <button3 class="button1" id="btn" type="button"
+        onclick="document.getElementById('btn').style.backgroundColor='#564C44'
+        document.getElementById('btn').style.color='white';" style="font-size:18px; width:170px;
+        height:40px "><a>즐겨찾기</a></button3>
+        </div>
+        </div>
+
+    </div>
+    {% endblock body%}
+</body>
+</html>

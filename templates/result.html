@@ -1,0 +1,178 @@
+{% extends "index.html" %}
+<html>
+     <head>
+      {% block head %}
+        <div style="width :1250px;"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/result.css')}}">
+        <script src="{{ url_for('static', filename = 'js/register_restaurant.js')}}"></script>
+        {% endblock head %}
+    </head>
+    <body>
+    {% block body %}
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 500px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:white;">맛집 등록 데이터 출력 : {{ data.name }}</h2>
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/vector6.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        </div>
+        
+        <div class ="card2">
+            <div class="rectangle">
+               
+                    <h1><div style="position:absolute; left:3%; top:4%;">
+                        1. 상호명 </div></h1>
+
+                    <div style="position:absolute; left:3%; top:10%;">
+                        <h3>{{ data.name }}</h3></div>
+
+                    <h1><div style="position:absolute; left:3%; top:24%;">
+                        2. 위치 </div></h1>
+
+                    <div style="position:absolute; left:3%; top:30%;">
+                        <h3>{{data.location}}</h3></div>
+
+                    <h1><div style="position:absolute; left:3%; top:44%;">
+                        3. 대표번호 </div></h1>
+
+                    <div style="position:absolute; left:3%; top:50%;">
+                        <h3>{{data.phone}}</h3></div>
+
+                    <h1><div style="position:absolute; left:3%; top:63%;">
+                        4. 음식 카테고리 </div></h1>
+
+
+                    <div style="position:absolute; left:3%; top:70%; color:white">
+                        <h3>{{data.category}}</h3></div>
+
+                    <h1><div style="position:absolute; left:3%; top:85%;">
+                        5. 주차/예약 가능 여부 </div></h1>
+
+                    <div style="position:absolute; text-align:center; left:3%; top:90%; color:white">
+                        <h3>Parking is {% if data['park'] == "available" %}
+                        available
+                        {% endif %}
+                        {% if data['park'] == NULL %}
+                        NOT available
+                        {% endif %} &nbsp;&nbsp;
+                        Reservation is
+                        {% if data['reserve'] == "available" %}
+                        available
+                        {% endif %}
+                        {% if data['reserve'] == NULL %}
+                        NOT available
+                        {% endif %}</h3></div>
+
+                    
+
+
+
+                    <h1><div style="position:absolute; left:51%; top:4%;">
+                        6. 영업시간 </div></h1>
+
+
+
+                    <h1><div style="position:absolute; left:67%; top:18%; font-size:20px;">
+                         OPENDAYS: {{data.monToSun}}<br><br>
+                         OPENTIME: {{data.open}} ~ {{data.close}}</div></h1>
+
+
+
+                    <h1><div style="position:absolute; left:51%; top:44%;">
+                        7. 업체사진 </div></h1>
+                        <div style="position:absolute; left:55%; top:50%;">
+                    
+                                <img src="{{url_for('static', filename=image_path)}}" alt="restaurantPhoto" width="80%">
+
+
+
+                                <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+                                    <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
+                                    <div>
+                                        <h1 style="position:absolute;left:2%;text-align:center;">
+                                            <br> It's time to register <br>the representative menu in {{data.name}}
+                                        </h1>
+                                        <button type="submit" style="font-size:17px; width:170px;
+                                            height:35px ;position:absolute; top:120%;left: 60%;">Register Menu
+                                    </div>
+                                </form>
+
+                        </div>
+            
+        </div>
+
+    </div>
+    {% endblock body %}
+</body>
+
+</html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       <!-- <p>
+        Restaurant name is {{ data.name }}<br>
+        Location is {{data.location}}<br>
+        To contact the restaurant, call {{data.phone}}<br>
+        Food Category: {{data.category}}<br>
+        OPENDAYS: {{data.monToSun}}<br>
+        OPENTIME: {{data.open}} ~ {{data.close}}<br>
+        </p>
+        <p>
+        Parking is
+        {% if data['park'] == "available" %}
+        available
+        {% endif %}
+        {% if data['park'] == NULL %}
+        NOT available
+        {% endif %}
+
+        </p>
+
+        <p>
+        Reservation is
+        {% if data['reserve'] == "available" %}
+        available
+        {% endif %}
+        {% if data['reserve'] == NULL %}
+        NOT available
+        {% endif %}
+
+        </p>
+
+        <img src="{{url_for('static', filename=image_path)}}" alt="restaurantPhoto" width="30%">
+
+        <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+            <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.name }}>
+            <div>
+                <p>
+                    It's time to register the representative menu in {{data.name}}
+                </p>
+                <button type="submit" style="font-size:17px; width:170px;
+                    height:35px ">Register Menu
+            </div>
+        </form>
+
+    </body>-->
+
+
