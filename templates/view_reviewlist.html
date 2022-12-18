@@ -1,0 +1,71 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+            <div style="width :1250px;"></div>
+            <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/view_review.css')}}">
+            <script src="{{ url_for('static', filename = 'js/view_mainmenu.js')}}"></script>
+            {% endblock head %}
+    </head>
+
+    <body>
+        {% block body %}
+                {% if total>0 %}
+            <div class="card3">
+                <div class="ha">
+    
+                    <div style="position:absolute; margin-left:1180; top:32px;">
+                        <img src="{{url_for('static', filename='image/vector5.png')}}" onclick="history.back();" width="40px" height="40px"></div>
+                    {% for data in datas %}
+                        <h2>{{data[1].restaurant_name}}</h2>
+                        <h1>{{total}}개의 리뷰</h1>
+                            {% endfor %}
+                </div>
+            </div>
+            {% for data in datas %} 
+            <div class="card2">
+                <div class="rectangle" > 
+                    <div class="box">
+                        <img src="/static/image/{{data[1].image_path}}" alt="reviewPhoto" 
+                        style="width:150px; height:150px; border-radius:100%;"> 
+                    </div>
+                    <h5 style="position:absolute;
+                    top:75%;
+                    left:9.7%;
+                    text-align: center;">{{ data[1].username }}</h5>
+
+                    <div class="v-line"></div>  
+                    <h1 class="review">{{data[1].year}}-{{data[1].month}}-{{data[1].date}}</h1>
+                    <div class="like">
+                        <img class="likeimg" src="{{url_for('static', filename='image/Thumbs-up.png')}}" style="position:absolute;top:3%; left: 39%;">
+                        <h2 >{{data[1].star}} </h2></div>
+                        <h4>{{data[1].write}}</h4>
+                </div>
+            </div>
+               
+            {% endfor %} 
+                
+                <div class="page-wrap" >
+                <div class="page-nation" >
+                    <ul style= "margin-left:1400px; position:absolute; top:30%;">
+                        <li>
+                            {% for i in range(page_count) %}<br><br>
+                              <a href="{{url_for('view_reviewlist', name=name, page=i)}}" color="black">{{i}}</a>
+                            {% endfor %}
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <br><br><p></p>
+                
+                {% else %}
+                   <h1 style="position:absolute; left:7%;">등록된 리뷰가 없습니다.</h1>
+                {% endif %}
+                        
+
+        {% endblock body %}
+    </body>
+</html>
+
+

@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+  }
+  a{
+      text-decoration: none;
+      text-decoration-line: none;
+    }
+  #menu a{
+    color:#FFFFFF;
+  }
+  body {
+    margin :0;
+    width:100%;
+    height:100%;
+    background-color: #CEC4BC;
+  }
+
+  nav{
+    width:80px;
+    background-color: #FFFFFF;
+    border-right:1px solid #FFFFFF;
+
+    position:fixed;
+    height:100%
+  }
+
+
+  nav h2{
+    position:absolute;
+    width: 80px;
+    height: 5%;
+    left: 0%;
+    top: 430px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    transform: rotate(-90deg);
+  }
+
+  .card {
+    background-color: #CEC4BC;
+    width:1250px;
+    height:92;
+    margin:auto;
+  }
+
+  .card2{
+    background-color: #CEC4BC;
+    width:1250px;
+    height:620;
+    top:92px;
+    margin-top:auto;
+    margin:auto;
+
+  }
+
+  .rectangle {
+    box-sizing: border-box;
+    box-align:center;
+    margin:100 auto;
+    margin-left: 110;
+
+    position: absolute;
+    width: 1110px;
+    height:600px;
+    margin-top:0;
+
+    border: 1px solid #000000;
+  }
+
+  .hr-dotted {
+    position:absolute;
+    border : 0px;
+    border-top: 1.5px dotted black;
+    width:1110;
+    left:0%;
+    top:300px;
+
+  }
+
+  .hr-dotted1 {
+    position:absolute;
+    border : 0px;
+    border-top: 1.5px dotted black;
+    width:28%;
+    left:35%;
+    top:146px;
+
+    transform: rotate(-90deg);
+
+  }
+
+  .rectangle.infor{
+    position: absolute;
+    width: 542px;
+    height: 170.67px;
+    left: 60%;
+    top: 100px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #000000;
+
+  }
+
+  .rectangle button1{
+    position: absolute;
+    width:80px;
+    background-color:#7E6F63;
+    color:rgb(255, 255, 255);
+    border:1.5px solid #7E6F63;
+    border-radius: 30px;
+    align-items: center;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+  }
+
+  .rectangle button{
+    position: absolute;
+    width:15%;
+    top:30%;
+    left:55%;
+    background-color: rgba(255, 255, 255, 0);
+    color:black;
+    border:1.5px solid black;
+    align-items: center;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    color:black;
+    text-align: center;
+  }
+
+  img{
+    position:absolute;
+    left:5%;
+    top: 27px;;
+  }
+
+  .button1{
+    margin: auto;
+    width: 60px;
+    height: 30px;
+    left: 450px;
+    top: 800px;
+    background-color: rgba(255, 255, 255, 0);
+    color:#564C44;
+    border-color:#564C44;
+    border: 1.5px solid ;
+
+
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #form-commentInfo{
+    position:absolute;
+    width: 93.5%;
+    top:320px;
+    left:3%;
+}
+
+#comment-count{
+    margin-bottom: 10px;
+}
+
+#comment-input{
+    width: 93%;
+    height: 3.7em;
+    background-color: #c1bcba00;
+    color:black;
+}
+
+#submit{
+    position:absolute;
+    background-color: rgba(0, 128, 255, 0);
+    width: 7%;
+    height: 3.25em;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+#comments{
+    margin-top: 0px;
+    position:absolute;
+    width: 90%;
+    top:393px;
+    left:4%;
+    height:20px;
+
+}
+
+.eachComment{
+    width :96%;
+    margin: 5px;
+    padding: 0.5em;
+    border-bottom: 1px solid #c1bcba;
+}
+
+.eachComment .name{
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eachComment .inputValue{
+    font-size: 1.0em;
+    font-style: italic;
+}
+
+.eachComment .time{
+    font-size: 0.7em;
+    color: #000000;
+    font-style: oblique;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+.rectangle1{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 93.5%;
+  height:30%;
+  left:3%;
+  top: 400px;
+
+  border: 1px solid #000000;
+}
+
+#myform fieldset{
+  display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+  direction: rtl; /* 이모지 순서 반전 */
+  border: 0; /* 필드셋 테두리 제거 */
+}
+#myform fieldset legend{
+  text-align: left;
+}
+#myform input[type=checkbox]{
+  display: none; /* 라디오박스 감춤 */
+}
+#myform label{
+  font-size: 2em; /* 이모지 크기 */
+  color: transparent; /* 기존 이모지 컬러 제거 */
+  text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+  border-color:#564C44;
+}
+#myform label:hover{
+  text-shadow: 0 0 0 #f0f0f0; /* 마우스 호버 */
+}
+#myform label:hover ~ label{
+  text-shadow: 0 0 0 #f0f0f0; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform input[type=checkbox]:checked ~ label{
+  text-shadow: 0 0 0 #564C44;; /* 마우스 클릭 체크 */
+}
+
+#heart-count{
+  margin-bottom: 10px;
+}
+
+
+#myform2 fieldset{
+  display: inline-block; /* 하위 별점 이미지들이 있는 영역만 자리를 차지함.*/
+  direction: rtl; /* 이모지 순서 반전 */
+  border: 0; /* 필드셋 테두리 제거 */
+}
+#myform2 fieldset legend{
+  text-align:center;
+}
+#myform2 input[type=checkbox]{
+  display: none; /* 라디오박스 감춤 */
+}
+#myform2 label{
+  font-size: 1.0em;/* 이모지 크기 */
+  color: transparent; /* 기존 이모지 컬러 제거 */
+  text-shadow: 0 0 0 #f0f0f0; /* 새 이모지 색상 부여 */
+  border-color:#564C44;
+}
+#myform2 label:hover{
+  text-shadow: 0 0 0 #564C44; /* 마우스 호버 */
+}
+#myform2 label:hover ~ label{
+  text-shadow: 0 0 0 #f0f0f0; /* 마우스 호버 뒤에오는 이모지들 */
+}
+#myform2 input[type=checkbox]:checked ~ label{
+  text-shadow: 0 0 0 #564C44;; /* 마우스 클릭 체크 */
+}
+
+
+
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    section, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    nav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 300px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    top:400px;
+  }
+
+  .sidenav h1{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 43px;
+    top: 150px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #343434;
+  }
+
+  .sidenav hr{
+    position: absolute;
+    width: 160px;
+    height: 0px;
+    left: 40px;
+    top: 230px;
+
+    border : 0px;
+    border-top: 1.5px solid #343434;
+  }
+
+  .sidenav button{
+    position: absolute;
+    width:160px;
+    top:200px;
+    left:40px;
+    background-color: rgba(255, 255, 255, 0);
+    color:#343434;
+    border:1.5px solid #343434;
+    align-items: center;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+    color:black;
+    text-align: center;
+  }
+  nav
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #224932;
+    font-size: 16px;
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 14px;}
+    }
+
+    @media screen and (min-height: 840px) {
+      .rectangle {
+        height:700;
+      }
+
+      .rectangle1{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 93.5%;
+        height:39%;
+        left:3%;
+        top: 400px;
+
+        border: 1px solid #000000;
+      }
+    }
+
+    @media screen and (min-height: 920px) {
+      .rectangle {
+        height:730;
+      }
+
+      .rectangle1{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 93.5%;
+        height:42%;
+        left:3%;
+        top: 400px;
+
+        border: 1px solid #000000;
+      }
+    }
