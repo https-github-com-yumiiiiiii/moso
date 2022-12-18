@@ -1,0 +1,114 @@
+{% extends "index.html" %}
+<html>
+    <head>
+      {% block head %}
+        <div style="width:1250px"></div>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/register_mainmenu.css')}}">
+        <script src="{{ url_for('static', filename = 'js/register_mainmenu.js')}}"></script>
+      {% endblock head %}
+    </head>
+
+    <body>
+        {% block body %}
+        <!-- <form action="/register_mainmenu" enctype="multipart/form-data" method="POST" >
+           <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
+            <button type="submit" onclick="location.href='/register_mainmenu'" style="margin-left:960; top:2px">메뉴 추가하기</button></form> -->
+        <form enctype="multipart/form-data" action="/result_mainmenu" method="POST">
+    <div class="card">
+        <h2 style="position:absolute;
+        width: 1000px;
+        height: 63px;
+        margin-left: 110;
+        top: 3px;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 42px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color:#fff;">{{ data.restaurant_name }}의 메뉴  </h2>
+
+        <div style="position:absolute; margin-left:1180px; top:32px;">
+        <img src= "{{url_for('static', filename='image/To-left (1).png')}}" onclick="history.back();" width="40px" height="40px"></div>
+        
+
+    </div>
+
+    <div class ="card2">
+        <div class="rectangle" >
+            
+            <h1><div style="position:absolute;left:30px; top:4%;">
+                1. 메뉴명 등록</div></h1>
+    
+            <div style="position:absolute; left:30px; top:9%;">
+                <input type="text" class="input-field" name="menu_name" placeholder="메뉴명 입력" required></div>
+    
+            <h1><div style="position:absolute; left:30px; top:19%;">
+                2.가격 등록</div></h1>
+    
+            <div style="position:absolute; left:30px; top:24%;">
+                <input type="text" class="input-field" name="menu_price" placeholder="가격 입력 (단위: 원)" required></div>
+            
+            <h1><div style="position:absolute; left:30px; top:34%;">
+                3.메뉴 소개</div></h1>
+    
+            <div style="position:absolute; left:30px; top:39%;">
+                <input type="text" class="input-field" name="menu_ex" placeholder="메뉴에 대한 짧은 소개 입력" required></div>
+    
+
+
+
+            <h1><div style="position:absolute; left:30px; top:50%;">
+                4. 음식사진 등록</div></h1>
+                <div class="rectangle2" style="top:58.5%;"></div>
+            <div style="position:absolute; left: 40px; top:59%; ">
+                    <div class="button">
+                        <label for="file">
+                            <p style="position:absolute; text-align:center;width: 100px;left:370px; border-bottom: 1px solid white; color:white; font-size:18px">파일 열기</p>
+                        </label>
+                    </div>
+                    <input type="file" id="file" name="file" accept="image/*" onchange="setThumbnail(event);"/>
+            <div id="image_container"></div>
+
+            </div>
+
+
+    <form action="/view_reg_mainmenu" enctype="multipart/form-data" method="POST" >
+            <input type="hidden" id="restaurant_name" name="restaurant_name" value={{ data.restaurant_name }}>
+    <div class="v-line"></div>
+    <h1><div style="position:absolute; margin-left:37%; top:89%;">
+        <button type="submit" style="font-size:18px; width:121px; height: 48px;">추가</button>
+        </div></h1>
+          </form>
+            
+            
+    <h1><div style="position:absolute;margin-left:580px; top:7%;">
+        등록된 메인 메뉴</div></h1>
+    <div class="rectangle3" style="top:15%;">
+        <h1>{{data.menu_name}}<br>{{data.menu_price}}</h1>
+        <img src="{{url_for('static', filename='image/'+image_file)}}" width="45%;" height="71.8%;" style="position:absolute; left:50%;top:7%;">
+        <!--<h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
+        <h3 style="position:absolute; text-align:center;width: 70px;left:13%;top:75%; color:white; font-size:18px">/</h3>
+        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>-->
+
+    </div>
+    <div class="rectangle3" style="top:53%;">
+        <h1>예시 : 메뉴 이름<br>예시 : 메뉴 가격</h1>
+        <img src="{{url_for('static', filename='image/image 8.png')}}" style="position:absolute; left:50%;top:7%;">
+        <!--<h2 style="position:absolute; text-align:center;width: 70px;left:4%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">수정</h2>
+        <h3 style="position:absolute; text-align:center;width: 70px;left:13%;top:75%; color:white; font-size:18px">/</h3>
+        <h2 style="position:absolute; text-align:center;width: 70px;left:22%;top:75%; border-bottom: 1px solid white; color:white; font-size:18px">삭제</h2>-->
+
+    </div>
+        <h1><div style="position:absolute; left:82%; top:89%;">
+            <button type=button style="font-size:18px; width:170px; height: 48px;"><a href="/view_one_restaurant/{{ data.restaurant_name }}/" style="font-size:18px; width:179px; height: 48px; color:white;">등록 완료하기</a>
+            </div></h1></button>
+
+    
+
+      {% endblock body %}
+</body>
+</html>
